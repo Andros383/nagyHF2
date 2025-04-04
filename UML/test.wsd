@@ -1,0 +1,13 @@
+@startuml Test
+' skinparam linetype ortho
+Component <|-- XOR
+Component <|-- NOT
+class "Wire" as InputWire
+class "Wire" as OutputWire
+
+InputWire "2" o.u. XOR
+InputWire "1   " o.u. NOT
+
+Component .u.o OutputWire
+
+@enduml
