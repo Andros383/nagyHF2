@@ -1,0 +1,86 @@
+@startuml terv
+skinparam ClassAttributeIconSize 0
+skinparam linetype ortho
+hide empty members
+skinparam groupInheritance 1
+
+class LogicNetworkConfigurer{
+	+ read_logic_network(char* filename): LogicNetwork
+	+ write_logic_network(char* filename, LogicNetwork N): void
+}
+
+note "Szervezés miatt külön osztály a fájlműveleteknek." as N1
+N1 -u- LogicNetworkConfigurer
+
+class LogicNetwork{
+	- Wires: Wire*[]
+	- Components: Component*[]
+	+LogicNetwork()
+	+update(): void	
+}
+
+note left of LogicNetwork::"configure(char* filename): void"
+	Eddig állapotát törölve
+	szöveges fájlból felépít
+	egy új hálózatot.
+end note
+
+LogicNetwork *-r- "*" Wire
+LogicNetwork *-r- "*" Component
+
+class Wire{ 
+	- input: int
+	- output: int
+	+ update()
+}
+
+note right of Wire::update()
+	A bemenetről a kimenetre
+	rakja a jelet
+end note
+
+abstract class Component{
+
+	- inputs: Wire*[]
+	- output: Wire*
+	+ Component()
+	+ virtual update() : void = 0
+	+ virtual ~Component()
+}
+note right of Component::update()
+	Bemeneti jelekből kiszámítja
+	a kimeneti jelet
+end note
+
+' Component o--u "1" Wire
+
+class XOR{
+	+XOR(Wire* inpA, Wire* inpB, Wire* out)
+	+ update() : void
+}
+class NOT{
+	+NOT(Wire* inp, Wire* out)
+	+ update() : void
+}
+
+XOR --u|> Component
+NOT --u|> Component
+INP --u|> Component
+
+note left of INP
+	Konstans jelet
+	adó komponens
+end note
+
+' class "Wire" as XORinp
+' class "Wire" as NOTinp
+
+note left of Wire{
+	Bemeneti és kimeneti vezetéket is jelent
+}
+
+Wire "1" --uo INP
+Wire "3" --uo XOR
+Wire "2 " --uo NOT
+
+@enduml
