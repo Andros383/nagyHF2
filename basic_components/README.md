@@ -1,0 +1,1 @@
+Ebben a mappában van a Component osztályból szármoztatott nagy adag, egymásra erősen hasonlító komponens.

@@ -1,18 +1,31 @@
 #ifndef COMPONENT_H
+#define DEBUG
 #define COMPONENT_H
-#include <string>
+#include <iostream>
 
+#include "memtrace.h"
 #include "wire.h"
+
+// nincs component.cpp?
+
 class Component {
-    std::string label;
+    // a gyerekek állítják be, hogy mik legyenek a be és kimenetek
+    // szerintem így jobb, mintha függvénnyel lenne
+   protected:
     Wire** inputs;
-    size_t inputs_len;
     Wire* output;
 
    public:
-    Component() {};
-    virtual void calculate_output();
-    void send_output();
-    virtual ~Component() {};
+    Component() : inputs(nullptr), output(nullptr) {};
+    // NOTE nem konst sehol sem, mert lehessen olyat, aminek van belső állapota
+    virtual void update() = 0;
+    virtual ~Component();
+    virtual const char* get_name() { return "Some_component_is_unnamed!"; }
+
+#ifdef DEBUG
+    virtual void debug() {
+        std::cout << "Default component debug" << std::endl;
+    };
+#endif
 };
 #endif

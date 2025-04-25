@@ -14,5 +14,6 @@ Ami mindenképp lesz:
 Konstans jeladó komponens
 Wire
 NAND kapu (valamiért ez kell)
-Késleltető komponens (~regiszter, beolvassa és ki is adja az adatot) 
+Késleltető komponens (~regiszter, beolvassa és ki is adja az adatot)
+^ Ezt felülírta a specifikációm
 
