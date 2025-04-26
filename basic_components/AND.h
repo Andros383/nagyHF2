@@ -8,7 +8,7 @@ class AND : public Component {
    public:
     AND(Wire* inpA, Wire* inpB, Wire* out);
     void update();
-    const char* get_name() { return "AND"; }
+    void write(Wire* base_address, std::ostream& os = std::cout);
 
     // #ifdef DEBUG
     void debug() {

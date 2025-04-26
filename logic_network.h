@@ -1,3 +1,5 @@
+#ifndef LOGIC_NETWORK_H
+#define LOGIC_NETWORK_H
 #include <iostream>
 
 #include "component.h"
@@ -23,12 +25,16 @@ class LogicNetwork {
     // viszont ki szeretném írni
 
    public:
+    // létrehozáskor meg kell adni a kábelek számát, hogy rá lehessen kötni a kapukat
     LogicNetwork(size_t wires_size, std::ostream& os = std::cout);
+    // lefrissíti először a wireokat, utána a komponenseket
     void update();
+    // egyszerre több frissítést futtat
     void bulk_update(size_t update_count);
-    // visszaad egy wire pointert manuális kötésre
-    // ha nincs, létrehoz annyit, hogy legyen
+    // visszaad egy wire-t manuális kötéshez
+    // ha nincs elég wire, akkor hibát dob
     Wire* get_wire(size_t wire_id);
+    // hozzáad egy komponenst mutatója alapján a hálózathoz
     void add_component(Component* component);
 #ifdef DEBUG
     void debug() {
@@ -43,5 +49,6 @@ class LogicNetwork {
         }
     }
 #endif
-    ~LogicNetwork();
+    virtual ~LogicNetwork();
 };
+#endif

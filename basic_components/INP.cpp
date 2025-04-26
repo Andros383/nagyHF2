@@ -10,6 +10,9 @@ INP::INP(Wire* out, int outer_signal) {
     signal = outer_signal;
 }
 void INP::update() {
-    bool out_signal = signal;
+    int out_signal = signal;
     output->set_signal(out_signal);
+}
+void INP::write(Wire* base_address, std::ostream& os) {
+    os << "INP " << output - base_address << " " << signal;
 }

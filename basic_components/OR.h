@@ -4,11 +4,10 @@
 #define DEBUG
 
 class OR : public Component {
-    // am lehetne struct is, ha már nincs privát tagja
    public:
     OR(Wire* inpA, Wire* inpB, Wire* out);
     void update();
-    const char* get_name() { return "OR"; }
+    void write(Wire* base_address, std::ostream& os = std::cout);
 
 #ifdef DEBUG
     void debug() {

@@ -4,11 +4,10 @@
 
 #define DEBUG
 class XOR : public Component {
-    // am lehetne struct is, ha már nincs privát tagja
    public:
     XOR(Wire* inpA, Wire* inpB, Wire* out);
     void update();
-    const char* get_name() { return "XOR"; }
+    void write(Wire* base_address, std::ostream& os = std::cout);
 #ifdef DEBUG
     void debug() {
         std::cout << "XOR gate: " << (void*)this << std::endl

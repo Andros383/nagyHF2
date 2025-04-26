@@ -18,25 +18,16 @@ void LogicNetwork::update() {
 }
 void LogicNetwork::bulk_update(size_t update_count) {
     for (size_t i = 0; i < update_count; i++) {
-        os << "Update " << i << std::endl;
+        os << std::endl
+           << "Update " << i << std::endl;
         this->update();
         os << std::endl;
     }
 }
 Wire* LogicNetwork::get_wire(size_t wire_id) {
-    if (wires_size <= wire_id) {
-        Wire* new_wires = new Wire[wire_id + 1];
-        // elméletben mivel van defa konstruktor nem UB ha átindexelek 10-re, utána pedig a 9-est kérem le
-        // TODO ellenőrizni
-        for (size_t i = 0; i < wires_size; i++) {
-            new_wires[i] = wires[i];
-        }
-        delete[] wires;
-        wires = new_wires;
-        wires_size = wire_id + 1;
+    if (wire_id >= wires_size) {
+        throw "Not enough wires!";
     }
-    // létrejött, visszaadható
-    // wires + wire_id
     return &wires[wire_id];
 }
 void LogicNetwork::add_component(Component* new_component) {

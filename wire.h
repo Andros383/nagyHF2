@@ -9,8 +9,11 @@ class Wire {
 
    public:
     Wire() : input(0), output(0) {}
+    // elejéről a végére rakja a jelet
     void update();
+    // beállítja a jelet a bemenetén
     void set_signal(int signal);
+    // visszaadja a kimenetén lévő jelet
     int get_signal() const {
         return output;
     }
