@@ -1,7 +1,8 @@
 #ifndef WIRE_H
 #define WIRE_H
-#include "memtrace.h"
+#include <iostream>
 
+#include "memtrace.h"
 #define DEBUG
 class Wire {
     int input;
