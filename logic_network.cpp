@@ -1,6 +1,4 @@
-#define DEBUG
 #include "logic_network.h"
-#define DEBUG
 
 #include "memtrace.h"
 LogicNetwork::LogicNetwork(size_t wires_size, std::ostream& os) : wires(nullptr), wires_size(wires_size), components(nullptr), components_size(0), os(os) {
@@ -18,8 +16,7 @@ void LogicNetwork::update() {
 }
 void LogicNetwork::bulk_update(size_t update_count) {
     for (size_t i = 0; i < update_count; i++) {
-        os << std::endl
-           << "Update " << i << std::endl;
+        os << " --- Update " << i + 1 << " ---" << std::endl;
         this->update();
         os << std::endl;
     }

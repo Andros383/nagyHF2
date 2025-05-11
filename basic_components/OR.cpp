@@ -1,8 +1,8 @@
 #include "OR.h"
 
 #include "../memtrace.h"
-#define DEBUG
-
+// kapu neve a beolvasáshoz / kiíráshoz
+const char* OR::name = "OR";
 OR::OR(Wire* inpA, Wire* inpB, Wire* out) {
     inputs = new Wire*[2];
     inputs[0] = inpA;
@@ -16,5 +16,5 @@ void OR::update() {
     output->set_signal(out_signal);
 }
 void OR::write(Wire* base_address, std::ostream& os) {
-    os << "OR " << inputs[0] - base_address << " " << inputs[1] - base_address << " " << output - base_address;
+    os << name << " " << inputs[0] - base_address << " " << inputs[1] - base_address << " " << output - base_address;
 }

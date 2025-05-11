@@ -3,7 +3,6 @@
 #include <iostream>
 
 #include "memtrace.h"
-#define DEBUG
 class Wire {
     int input;
     int output;
@@ -18,11 +17,6 @@ class Wire {
     int get_signal() const {
         return output;
     }
-#ifdef DEBUG
-    void debug() {
-        std::cout << "wire: " << (void*)this << "\n\tinput:  " << input << "\n\toutput: " << output << std::endl;
-    }
-#endif
 };
 
 #endif

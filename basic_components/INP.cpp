@@ -1,8 +1,9 @@
 #include "INP.h"
-#define DEBUG
 
 #include "../memtrace.h"
 
+// kapu neve a beolvasáshoz / kiíráshoz
+const char* INP::name = "INP";
 // TODO init listával megoldani? csak akkor az output-ot nem lehet beállítani
 // annyira nem baj
 INP::INP(Wire* out, int outer_signal) {
@@ -14,5 +15,5 @@ void INP::update() {
     output->set_signal(out_signal);
 }
 void INP::write(Wire* base_address, std::ostream& os) {
-    os << "INP " << output - base_address << " " << signal;
+    os << name << " " << output - base_address << " " << signal;
 }

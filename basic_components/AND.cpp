@@ -1,7 +1,9 @@
 #include "AND.h"
-#define DEBUG
 
 #include "../memtrace.h"
+
+// kapu neve a beolvasáshoz / kiíráshoz
+const char* AND::name = "AND";
 
 AND::AND(Wire* inpA, Wire* inpB, Wire* out) {
     inputs = new Wire*[2];
@@ -16,5 +18,5 @@ void AND::update() {
     output->set_signal(out_signal);
 }
 void AND::write(Wire* base_address, std::ostream& os) {
-    os << "AND " << inputs[0] - base_address << " " << inputs[1] - base_address << " " << output - base_address;
+    os << name << " " << inputs[0] - base_address << " " << inputs[1] - base_address << " " << output - base_address;
 }

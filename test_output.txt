@@ -1,6 +1,6 @@
 40 12
-STD_INP 0 A
-STD_INP 1 B
+STD_INP 0 Elso input
+STD_INP 1 Masodik input
 PRINT 0 A
 PRINT 1 B
 XOR 0 1 2

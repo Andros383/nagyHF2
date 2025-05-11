@@ -1,8 +1,8 @@
 #include "XOR.h"
 
 #include "../memtrace.h"
-#define DEBUG
-
+// kapu neve a beolvasáshoz / kiíráshoz
+const char* XOR::name = "XOR";
 XOR::XOR(Wire* inpA, Wire* inpB, Wire* out) {
     inputs = new Wire*[2];
     inputs[0] = inpA;
@@ -16,5 +16,5 @@ void XOR::update() {
     output->set_signal(out_signal);
 }
 void XOR::write(Wire* base_address, std::ostream& os) {
-    os << "XOR " << inputs[0] - base_address << " " << inputs[1] - base_address << " " << output - base_address;
+    os << name << " " << inputs[0] - base_address << " " << inputs[1] - base_address << " " << output - base_address;
 }

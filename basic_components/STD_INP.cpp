@@ -1,8 +1,8 @@
 #include "STD_INP.h"
-#define DEBUG
 
 #include "../memtrace.h"
-
+// kapu neve a beolvasáshoz / kiíráshoz
+const char* STD_INP::name = "STD_INP";
 // standard bemenetről tujda beolvasni a signal-t amit kirak
 STD_INP::STD_INP(Wire* out, const char* outer_label) {
     output = out;
@@ -20,7 +20,7 @@ void STD_INP::update() {
     output->set_signal(out_signal);
 }
 void STD_INP::write(Wire* base_address, std::ostream& os) {
-    os << "STD_INP " << output - base_address << " " << label;
+    os << name << " " << output - base_address << " " << label;
 }
 STD_INP::~STD_INP() {
     delete[] label;

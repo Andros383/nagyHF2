@@ -1,21 +1,24 @@
 
+#ifndef AND_H
+#define AND_H
+
 #include "../component.h"
 #include "../memtrace.h"
-#define DEBUG
 
 class AND : public Component {
-    // am lehetne struct is, ha már nincs privát tagja
+    static const char* name;
+    // copy constructor és értékadó operátor letiltása
+    // mert memóriahibát okozna, és nincs értelme ugyan azt a komponenst létrehozni
+    // pontosan ugyan azt csinálná két ugyan oda kötött komponens, mint egy
+    AND(const AND&);
+    AND& operator=(const AND&);
+
    public:
     AND(Wire* inpA, Wire* inpB, Wire* out);
     void update();
     void write(Wire* base_address, std::ostream& os = std::cout);
-
-    // #ifdef DEBUG
-    void debug() {
-        std::cout << "AND gate: " << (void*)this << std::endl
-                  << "\tinp1: " << (void*)inputs[0] << "\tval: " << inputs[0]->get_signal() << std::endl
-                  << "\tinp2: " << (void*)inputs[1] << "\tval: " << inputs[1]->get_signal() << std::endl
-                  << "\tout: " << (void*)output << "\tval: " << output->get_signal() << std::endl;
+    static const char* get_name() {
+        return name;
     }
-    // #endif
 };
+#endif

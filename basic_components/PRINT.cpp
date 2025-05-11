@@ -1,8 +1,8 @@
 #include "PRINT.h"
 
-#define DEBUG
 #include "../memtrace.h"
-
+// kapu neve a beolvasáshoz / kiíráshoz
+const char* PRINT::name = "PRINT";
 PRINT::PRINT(Wire* inpA, const char* outer_label, std::ostream& os) : os(os) {
     // egységesség miatt 1 elemhosszú tömbként
     inputs = new Wire*[1];
@@ -14,7 +14,7 @@ void PRINT::update() {
     os << label << ": " << inputs[0]->get_signal() << std::endl;
 }
 void PRINT::write(Wire* base_address, std::ostream& os) {
-    os << "PRINT " << inputs[0] - base_address << " " << label;
+    os << name << " " << inputs[0] - base_address << " " << label;
 }
 PRINT::~PRINT() {
     delete[] label;

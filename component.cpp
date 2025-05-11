@@ -1,7 +1,6 @@
 #include "component.h"
 
 #include <iostream>
-#define DEBUG
 
 #include "memtrace.h"
 

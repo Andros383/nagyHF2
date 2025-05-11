@@ -1,14 +1,12 @@
 #ifndef COMPONENT_H
-#define DEBUG
 #define COMPONENT_H
 #include <iostream>
 
 #include "memtrace.h"
 #include "wire.h"
 
-// nincs component.cpp?
-
 class Component {
+    static const char* component_name;
     // a gyerekek állítják be, hogy mik legyenek a be és kimenetek
     // szerintem így jobb, mintha függvénnyel lenne
    protected:
@@ -28,11 +26,5 @@ class Component {
     // base_address: a kezdőcíme a kábelek tömbjének, hogy ez alapján ki tudják írni hanyas wire-on csatlakoznak egy-egy bemeneten
     virtual void write(Wire* base_address, std::ostream& os = std::cout) = 0;
     virtual ~Component();
-
-#ifdef DEBUG
-    virtual void debug() {
-        std::cout << "Default component debug" << std::endl;
-    };
-#endif
 };
 #endif

@@ -1,0 +1,28 @@
+\doxysection{C\+:/egyetem/nagy\+HF2/logic\+\_\+network\+\_\+configurer.h}
+\hypertarget{logic__network__configurer_8h_source}{}\label{logic__network__configurer_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LOGIC\_NETWORK\_CONFIGURER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LOGIC\_NETWORK\_CONFIGURER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ DEBUG}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}logic\_network.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}memtrace.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }LogicNetworkConfigurer\ :\ \textcolor{keyword}{public}\ LogicNetwork\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{comment}{//\ TODO\ kell\ mindenféle\ copy\ konstruktor,\ stb}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{//\ TODO\ nem\ biztos\ hogy\ ide\ kéne\ a\ wires\_size,\ meg\ default\ argumentumok\ miatt\ ilyen\ sorrendben}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ alapvetően\ 0-\/ra\ állítja\ be\ a\ méretet,\ majd\ beáll\ amikor\ egy\ txt-\/ből\ beolvas}}
+\DoxyCodeLine{00015\ \ \ \ \ LogicNetworkConfigurer(\textcolor{keywordtype}{size\_t}\ wires\_size\ =\ 0,\ std::ostream\&\ os\ =\ std::cout)\ :\ LogicNetwork(wires\_size,\ os)\ \{\}}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//\ TODO\ olyan\ függvények,\ amik\ ezeket\ wrappelik\ és\ txt-\/be\ írnak\ ki}}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ beolvassa\ egy\ bemeneti\ streamről\ a\ hálózatot}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ read\_logic\_network(std::istream\&\ is);}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{//\ kiírja\ egy\ kimeneti\ streamre\ magát}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ write\_logic\_network(std::ostream\&\ os);}
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

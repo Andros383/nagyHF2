@@ -1,0 +1,19 @@
+var NAVTREEINDEX0 =
+{
+"annotated.html":[0,0],
+"basic__components_8h_source.html":[1,0,0],
+"class_component.html":[0,0,0],
+"class_logic_network.html":[0,0,1],
+"class_logic_network_configurer.html":[0,0,2],
+"class_wire.html":[0,0,3],
+"classes.html":[0,1],
+"component_8h_source.html":[1,0,1],
+"files.html":[1,0],
+"hierarchy.html":[0,2],
+"index.html":[],
+"logic__network_8h_source.html":[1,0,2],
+"logic__network__configurer_8h_source.html":[1,0,3],
+"memtrace_8h_source.html":[1,0,4],
+"pages.html":[],
+"wire_8h_source.html":[1,0,5]
+};

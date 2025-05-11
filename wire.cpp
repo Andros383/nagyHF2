@@ -1,5 +1,4 @@
 #include "wire.h"
-#define DEBUG
 
 void Wire::update() {
     output = input;
