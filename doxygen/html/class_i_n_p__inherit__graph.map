@@ -1,0 +1,5 @@
+<map id="INP" name="INP">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,192,163,389"/>
+<area shape="rect" id="Node000002" href="$class_component.html" title=" " alt="" coords="7,5,161,144"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,159,87,192,82,192,82,159"/>
+</map>

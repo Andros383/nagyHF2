@@ -1,7 +1,7 @@
 /**
  * @file main.cpp
  * @brief Main file az összes teszttel
- * Minden teszt gtest_lita-al írt. Az utolsó pedig standard bemenetről olvas be biteket, amiknek ha az értéke 5, a kimenete a hálózatnak 1 lesz
+ * Minden teszt gtest_lita-al írt. Az utolsó teszteset standard bemenetről olvas.
  *
  */
 
@@ -366,8 +366,21 @@ int main() {
         EXPECT_THROW(lnc.read_logic_network(input_configuration), const char*);
     }
     END
-
+    TEST(LogicNetworkConfigurer, kezdeti paraméterek) {
+        std::stringstream input_configuration;
+        // a kábelek száma helyett értelmetlen szöveget van
+        input_configuration << "macska 2\n"
+                               "PRINT 0 Kimenet\n"
+                               "INP 0 1\n";
         LogicNetworkConfigurer lnc(0);
+        EXPECT_THROW(lnc.read_logic_network(input_configuration), const char*);
+    }
+    END
+
+    TEST(LogicNetworkConfigurer, standard bemenet) {
+    }
+    std::stringstream ss;
+    LogicNetworkConfigurer lnc(0, ss);
     std::ifstream f("fivetest.txt");
     try {
         lnc.read_logic_network(f);
@@ -376,7 +389,21 @@ int main() {
         std::cout << "Futtatás közbeni hiba: " << std::endl;
         std::cout << error << '\n';
     }
-
+    EXPECT_EQ(ss.str(),
+              " --- Update 1 ---\n"
+              "Ha a bemenet 5 volt valamikor itt a kimenet 1 lesz: 0\n\n"
+              " --- Update 2 ---\n"
+              "Ha a bemenet 5 volt valamikor itt a kimenet 1 lesz: 0\n\n"
+              " --- Update 3 ---\n"
+              "Ha a bemenet 5 volt valamikor itt a kimenet 1 lesz: 0\n\n"
+              " --- Update 4 ---\n"
+              "Ha a bemenet 5 volt valamikor itt a kimenet 1 lesz: 0\n\n"
+              " --- Update 5 ---\n"
+              "Ha a bemenet 5 volt valamikor itt a kimenet 1 lesz: 0\n\n"
+              " --- Update 6 ---\n"
+              "Ha a bemenet 5 volt valamikor itt a kimenet 1 lesz: 1\n\n");
     f.close();
-    return 0;
+    END
+
+        return 0;
 }

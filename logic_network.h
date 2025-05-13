@@ -1,3 +1,7 @@
+/**
+ * @file logic_network.h
+ * @brief Logikai hálózatot megvalósító osztály. Eltárolja a neki átadott komponenseket, használat után törli azokat.
+ */
 #ifndef LOGIC_NETWORK_H
 #define LOGIC_NETWORK_H
 #include <iostream>
@@ -26,19 +30,45 @@ class LogicNetwork {
     std::ostream& os;
 
    public:
-    // létrehozáskor meg kell adni a kábelek számát, hogy rá lehessen kötni a kapukat
+    /**
+     * @brief Logikai hálózat konstruktora
+     *
+     * @param wires_size A hálózatban lévő kábelek maximális száma
+     * @param os Az adatfolyam, ahova a frissítéseket elválasztó üzeneteket írja
+     */
     LogicNetwork(size_t wires_size, std::ostream& os = std::cout);
-    // lefrissíti először a wireokat, utána a komponenseket
+    /**
+     * @brief A hálózat elemeinek frissítése: először kábelek, majd komponensek sorrendben
+     */
     void update();
-    // egyszerre több frissítést futtat
+    /**
+     * @brief Egyszerre több frissítés futtatása. Kiírja az egyes frissítések kezdetét az adatfolyamra.
+     *
+     * @param update_count A frissítések száma
+     */
     void bulk_update(size_t update_count);
-    // visszaad egy wire-t manuális kötéshez
-    // ha nincs elég wire, akkor hibát dob
+
+    /**
+     * @brief Visszaad egy mutatót az eltárolt vezetékekre sorszám alapján
+     *
+     * @throw const_char* Ha nincsen wire_id számú kábel, "Nincs elég kábel!" kivételt dob
+     *
+     * @param wire_id Vezeték sorszáma
+     * @return Wire*
+     */
     Wire* get_wire(size_t wire_id);
-    // hozzáad egy komponenst mutatója alapján a hálózathoz
+    /**
+     * @brief Hozzáad egy komponenst a hálózathoz. A komponenst a hálózat fogja felszabadítani.
+     *
+     * @param component Az új komponens mutatóval, amit hozzáad
+     */
     void add_component(Component* component);
 
-    // visszaadja a streamet amire kiír
+    /**
+     * @brief Visszaadja a kimeneti adatfolyamot, amire a frissítések kezdetét jelző szöveget írja ki
+     *
+     * @return std::ostream&
+     */
     std::ostream& get_os() { return os; }
     virtual ~LogicNetwork();
 };

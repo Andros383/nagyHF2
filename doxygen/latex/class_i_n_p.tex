@@ -1,0 +1,96 @@
+\doxysection{INP osztályreferencia}
+\hypertarget{class_i_n_p}{}\label{class_i_n_p}\index{INP@{INP}}
+
+
+Az INP osztály származási diagramja\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_i_n_p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Az INP osztály együttműködési diagramja\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_i_n_p__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_n_p_adf396f65031c8d10608fff17dd5b8d50}{INP}} (\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}out, int signal)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_i_n_p}{INP} komponens konstruktora. \end{DoxyCompactList}\item 
+\Hypertarget{class_i_n_p_a726d7727923ba821fbe00906c33539e1}\label{class_i_n_p_a726d7727923ba821fbe00906c33539e1} 
+void {\bfseries update} ()
+\begin{DoxyCompactList}\small\item\em A belső jelet kirakja a kimeneti kábelre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_i_n_p_ac74a70dbe94ea9ed806f072ef3221fc7}{write}} (\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}base\+\_\+address, std\+::ostream \&os=std\+::cout)
+\begin{DoxyCompactList}\small\item\em Komponens kiírása a fájlba mentéshez. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Statikus publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+static const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_i_n_p_aa44e033cb87bd134f12ecf205f40668f}{get\+\_\+name}} ()
+\begin{DoxyCompactList}\small\item\em Visszaadja a komponens elmentésekor használt nevet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Konstruktorok és destruktorok dokumentációja}
+\Hypertarget{class_i_n_p_adf396f65031c8d10608fff17dd5b8d50}\index{INP@{INP}!INP@{INP}}
+\index{INP@{INP}!INP@{INP}}
+\doxysubsubsection{\texorpdfstring{INP()}{INP()}}
+{\footnotesize\ttfamily \label{class_i_n_p_adf396f65031c8d10608fff17dd5b8d50} 
+INP\+::\+INP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}}]{out}{, }\item[{int}]{signal}{}\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_i_n_p}{INP} komponens konstruktora. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em out} & Kimenet \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Tagfüggvények dokumentációja}
+\Hypertarget{class_i_n_p_aa44e033cb87bd134f12ecf205f40668f}\index{INP@{INP}!get\_name@{get\_name}}
+\index{get\_name@{get\_name}!INP@{INP}}
+\doxysubsubsection{\texorpdfstring{get\_name()}{get\_name()}}
+{\footnotesize\ttfamily \label{class_i_n_p_aa44e033cb87bd134f12ecf205f40668f} 
+static const char \texorpdfstring{$\ast$}{*} INP\+::get\+\_\+name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Visszaadja a komponens elmentésekor használt nevet. 
+
+\begin{DoxyReturn}{Visszatérési érték}
+A komponens neve 
+\end{DoxyReturn}
+\Hypertarget{class_i_n_p_ac74a70dbe94ea9ed806f072ef3221fc7}\index{INP@{INP}!write@{write}}
+\index{write@{write}!INP@{INP}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_i_n_p_ac74a70dbe94ea9ed806f072ef3221fc7} 
+void INP\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}}]{base\+\_\+address}{, }\item[{std\+::ostream \&}]{os}{ = {\ttfamily std\+:\+:cout}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Komponens kiírása a fájlba mentéshez. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em base\+\_\+address} & A logikai hálózat vezetékeket tároló tömbjének kezdőcíme \\
+\hline
+{\em os} & A kimeneti adatfolyam, amire a kapu kiírja magát \\
+\hline
+\end{DoxyParams}
+
+
+Megvalósítja a következőket\+: \mbox{\hyperlink{class_component_a60c1995ed8c270084ba7703579f5684a}{Component}}.
+
+
+
+Ez a dokumentáció az osztályról a következő fájlok alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_i_n_p_8h}{INP.\+h}}\item 
+INP.\+cpp\end{DoxyCompactItemize}

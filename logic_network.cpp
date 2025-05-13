@@ -24,7 +24,7 @@ void LogicNetwork::bulk_update(size_t update_count) {
 }
 Wire* LogicNetwork::get_wire(size_t wire_id) {
     if (wire_id >= wires_size) {
-        throw "Not enough wires!";
+        throw "Nincs elég kábel!";
     }
     return &wires[wire_id];
 }

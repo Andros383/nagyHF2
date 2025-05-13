@@ -1,0 +1,20 @@
+<map id="logic_network_configurer.h" name="logic_network_configurer.h">
+<area shape="rect" id="Node000001" title="Fájlba menthető és fájlból beolvasható logikai hálózat osztály." alt="" coords="18,5,194,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,304,77,331"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,34,62,54,41,81,22,127,17,165,20,205,28,256,35,289,30,290,22,256,15,206,12,165,17,125,36,79,58,51,84,30"/>
+<area shape="rect" id="Node000003" href="$logic__network_8h.html" title="Logikai hálózatot megvalósító osztály. Eltárolja a neki átadott komponenseket, használat után törli a..." alt="" coords="50,80,162,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="109,33,109,64,104,64,104,33"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="169,304,260,331"/>
+<area shape="poly" id="edge12_Node000001_Node000005" title=" " alt="" coords="126,30,182,79,212,114,235,153,247,181,252,204,253,228,248,257,233,291,228,289,242,255,248,227,247,205,242,183,231,156,208,117,179,83,122,34"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="99,109,66,160,48,194,36,230,33,260,36,289,31,289,28,260,30,229,43,192,61,157,94,106"/>
+<area shape="rect" id="Node000004" href="$component_8h.html" title="A komponensek absztrakt bázisosztálya." alt="" coords="101,155,197,181"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="116,106,136,140,132,143,111,109"/>
+<area shape="poly" id="edge10_Node000003_Node000005" title=" " alt="" coords="148,105,183,124,199,137,211,153,225,188,229,224,228,259,224,289,218,288,223,259,224,225,220,189,207,156,195,141,180,128,145,110"/>
+<area shape="rect" id="Node000006" href="$wire_8h.html" title="Vezetéket megvalósító osztály." alt="" coords="45,229,101,256"/>
+<area shape="poly" id="edge11_Node000003_Node000006" title=" " alt="" coords="105,108,92,155,80,214,75,213,86,154,100,106"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="148,182,137,218,115,258,96,279,74,297,71,293,92,275,111,254,132,215,143,181"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="157,181,205,289,200,291,152,183"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="138,184,99,221,95,217,134,180"/>
+<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="70,258,55,291,50,289,65,255"/>
+<area shape="poly" id="edge9_Node000006_Node000005" title=" " alt="" coords="99,254,177,294,175,299,96,259"/>
+</map>

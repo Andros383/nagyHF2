@@ -1,4 +1,7 @@
-
+/**
+ * @file NOT.h
+ * @brief NOT kaput megvalósító komponens
+ */
 #ifndef NOT_H
 #define NOT_H
 
@@ -15,9 +18,23 @@ class NOT : public Component {
     NOT& operator=(const NOT&);
 
    public:
+    /**
+     * @brief NOT komponens konstruktora
+     *
+     * @param inpA Bemenet
+     * @param out Kimenet
+     */
     NOT(Wire* inpA, Wire* out);
+    /**
+     * @brief Kimeneti jel a bemeneten végzett NOT eredménye
+     */
     void update();
     void write(Wire* base_address, std::ostream& os = std::cout);
+    /**
+     * @brief Visszaadja a komponens elmentésekor használt nevet
+     *
+     * @return A komponens neve
+     */
     static const char* get_name() {
         return name;
     }

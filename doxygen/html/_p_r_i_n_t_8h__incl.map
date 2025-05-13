@@ -1,0 +1,16 @@
+<map id="PRINT.h" name="PRINT.h">
+<area shape="rect" id="Node000001" title="A kábel értéket kimenetre író komponens." alt="" coords="58,5,130,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,229,77,256"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,35,50,54,30,81,21,115,21,151,26,185,34,214,29,216,21,187,15,152,16,115,25,79,46,51,71,31"/>
+<area shape="rect" id="Node000003" href="$component_8h.html" title="A komponensek absztrakt bázisosztálya." alt="" coords="40,80,148,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="97,33,97,64,92,64,92,33"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="172,80,275,107"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="118,30,189,70,186,74,116,35"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="90,108,69,156,50,215,45,213,64,154,85,106"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="113,229,204,256"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="111,105,131,126,149,154,158,184,161,214,156,214,153,185,144,156,127,130,107,109"/>
+<area shape="rect" id="Node000005" href="$wire_8h.html" title="Vezetéket megvalósító osztály." alt="" coords="78,155,134,181"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="99,107,104,139,99,140,94,108"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="97,184,64,220,60,216,93,180"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="118,180,143,215,138,218,113,183"/>
+</map>

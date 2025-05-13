@@ -53,8 +53,10 @@ void LogicNetworkConfigurer::read_logic_network(std::istream& is) {
     // minden komponenst egyesével a végére fűzzük a hálózatnak
     size_t components_cnt;
     is >> components_cnt;
+
+    if (!is.good())
+        throw "Hiba a komponensek és kábelek számának beolvasásakor";
     for (size_t i = 0; i < components_cnt; i++) {
-        // TODO ne legyen hosszú gate name emiatt
         char gate_name[101];
         is >> gate_name;
         if (strcmp(gate_name, AND::get_name()) == 0) {
@@ -88,7 +90,6 @@ void LogicNetworkConfigurer::read_logic_network(std::istream& is) {
             this->add_component(new STD_INP(this->get_wire(out), label));
             delete[] label;
         } else if (strcmp(gate_name, PRINT::get_name()) == 0) {
-            // TODO ha txt akkor kötelező a label?
             size_t in;
             is >> in;
             char* label;

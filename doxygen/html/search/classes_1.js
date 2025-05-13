@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['logicnetwork_0',['LogicNetwork',['../class_logic_network.html',1,'']]],
-  ['logicnetworkconfigurer_1',['LogicNetworkConfigurer',['../class_logic_network_configurer.html',1,'']]]
+  ['component_0',['Component',['../class_component.html',1,'']]]
 ];

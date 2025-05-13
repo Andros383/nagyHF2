@@ -1,29 +1,59 @@
-\doxysection{Component Class Reference}
+\doxysection{Component osztályreferencia}
 \hypertarget{class_component}{}\label{class_component}\index{Component@{Component}}
-\doxysubsubsection*{Public Member Functions}
+
+
+A Component osztály származási diagramja\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component__inherit__graph}
+\end{center}
+\end{figure}
+
+
+A Component osztály együttműködési diagramja\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{class_component__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Publikus tagfüggvények}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_component_a910086d9eda3ecb47d1117674ee99ea5}\label{class_component_a910086d9eda3ecb47d1117674ee99ea5} 
 virtual void {\bfseries update} ()=0
-\item 
-\Hypertarget{class_component_a60c1995ed8c270084ba7703579f5684a}\label{class_component_a60c1995ed8c270084ba7703579f5684a} 
-virtual void {\bfseries write} (\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}base\+\_\+address, std\+::ostream \&os=std\+::cout)=0
-\item 
-\Hypertarget{class_component_a74f69eeadb4cfa57d051d66a49293ac8}\label{class_component_a74f69eeadb4cfa57d051d66a49293ac8} 
-virtual void {\bfseries debug} ()
-\end{DoxyCompactItemize}
-\doxysubsubsection*{Protected Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\Hypertarget{class_component_add422aca31912941f98120a1168a5763}\label{class_component_add422aca31912941f98120a1168a5763} 
-\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries inputs}
-\item 
-\Hypertarget{class_component_ab9d1b6c8d71248175dfc36af31a9da42}\label{class_component_ab9d1b6c8d71248175dfc36af31a9da42} 
-\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*} {\bfseries output}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Kaputól függően a frissítés elvégzése\+: ~\newline
+ Bementi jelekből a kimeneti jelek kiszámítása / egyéb műveletek végrehajtása. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a60c1995ed8c270084ba7703579f5684a}{write}} (\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}base\+\_\+address, std\+::ostream \&os=std\+::cout)=0
+\begin{DoxyCompactList}\small\item\em Komponens kiírása a fájlba mentéshez. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\doxysubsection{Tagfüggvények dokumentációja}
+\Hypertarget{class_component_a60c1995ed8c270084ba7703579f5684a}\index{Component@{Component}!write@{write}}
+\index{write@{write}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_component_a60c1995ed8c270084ba7703579f5684a} 
+virtual void Component\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}}]{base\+\_\+address}{, }\item[{std\+::ostream \&}]{os}{ = {\ttfamily std\+:\+:cout}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Komponens kiírása a fájlba mentéshez. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em base\+\_\+address} & A logikai hálózat vezetékeket tároló tömbjének kezdőcíme \\
+\hline
+{\em os} & A kimeneti adatfolyam, amire a kapu kiírja magát \\
+\hline
+\end{DoxyParams}
+
+
+Megvalósítják a következők\+: \mbox{\hyperlink{class_a_n_d_a1f5e0de5f526fba0108f7226d658f301}{AND}}, \mbox{\hyperlink{class_i_n_p_ac74a70dbe94ea9ed806f072ef3221fc7}{INP}}, \mbox{\hyperlink{class_n_o_t_ae133179ad283181f75343b570f5ca70b}{NOT}}, \mbox{\hyperlink{class_o_r_a0f6461bf6ed1882d842fcb30edde8a5a}{OR}}, \mbox{\hyperlink{class_p_r_i_n_t_a1b77c5d81b4d4503c57d2a90f9f4e565}{PRINT}}, \mbox{\hyperlink{class_s_t_d___i_n_p_a155a6ee8de4f6c914625d29309be0a91}{STD\+\_\+\+INP}} és \mbox{\hyperlink{class_x_o_r_ab620e2443223a3b2312463d24b02d102}{XOR}}.
+
+
+
+Ez a dokumentáció az osztályról a következő fájlok alapján készült\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/egyetem/nagy\+HF2/component.\+h\item 
-C\+:/egyetem/nagy\+HF2/component.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{component_8h}{component.\+h}}\item 
+component.\+cpp\end{DoxyCompactItemize}

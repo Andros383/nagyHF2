@@ -1,0 +1,15 @@
+<map id="STD_INP.h" name="STD_INP.h">
+<area shape="rect" id="Node000001" title="Olyan INP komponens, aminek az értékét a standard bemeneten lehet megadni." alt="" coords="115,5,202,32"/>
+<area shape="rect" id="Node000002" href="$component_8h.html" title="A komponensek absztrakt bázisosztálya." alt="" coords="40,80,148,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,34,117,70,114,66,145,31"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="172,80,275,107"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="172,31,204,67,200,70,168,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,229,77,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="86,109,70,130,57,156,49,186,45,215,39,214,43,185,52,154,66,127,82,106"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="108,229,198,256"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="107,106,122,127,137,154,147,184,152,214,147,215,142,186,132,156,118,130,103,109"/>
+<area shape="rect" id="Node000005" href="$wire_8h.html" title="Vezetéket megvalósító osztály." alt="" coords="66,155,122,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="97,107,97,139,92,139,92,107"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="87,183,61,218,57,215,83,180"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="107,180,135,215,131,219,102,184"/>
+</map>

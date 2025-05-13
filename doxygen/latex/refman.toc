@@ -1,20 +1,107 @@
-\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
-\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}%
-\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
-\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}%
-\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}%
-\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Component Class Reference}{7}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Logic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network Class Reference}{7}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Logic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Configurer Class Reference}{8}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Wire Class Reference}{9}{section.4.4}%
-\contentsline {chapter}{\numberline {5}File Documentation}{11}{chapter.5}%
-\contentsline {section}{\numberline {5.1}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/egyetem/nagy\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF2/basic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}components.h}{11}{section.5.1}%
-\contentsline {section}{\numberline {5.2}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/egyetem/nagy\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF2/component.h}{11}{section.5.2}%
-\contentsline {section}{\numberline {5.3}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/egyetem/nagy\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF2/logic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}network.h}{12}{section.5.3}%
-\contentsline {section}{\numberline {5.4}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/egyetem/nagy\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF2/logic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}network\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}configurer.h}{12}{section.5.4}%
-\contentsline {section}{\numberline {5.5}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/egyetem/nagy\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF2/memtrace.h}{13}{section.5.5}%
-\contentsline {section}{\numberline {5.6}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/egyetem/nagy\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF2/wire.h}{15}{section.5.6}%
-\contentsline {chapter}{Index}{17}{section*.12}%
+\select@language {magyar} \@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\select@language {magyar} \contentsline {chapter}{\numberline {1}Szeretem az anime lányaidat}{1}{chapter.1}%
+\select@language {magyar} \contentsline {chapter}{\numberline {2}Hierarchikus mutató}{3}{chapter.2}%
+\select@language {magyar} \contentsline {section}{\numberline {2.1}Osztályhierarchia}{3}{section.2.1}%
+\select@language {magyar} \contentsline {chapter}{\numberline {3}Osztálymutató}{5}{chapter.3}%
+\select@language {magyar} \contentsline {section}{\numberline {3.1}Osztálylista}{5}{section.3.1}%
+\select@language {magyar} \contentsline {chapter}{\numberline {4}Fájlmutató}{7}{chapter.4}%
+\select@language {magyar} \contentsline {section}{\numberline {4.1}Fájllista}{7}{section.4.1}%
+\select@language {magyar} \contentsline {chapter}{\numberline {5}Osztályok dokumentációja}{9}{chapter.5}%
+\select@language {magyar} \contentsline {section}{\numberline {5.1}AND osztályreferencia}{9}{section.5.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.1.1}Konstruktorok és destruktorok dokumentációja}{11}{subsection.5.1.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.1.1.1}AND()}{11}{subsubsection.5.1.1.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.1.2}Tagfüggvények dokumentációja}{11}{subsection.5.1.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.1.2.1}get\_name()}{11}{subsubsection.5.1.2.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.1.2.2}write()}{11}{subsubsection.5.1.2.2}%
+\select@language {magyar} \contentsline {section}{\numberline {5.2}Component osztályreferencia}{12}{section.5.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.2.1}Tagfüggvények dokumentációja}{13}{subsection.5.2.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.2.1.1}write()}{13}{subsubsection.5.2.1.1}%
+\select@language {magyar} \contentsline {section}{\numberline {5.3}INP osztályreferencia}{13}{section.5.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.3.1}Konstruktorok és destruktorok dokumentációja}{15}{subsection.5.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.3.1.1}INP()}{15}{subsubsection.5.3.1.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.3.2}Tagfüggvények dokumentációja}{15}{subsection.5.3.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.3.2.1}get\_name()}{15}{subsubsection.5.3.2.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.3.2.2}write()}{15}{subsubsection.5.3.2.2}%
+\select@language {magyar} \contentsline {section}{\numberline {5.4}Logic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network osztályreferencia}{16}{section.5.4}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.4.1}Konstruktorok és destruktorok dokumentációja}{18}{subsection.5.4.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.4.1.1}LogicNetwork()}{18}{subsubsection.5.4.1.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.4.2}Tagfüggvények dokumentációja}{18}{subsection.5.4.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.4.2.1}add\_component()}{18}{subsubsection.5.4.2.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.4.2.2}bulk\_update()}{18}{subsubsection.5.4.2.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.4.2.3}get\_os()}{19}{subsubsection.5.4.2.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.4.2.4}get\_wire()}{19}{subsubsection.5.4.2.4}%
+\select@language {magyar} \contentsline {section}{\numberline {5.5}Logic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Configurer osztályreferencia}{20}{section.5.5}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.5.1}Tagfüggvények dokumentációja}{22}{subsection.5.5.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.5.1.1}read\_logic\_network()}{22}{subsubsection.5.5.1.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.5.1.2}write\_logic\_network()}{22}{subsubsection.5.5.1.2}%
+\select@language {magyar} \contentsline {section}{\numberline {5.6}NOT osztályreferencia}{23}{section.5.6}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.6.1}Konstruktorok és destruktorok dokumentációja}{25}{subsection.5.6.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.6.1.1}NOT()}{25}{subsubsection.5.6.1.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.6.2}Tagfüggvények dokumentációja}{25}{subsection.5.6.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.6.2.1}get\_name()}{25}{subsubsection.5.6.2.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.6.2.2}write()}{25}{subsubsection.5.6.2.2}%
+\select@language {magyar} \contentsline {section}{\numberline {5.7}OR osztályreferencia}{26}{section.5.7}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.7.1}Konstruktorok és destruktorok dokumentációja}{28}{subsection.5.7.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.7.1.1}OR()}{28}{subsubsection.5.7.1.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.7.2}Tagfüggvények dokumentációja}{28}{subsection.5.7.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.7.2.1}get\_name()}{28}{subsubsection.5.7.2.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.7.2.2}write()}{28}{subsubsection.5.7.2.2}%
+\select@language {magyar} \contentsline {section}{\numberline {5.8}PRINT osztályreferencia}{29}{section.5.8}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.8.1}Konstruktorok és destruktorok dokumentációja}{31}{subsection.5.8.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.8.1.1}PRINT()}{31}{subsubsection.5.8.1.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.8.2}Tagfüggvények dokumentációja}{31}{subsection.5.8.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.8.2.1}get\_name()}{31}{subsubsection.5.8.2.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.8.2.2}write()}{31}{subsubsection.5.8.2.2}%
+\select@language {magyar} \contentsline {section}{\numberline {5.9}STD\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}INP osztályreferencia}{32}{section.5.9}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.9.1}Konstruktorok és destruktorok dokumentációja}{34}{subsection.5.9.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.9.1.1}STD\_INP()}{34}{subsubsection.5.9.1.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.9.2}Tagfüggvények dokumentációja}{34}{subsection.5.9.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.9.2.1}get\_name()}{34}{subsubsection.5.9.2.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.9.2.2}update()}{34}{subsubsection.5.9.2.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.9.2.3}write()}{34}{subsubsection.5.9.2.3}%
+\select@language {magyar} \contentsline {section}{\numberline {5.10}Wire osztályreferencia}{35}{section.5.10}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.10.1}Tagfüggvények dokumentációja}{35}{subsection.5.10.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.10.1.1}get\_signal()}{35}{subsubsection.5.10.1.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.10.1.2}set\_signal()}{36}{subsubsection.5.10.1.2}%
+\select@language {magyar} \contentsline {section}{\numberline {5.11}XOR osztályreferencia}{36}{section.5.11}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.11.1}Konstruktorok és destruktorok dokumentációja}{38}{subsection.5.11.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.11.1.1}XOR()}{38}{subsubsection.5.11.1.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.11.2}Tagfüggvények dokumentációja}{38}{subsection.5.11.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.11.2.1}get\_name()}{38}{subsubsection.5.11.2.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {5.11.2.2}write()}{38}{subsubsection.5.11.2.2}%
+\select@language {magyar} \contentsline {chapter}{\numberline {6}Fájlok dokumentációja}{39}{chapter.6}%
+\select@language {magyar} \contentsline {section}{\numberline {6.1}basic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}components.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{39}{section.6.1}%
+\select@language {magyar} \contentsline {section}{\numberline {6.2}AND.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{39}{section.6.2}%
+\select@language {magyar} \contentsline {section}{\numberline {6.3}INP.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h fájlreferencia}{39}{section.6.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.3.1}Részletes leírás}{40}{subsection.6.3.1}%
+\select@language {magyar} \contentsline {section}{\numberline {6.4}INP.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{41}{section.6.4}%
+\select@language {magyar} \contentsline {section}{\numberline {6.5}NOT.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h fájlreferencia}{41}{section.6.5}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.5.1}Részletes leírás}{42}{subsection.6.5.1}%
+\select@language {magyar} \contentsline {section}{\numberline {6.6}NOT.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{42}{section.6.6}%
+\select@language {magyar} \contentsline {section}{\numberline {6.7}OR.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h fájlreferencia}{43}{section.6.7}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.7.1}Részletes leírás}{44}{subsection.6.7.1}%
+\select@language {magyar} \contentsline {section}{\numberline {6.8}OR.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{44}{section.6.8}%
+\select@language {magyar} \contentsline {section}{\numberline {6.9}PRINT.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h fájlreferencia}{44}{section.6.9}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.9.1}Részletes leírás}{45}{subsection.6.9.1}%
+\select@language {magyar} \contentsline {section}{\numberline {6.10}PRINT.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{46}{section.6.10}%
+\select@language {magyar} \contentsline {section}{\numberline {6.11}STD\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}INP.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h fájlreferencia}{46}{section.6.11}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.11.1}Részletes leírás}{47}{subsection.6.11.1}%
+\select@language {magyar} \contentsline {section}{\numberline {6.12}STD\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}INP.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{47}{section.6.12}%
+\select@language {magyar} \contentsline {section}{\numberline {6.13}XOR.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h fájlreferencia}{48}{section.6.13}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.13.1}Részletes leírás}{49}{subsection.6.13.1}%
+\select@language {magyar} \contentsline {section}{\numberline {6.14}XOR.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{49}{section.6.14}%
+\select@language {magyar} \contentsline {section}{\numberline {6.15}component.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h fájlreferencia}{49}{section.6.15}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.15.1}Részletes leírás}{50}{subsection.6.15.1}%
+\select@language {magyar} \contentsline {section}{\numberline {6.16}component.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{50}{section.6.16}%
+\select@language {magyar} \contentsline {section}{\numberline {6.17}logic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}network.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h fájlreferencia}{50}{section.6.17}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.17.1}Részletes leírás}{51}{subsection.6.17.1}%
+\select@language {magyar} \contentsline {section}{\numberline {6.18}logic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}network.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{52}{section.6.18}%
+\select@language {magyar} \contentsline {section}{\numberline {6.19}logic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}network\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}configurer.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h fájlreferencia}{52}{section.6.19}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.19.1}Részletes leírás}{53}{subsection.6.19.1}%
+\select@language {magyar} \contentsline {section}{\numberline {6.20}logic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}network\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}configurer.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{54}{section.6.20}%
+\select@language {magyar} \contentsline {section}{\numberline {6.21}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp fájlreferencia}{54}{section.6.21}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.21.1}Részletes leírás}{54}{subsection.6.21.1}%
+\select@language {magyar} \contentsline {section}{\numberline {6.22}wire.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h fájlreferencia}{55}{section.6.22}%
+\select@language {magyar} \contentsline {subsection}{\numberline {6.22.1}Részletes leírás}{55}{subsection.6.22.1}%
+\select@language {magyar} \contentsline {section}{\numberline {6.23}wire.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{56}{section.6.23}%
+\select@language {magyar} \contentsline {chapter}{T\'argymutat\'o}{57}{section*.72}%

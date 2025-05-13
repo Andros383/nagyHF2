@@ -1,53 +1,131 @@
-\doxysection{Logic\+Network Class Reference}
+\doxysection{Logic\+Network osztályreferencia}
 \hypertarget{class_logic_network}{}\label{class_logic_network}\index{LogicNetwork@{LogicNetwork}}
-Inheritance diagram for Logic\+Network\+:\begin{figure}[H]
+
+
+A Logic\+Network osztály származási diagramja\+:\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_logic_network}
+\includegraphics[width=209pt]{class_logic_network__inherit__graph}
 \end{center}
 \end{figure}
-\doxysubsubsection*{Public Member Functions}
+
+
+A Logic\+Network osztály együttműködési diagramja\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_logic_network__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Publikus tagfüggvények}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_logic_network_a0a11fb84253979b868dcc8805195d46e}\label{class_logic_network_a0a11fb84253979b868dcc8805195d46e} 
-{\bfseries Logic\+Network} (size\+\_\+t wires\+\_\+size, std\+::ostream \&os=std\+::cout)
-\item 
+\mbox{\hyperlink{class_logic_network_a0a11fb84253979b868dcc8805195d46e}{Logic\+Network}} (size\+\_\+t wires\+\_\+size, std\+::ostream \&os=std\+::cout)
+\begin{DoxyCompactList}\small\item\em Logikai hálózat konstruktora. \end{DoxyCompactList}\item 
 \Hypertarget{class_logic_network_a02eeb4f1843d6df878832c8db6c9d649}\label{class_logic_network_a02eeb4f1843d6df878832c8db6c9d649} 
 void {\bfseries update} ()
-\item 
-\Hypertarget{class_logic_network_a939a492bcc688188b79d7715aa632f95}\label{class_logic_network_a939a492bcc688188b79d7715aa632f95} 
-void {\bfseries bulk\+\_\+update} (size\+\_\+t update\+\_\+count)
-\item 
-\Hypertarget{class_logic_network_ad5584c528295b333ca5d898825b78b77}\label{class_logic_network_ad5584c528295b333ca5d898825b78b77} 
-\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+wire} (size\+\_\+t wire\+\_\+id)
-\item 
-\Hypertarget{class_logic_network_a52198c2d05ba83550b2bdf835a837698}\label{class_logic_network_a52198c2d05ba83550b2bdf835a837698} 
-void {\bfseries add\+\_\+component} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}component)
-\item 
-\Hypertarget{class_logic_network_a2d66d6c5d9df6b65a3bca2e656ff1864}\label{class_logic_network_a2d66d6c5d9df6b65a3bca2e656ff1864} 
-void {\bfseries debug} ()
-\end{DoxyCompactItemize}
-\doxysubsubsection*{Protected Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\Hypertarget{class_logic_network_a3a3f52e86587e64a302ea89532adec47}\label{class_logic_network_a3a3f52e86587e64a302ea89532adec47} 
-\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*} {\bfseries wires}
-\item 
-\Hypertarget{class_logic_network_a66255d3d7e850c02df9dfd7fa5502153}\label{class_logic_network_a66255d3d7e850c02df9dfd7fa5502153} 
-size\+\_\+t {\bfseries wires\+\_\+size}
-\item 
-\Hypertarget{class_logic_network_abd092709d455adbde205a69ff870bf56}\label{class_logic_network_abd092709d455adbde205a69ff870bf56} 
-\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries components}
-\item 
-\Hypertarget{class_logic_network_a8c35afa2abafdbef0393b9034ad287f0}\label{class_logic_network_a8c35afa2abafdbef0393b9034ad287f0} 
-size\+\_\+t {\bfseries components\+\_\+size}
-\item 
-\Hypertarget{class_logic_network_a10b678fcaa0b91cf9ef0c7f0e7f66b4c}\label{class_logic_network_a10b678fcaa0b91cf9ef0c7f0e7f66b4c} 
-std\+::ostream \& {\bfseries os}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A hálózat elemeinek frissítése\+: először kábelek, majd komponensek sorrendben. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logic_network_a939a492bcc688188b79d7715aa632f95}{bulk\+\_\+update}} (size\+\_\+t update\+\_\+count)
+\begin{DoxyCompactList}\small\item\em Egyszerre több frissítés futtatása. Kiírja az egyes frissítések kezdetét az adatfolyamra. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_logic_network_ad5584c528295b333ca5d898825b78b77}{get\+\_\+wire}} (size\+\_\+t wire\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Visszaad egy mutatót az eltárolt vezetékekre sorszám alapján. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logic_network_a52198c2d05ba83550b2bdf835a837698}{add\+\_\+component}} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}component)
+\begin{DoxyCompactList}\small\item\em Hozzáad egy komponenst a hálózathoz. A komponenst a hálózat fogja felszabadítani. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{class_logic_network_aa5fb94382274f892ca2f4feb9da97f30}{get\+\_\+os}} ()
+\begin{DoxyCompactList}\small\item\em Visszaadja a kimeneti adatfolyamot, amire a frissítések kezdetét jelző szöveget írja ki. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\doxysubsection{Konstruktorok és destruktorok dokumentációja}
+\Hypertarget{class_logic_network_a0a11fb84253979b868dcc8805195d46e}\index{LogicNetwork@{LogicNetwork}!LogicNetwork@{LogicNetwork}}
+\index{LogicNetwork@{LogicNetwork}!LogicNetwork@{LogicNetwork}}
+\doxysubsubsection{\texorpdfstring{LogicNetwork()}{LogicNetwork()}}
+{\footnotesize\ttfamily \label{class_logic_network_a0a11fb84253979b868dcc8805195d46e} 
+Logic\+Network\+::\+Logic\+Network (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{wires\+\_\+size}{, }\item[{std\+::ostream \&}]{os}{ = {\ttfamily std\+:\+:cout}}\end{DoxyParamCaption})}
+
+
+
+Logikai hálózat konstruktora. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em wires\+\_\+size} & A hálózatban lévő kábelek maximális száma \\
+\hline
+{\em os} & Az adatfolyam, ahova a frissítéseket elválasztó üzeneteket írja \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Tagfüggvények dokumentációja}
+\Hypertarget{class_logic_network_a52198c2d05ba83550b2bdf835a837698}\index{LogicNetwork@{LogicNetwork}!add\_component@{add\_component}}
+\index{add\_component@{add\_component}!LogicNetwork@{LogicNetwork}}
+\doxysubsubsection{\texorpdfstring{add\_component()}{add\_component()}}
+{\footnotesize\ttfamily \label{class_logic_network_a52198c2d05ba83550b2bdf835a837698} 
+void Logic\+Network\+::add\+\_\+component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}}]{component}{}\end{DoxyParamCaption})}
+
+
+
+Hozzáad egy komponenst a hálózathoz. A komponenst a hálózat fogja felszabadítani. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em component} & Az új komponens mutatóval, amit hozzáad \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_logic_network_a939a492bcc688188b79d7715aa632f95}\index{LogicNetwork@{LogicNetwork}!bulk\_update@{bulk\_update}}
+\index{bulk\_update@{bulk\_update}!LogicNetwork@{LogicNetwork}}
+\doxysubsubsection{\texorpdfstring{bulk\_update()}{bulk\_update()}}
+{\footnotesize\ttfamily \label{class_logic_network_a939a492bcc688188b79d7715aa632f95} 
+void Logic\+Network\+::bulk\+\_\+update (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{update\+\_\+count}{}\end{DoxyParamCaption})}
+
+
+
+Egyszerre több frissítés futtatása. Kiírja az egyes frissítések kezdetét az adatfolyamra. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em update\+\_\+count} & A frissítések száma \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_logic_network_aa5fb94382274f892ca2f4feb9da97f30}\index{LogicNetwork@{LogicNetwork}!get\_os@{get\_os}}
+\index{get\_os@{get\_os}!LogicNetwork@{LogicNetwork}}
+\doxysubsubsection{\texorpdfstring{get\_os()}{get\_os()}}
+{\footnotesize\ttfamily \label{class_logic_network_aa5fb94382274f892ca2f4feb9da97f30} 
+std\+::ostream \& Logic\+Network\+::get\+\_\+os (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Visszaadja a kimeneti adatfolyamot, amire a frissítések kezdetét jelző szöveget írja ki. 
+
+\begin{DoxyReturn}{Visszatérési érték}
+std\+::ostream\& 
+\end{DoxyReturn}
+\Hypertarget{class_logic_network_ad5584c528295b333ca5d898825b78b77}\index{LogicNetwork@{LogicNetwork}!get\_wire@{get\_wire}}
+\index{get\_wire@{get\_wire}!LogicNetwork@{LogicNetwork}}
+\doxysubsubsection{\texorpdfstring{get\_wire()}{get\_wire()}}
+{\footnotesize\ttfamily \label{class_logic_network_ad5584c528295b333ca5d898825b78b77} 
+\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*} Logic\+Network\+::get\+\_\+wire (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{wire\+\_\+id}{}\end{DoxyParamCaption})}
+
+
+
+Visszaad egy mutatót az eltárolt vezetékekre sorszám alapján. 
+
+
+\begin{DoxyExceptions}{Kivételek}
+{\em const\+\_\+char\texorpdfstring{$\ast$}{*}} & Ha nincsen wire\+\_\+id számú kábel, "{}\+Nincs elég kábel!"{} kivételt dob\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Paraméterek}
+{\em wire\+\_\+id} & Vezeték sorszáma \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+Wire\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+
+
+Ez a dokumentáció az osztályról a következő fájlok alapján készült\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/egyetem/nagy\+HF2/logic\+\_\+network.\+h\item 
-C\+:/egyetem/nagy\+HF2/logic\+\_\+network.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{logic__network_8h}{logic\+\_\+network.\+h}}\item 
+logic\+\_\+network.\+cpp\end{DoxyCompactItemize}

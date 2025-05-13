@@ -1,0 +1,100 @@
+\doxysection{PRINT osztályreferencia}
+\hypertarget{class_p_r_i_n_t}{}\label{class_p_r_i_n_t}\index{PRINT@{PRINT}}
+
+
+A PRINT osztály származási diagramja\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{class_p_r_i_n_t__inherit__graph}
+\end{center}
+\end{figure}
+
+
+A PRINT osztály együttműködési diagramja\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{class_p_r_i_n_t__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_r_i_n_t_a9299f8a018b4c3959fc3083ae810d2d2}{PRINT}} (\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}inpA, const char \texorpdfstring{$\ast$}{*}label="{}unnamed\+\_\+output"{}, std\+::ostream \&os=std\+::cout)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_p_r_i_n_t}{PRINT} komponens konstruktora. \end{DoxyCompactList}\item 
+\Hypertarget{class_p_r_i_n_t_ae322c35715a5a109f78ff3976633784d}\label{class_p_r_i_n_t_ae322c35715a5a109f78ff3976633784d} 
+void {\bfseries update} ()
+\begin{DoxyCompactList}\small\item\em Kiírja a bemeneti kábel értékét a megadott adatfolyamra. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_p_r_i_n_t_a1b77c5d81b4d4503c57d2a90f9f4e565}{write}} (\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}base\+\_\+address, std\+::ostream \&os=std\+::cout)
+\begin{DoxyCompactList}\small\item\em Komponens kiírása a fájlba mentéshez. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Statikus publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+static const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_p_r_i_n_t_a199df696c3f528c10d227eea8dc5c73c}{get\+\_\+name}} ()
+\begin{DoxyCompactList}\small\item\em Visszaadja a komponens elmentésekor használt nevet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Konstruktorok és destruktorok dokumentációja}
+\Hypertarget{class_p_r_i_n_t_a9299f8a018b4c3959fc3083ae810d2d2}\index{PRINT@{PRINT}!PRINT@{PRINT}}
+\index{PRINT@{PRINT}!PRINT@{PRINT}}
+\doxysubsubsection{\texorpdfstring{PRINT()}{PRINT()}}
+{\footnotesize\ttfamily \label{class_p_r_i_n_t_a9299f8a018b4c3959fc3083ae810d2d2} 
+PRINT\+::\+PRINT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}}]{inpA}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{label}{ = {\ttfamily "{}unnamed\+\_\+output"{}}, }\item[{std\+::ostream \&}]{os}{ = {\ttfamily std\+:\+:cout}}\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_p_r_i_n_t}{PRINT} komponens konstruktora. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em inpA} & Bemeneti kábel \\
+\hline
+{\em label} & A címke, ami alapján meg lehet különböztetni a kimeneteket \\
+\hline
+{\em os} & Az adatfolyam, amire a kimenetét írja \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Tagfüggvények dokumentációja}
+\Hypertarget{class_p_r_i_n_t_a199df696c3f528c10d227eea8dc5c73c}\index{PRINT@{PRINT}!get\_name@{get\_name}}
+\index{get\_name@{get\_name}!PRINT@{PRINT}}
+\doxysubsubsection{\texorpdfstring{get\_name()}{get\_name()}}
+{\footnotesize\ttfamily \label{class_p_r_i_n_t_a199df696c3f528c10d227eea8dc5c73c} 
+static const char \texorpdfstring{$\ast$}{*} PRINT\+::get\+\_\+name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Visszaadja a komponens elmentésekor használt nevet. 
+
+\begin{DoxyReturn}{Visszatérési érték}
+A komponens neve 
+\end{DoxyReturn}
+\Hypertarget{class_p_r_i_n_t_a1b77c5d81b4d4503c57d2a90f9f4e565}\index{PRINT@{PRINT}!write@{write}}
+\index{write@{write}!PRINT@{PRINT}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_p_r_i_n_t_a1b77c5d81b4d4503c57d2a90f9f4e565} 
+void PRINT\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}}]{base\+\_\+address}{, }\item[{std\+::ostream \&}]{os}{ = {\ttfamily std\+:\+:cout}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Komponens kiírása a fájlba mentéshez. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em base\+\_\+address} & A logikai hálózat vezetékeket tároló tömbjének kezdőcíme \\
+\hline
+{\em os} & A kimeneti adatfolyam, amire a kapu kiírja magát \\
+\hline
+\end{DoxyParams}
+
+
+Megvalósítja a következőket\+: \mbox{\hyperlink{class_component_a60c1995ed8c270084ba7703579f5684a}{Component}}.
+
+
+
+Ez a dokumentáció az osztályról a következő fájlok alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_p_r_i_n_t_8h}{PRINT.\+h}}\item 
+PRINT.\+cpp\end{DoxyCompactItemize}

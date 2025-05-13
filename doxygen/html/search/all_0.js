@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['component_0',['Component',['../class_component.html',1,'']]]
+  ['add_5fcomponent_0',['add_component',['../class_logic_network.html#a52198c2d05ba83550b2bdf835a837698',1,'LogicNetwork']]],
+  ['and_1',['AND',['../class_a_n_d.html',1,'AND'],['../class_a_n_d.html#a03b9a26d06bbb416522c3229e9d3226c',1,'AND::AND()']]],
+  ['anime_20lányaidat_2',['Szeretem az anime lányaidat',['../index.html',1,'']]],
+  ['az_20anime_20lányaidat_3',['Szeretem az anime lányaidat',['../index.html',1,'']]]
 ];

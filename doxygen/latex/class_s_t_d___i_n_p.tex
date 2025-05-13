@@ -1,0 +1,116 @@
+\doxysection{STD\+\_\+\+INP osztályreferencia}
+\hypertarget{class_s_t_d___i_n_p}{}\label{class_s_t_d___i_n_p}\index{STD\_INP@{STD\_INP}}
+
+
+A STD\+\_\+\+INP osztály származási diagramja\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_s_t_d___i_n_p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+A STD\+\_\+\+INP osztály együttműködési diagramja\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_s_t_d___i_n_p__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_t_d___i_n_p_ae209a5f899a921c4b03a9e2cee6b3538}{STD\+\_\+\+INP}} (\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}out, const char \texorpdfstring{$\ast$}{*}label="{}Nem elnevezett bemenet"{})
+\begin{DoxyCompactList}\small\item\em \doxylink{class_s_t_d___i_n_p}{STD\+\_\+\+INP} komponens konstruktora. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_t_d___i_n_p_a3f37f8168e8d9a3cca275ba8e5b67b92}{update}} ()
+\begin{DoxyCompactList}\small\item\em Első frissítéskor elkéri, hogy mit rakjon a kimenetre. Ez után ilyen értékű \doxylink{class_i_n_p}{INP} kapuként működik. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_t_d___i_n_p_a155a6ee8de4f6c914625d29309be0a91}{write}} (\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}base\+\_\+address, std\+::ostream \&os=std\+::cout)
+\begin{DoxyCompactList}\small\item\em Komponens kiírása a fájlba mentéshez. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Statikus publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+static const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_s_t_d___i_n_p_a77ecbb15626d7ee042134b9f5676dc58}{get\+\_\+name}} ()
+\begin{DoxyCompactList}\small\item\em Visszaadja a komponens elmentésekor használt nevet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Konstruktorok és destruktorok dokumentációja}
+\Hypertarget{class_s_t_d___i_n_p_ae209a5f899a921c4b03a9e2cee6b3538}\index{STD\_INP@{STD\_INP}!STD\_INP@{STD\_INP}}
+\index{STD\_INP@{STD\_INP}!STD\_INP@{STD\_INP}}
+\doxysubsubsection{\texorpdfstring{STD\_INP()}{STD\_INP()}}
+{\footnotesize\ttfamily \label{class_s_t_d___i_n_p_ae209a5f899a921c4b03a9e2cee6b3538} 
+STD\+\_\+\+INP\+::\+STD\+\_\+\+INP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}}]{out}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{label}{ = {\ttfamily "{}Nem~elnevezett~bemenet"{}}}\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_s_t_d___i_n_p}{STD\+\_\+\+INP} komponens konstruktora. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em out} & Kimenet \\
+\hline
+{\em label} & A bemenetek megkülönböztetésére használt címke \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Tagfüggvények dokumentációja}
+\Hypertarget{class_s_t_d___i_n_p_a77ecbb15626d7ee042134b9f5676dc58}\index{STD\_INP@{STD\_INP}!get\_name@{get\_name}}
+\index{get\_name@{get\_name}!STD\_INP@{STD\_INP}}
+\doxysubsubsection{\texorpdfstring{get\_name()}{get\_name()}}
+{\footnotesize\ttfamily \label{class_s_t_d___i_n_p_a77ecbb15626d7ee042134b9f5676dc58} 
+static const char \texorpdfstring{$\ast$}{*} STD\+\_\+\+INP\+::get\+\_\+name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Visszaadja a komponens elmentésekor használt nevet. 
+
+\begin{DoxyReturn}{Visszatérési érték}
+A komponens neve 
+\end{DoxyReturn}
+\Hypertarget{class_s_t_d___i_n_p_a3f37f8168e8d9a3cca275ba8e5b67b92}\index{STD\_INP@{STD\_INP}!update@{update}}
+\index{update@{update}!STD\_INP@{STD\_INP}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_s_t_d___i_n_p_a3f37f8168e8d9a3cca275ba8e5b67b92} 
+void STD\+\_\+\+INP\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Első frissítéskor elkéri, hogy mit rakjon a kimenetre. Ez után ilyen értékű \doxylink{class_i_n_p}{INP} kapuként működik. 
+
+
+\begin{DoxyExceptions}{Kivételek}
+{\em const\+\_\+char\texorpdfstring{$\ast$}{*}} & Első frissítésnél "{}\+Hibás bemenet egy STD\+\_\+\+INP kapunak"{} kivételt dob, ha a kapott érték nem 0 vagy 1 \\
+\hline
+\end{DoxyExceptions}
+
+
+Megvalósítja a következőket\+: \mbox{\hyperlink{class_component_a910086d9eda3ecb47d1117674ee99ea5}{Component}}.
+
+\Hypertarget{class_s_t_d___i_n_p_a155a6ee8de4f6c914625d29309be0a91}\index{STD\_INP@{STD\_INP}!write@{write}}
+\index{write@{write}!STD\_INP@{STD\_INP}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_s_t_d___i_n_p_a155a6ee8de4f6c914625d29309be0a91} 
+void STD\+\_\+\+INP\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}}]{base\+\_\+address}{, }\item[{std\+::ostream \&}]{os}{ = {\ttfamily std\+:\+:cout}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Komponens kiírása a fájlba mentéshez. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em base\+\_\+address} & A logikai hálózat vezetékeket tároló tömbjének kezdőcíme \\
+\hline
+{\em os} & A kimeneti adatfolyam, amire a kapu kiírja magát \\
+\hline
+\end{DoxyParams}
+
+
+Megvalósítja a következőket\+: \mbox{\hyperlink{class_component_a60c1995ed8c270084ba7703579f5684a}{Component}}.
+
+
+
+Ez a dokumentáció az osztályról a következő fájlok alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_s_t_d___i_n_p_8h}{STD\+\_\+\+INP.\+h}}\item 
+STD\+\_\+\+INP.\+cpp\end{DoxyCompactItemize}

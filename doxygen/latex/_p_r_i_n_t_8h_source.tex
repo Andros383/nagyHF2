@@ -1,0 +1,36 @@
+\doxysection{PRINT.\+h}
+\hypertarget{_p_r_i_n_t_8h_source}{}\label{_p_r_i_n_t_8h_source}\index{PRINT.h@{PRINT.h}}
+\mbox{\hyperlink{_p_r_i_n_t_8h}{Ugrás a fájl dokumentációjához.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ PRINT\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ PRINT\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{component_8h}{../component.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}../memtrace.h"{}}}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }PRINT\ :\ \textcolor{keyword}{public}\ Component\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ name;}
+\DoxyCodeLine{00016\ \ \ \ \ std::ostream\&\ os;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{char}*\ label;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{//\ copy\ constructor\ és\ értékadó\ operátor\ letiltása}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ mert\ memóriahibát\ okozna,\ és\ nincs\ értelme\ ugyan\ azt\ a\ komponenst\ létrehozni}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ pontosan\ ugyan\ azt\ csinálná\ két\ ugyan\ oda\ kötött\ komponens,\ mint\ egy}}
+\DoxyCodeLine{00022\ \ \ \ \ PRINT(\textcolor{keyword}{const}\ PRINT\&);}
+\DoxyCodeLine{00023\ \ \ \ \ PRINT\&\ operator=(\textcolor{keyword}{const}\ PRINT\&);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \ \ PRINT(\mbox{\hyperlink{class_wire}{Wire}}*\ inpA,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ label\ =\ \textcolor{stringliteral}{"{}unnamed\_output"{}},\ std::ostream\&\ os\ =\ std::cout);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_p_r_i_n_t_ae322c35715a5a109f78ff3976633784d}{update}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_p_r_i_n_t_a1b77c5d81b4d4503c57d2a90f9f4e565}{write}}(\mbox{\hyperlink{class_wire}{Wire}}*\ base\_address,\ std::ostream\&\ os\ =\ std::cout);}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_p_r_i_n_t_a199df696c3f528c10d227eea8dc5c73c}{get\_name}}()\ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ name;}
+\DoxyCodeLine{00047\ \ \ \ \ \}}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_p_r_i_n_t}{\string~PRINT}}();}
+\DoxyCodeLine{00049\ \};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

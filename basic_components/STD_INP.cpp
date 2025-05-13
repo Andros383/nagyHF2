@@ -1,3 +1,4 @@
+
 #include "STD_INP.h"
 
 #include "../memtrace.h"
@@ -14,7 +15,7 @@ void STD_INP::update() {
     if (!is_signal_set) {
         std::cout << "Input signal for " << label << ": ";
         std::cin >> signal;
-        if (!std::cin.good()) throw "Hibás bement az STD_INP kapunak";
+        if (!std::cin.good() || !(signal == 0 || signal == 1)) throw "Hibás bemenet egy STD_INP kapunak";
         is_signal_set = true;
     }
     int out_signal = signal;

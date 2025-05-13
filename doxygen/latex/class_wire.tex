@@ -1,23 +1,58 @@
-\doxysection{Wire Class Reference}
+\doxysection{Wire osztályreferencia}
 \hypertarget{class_wire}{}\label{class_wire}\index{Wire@{Wire}}
-\doxysubsubsection*{Public Member Functions}
+
+
+A Wire osztály együttműködési diagramja\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_wire__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Publikus tagfüggvények}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_wire_a51c7528796abe2531ce8174c64876886}\label{class_wire_a51c7528796abe2531ce8174c64876886} 
 void {\bfseries update} ()
-\item 
-\Hypertarget{class_wire_a72745864d2a3d0a3ca5baae5cc62a69a}\label{class_wire_a72745864d2a3d0a3ca5baae5cc62a69a} 
-void {\bfseries set\+\_\+signal} (int signal)
-\item 
-\Hypertarget{class_wire_a411b56b5e652298d169697b10374de16}\label{class_wire_a411b56b5e652298d169697b10374de16} 
-int {\bfseries get\+\_\+signal} () const
-\item 
-\Hypertarget{class_wire_a7618c21d53580afd57c897add99cd837}\label{class_wire_a7618c21d53580afd57c897add99cd837} 
-void {\bfseries debug} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A vezeték elejéről a végére rakja a jelet, elejét 0-\/ra állítja. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_wire_a72745864d2a3d0a3ca5baae5cc62a69a}{set\+\_\+signal}} (int signal)
+\begin{DoxyCompactList}\small\item\em Beállítja a bemenetén a jelet, a kapott és a már ott lévő érték közül a nagyobbra. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_wire_a411b56b5e652298d169697b10374de16}{get\+\_\+signal}} () const
+\begin{DoxyCompactList}\small\item\em Visszaadja a kimenetén lévő jelet. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\doxysubsection{Tagfüggvények dokumentációja}
+\Hypertarget{class_wire_a411b56b5e652298d169697b10374de16}\index{Wire@{Wire}!get\_signal@{get\_signal}}
+\index{get\_signal@{get\_signal}!Wire@{Wire}}
+\doxysubsubsection{\texorpdfstring{get\_signal()}{get\_signal()}}
+{\footnotesize\ttfamily \label{class_wire_a411b56b5e652298d169697b10374de16} 
+int Wire\+::get\+\_\+signal (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Visszaadja a kimenetén lévő jelet. 
+
+\begin{DoxyReturn}{Visszatérési érték}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_wire_a72745864d2a3d0a3ca5baae5cc62a69a}\index{Wire@{Wire}!set\_signal@{set\_signal}}
+\index{set\_signal@{set\_signal}!Wire@{Wire}}
+\doxysubsubsection{\texorpdfstring{set\_signal()}{set\_signal()}}
+{\footnotesize\ttfamily \label{class_wire_a72745864d2a3d0a3ca5baae5cc62a69a} 
+void Wire\+::set\+\_\+signal (\begin{DoxyParamCaption}\item[{int}]{signal}{}\end{DoxyParamCaption})}
+
+
+
+Beállítja a bemenetén a jelet, a kapott és a már ott lévő érték közül a nagyobbra. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em signal} & \\
+\hline
+\end{DoxyParams}
+
+
+Ez a dokumentáció az osztályról a következő fájlok alapján készült\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/egyetem/nagy\+HF2/wire.\+h\item 
-C\+:/egyetem/nagy\+HF2/wire.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{wire_8h}{wire.\+h}}\item 
+wire.\+cpp\end{DoxyCompactItemize}

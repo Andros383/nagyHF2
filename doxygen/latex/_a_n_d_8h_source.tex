@@ -1,0 +1,31 @@
+\doxysection{AND.\+h}
+\hypertarget{_a_n_d_8h_source}{}\label{_a_n_d_8h_source}\index{AND.h@{AND.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ AND\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ AND\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{component_8h}{../component.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}../memtrace.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }AND\ :\ \textcolor{keyword}{public}\ Component\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ name;}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{comment}{//\ copy\ constructor\ és\ értékadó\ operátor\ letiltása}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{comment}{//\ mert\ memóriahibát\ okozna,\ és\ nincs\ értelme\ ugyan\ azt\ a\ komponenst\ létrehozni}}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{comment}{//\ pontosan\ ugyan\ azt\ csinálná\ két\ ugyan\ oda\ kötött\ komponens,\ mint\ egy}}
+\DoxyCodeLine{00013\ \ \ \ \ AND(\textcolor{keyword}{const}\ AND\&);}
+\DoxyCodeLine{00014\ \ \ \ \ AND\&\ operator=(\textcolor{keyword}{const}\ AND\&);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ AND(\mbox{\hyperlink{class_wire}{Wire}}*\ inpA,\ \mbox{\hyperlink{class_wire}{Wire}}*\ inpB,\ \mbox{\hyperlink{class_wire}{Wire}}*\ out);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_n_d_a0cbf1ff9790cfe81ea95cee3b66c2121}{update}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_n_d_a1f5e0de5f526fba0108f7226d658f301}{write}}(\mbox{\hyperlink{class_wire}{Wire}}*\ base\_address,\ std::ostream\&\ os\ =\ std::cout);}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_a_n_d_a013df7d14b2de1d02f0eeaebd45052c0}{get\_name}}()\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ name;}
+\DoxyCodeLine{00038\ \ \ \ \ \}}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

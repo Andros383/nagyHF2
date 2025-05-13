@@ -1,0 +1,38 @@
+\doxysection{STD\+\_\+\+INP.\+h}
+\hypertarget{_s_t_d___i_n_p_8h_source}{}\label{_s_t_d___i_n_p_8h_source}\index{STD\_INP.h@{STD\_INP.h}}
+\mbox{\hyperlink{_s_t_d___i_n_p_8h}{Ugrás a fájl dokumentációjához.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ STD\_INP\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ STD\_INP\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{component_8h}{../component.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}../memtrace.h"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ mindig\ a\ standard\ bemenetről\ olvassa\ be,\ hogy\ mit\ adjon\ ki}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }STD\_INP\ :\ \textcolor{keyword}{public}\ Component\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ name;}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ signal;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_signal\_set;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{char}*\ label;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{//\ copy\ constructor\ és\ értékadó\ operátor\ letiltása}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ mert\ memóriahibát\ okozna,\ és\ nincs\ értelme\ ugyan\ azt\ a\ komponenst\ létrehozni}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ pontosan\ ugyan\ azt\ csinálná\ két\ ugyan\ oda\ kötött\ komponens,\ mint\ egy}}
+\DoxyCodeLine{00022\ \ \ \ \ STD\_INP(\textcolor{keyword}{const}\ STD\_INP\&);}
+\DoxyCodeLine{00023\ \ \ \ \ STD\_INP\&\ operator=(\textcolor{keyword}{const}\ STD\_INP\&);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ STD\_INP(\mbox{\hyperlink{class_wire}{Wire}}*\ out,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ label\ =\ \textcolor{stringliteral}{"{}Nem\ elnevezett\ bemenet"{}});}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_t_d___i_n_p_a3f37f8168e8d9a3cca275ba8e5b67b92}{update}}();}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_t_d___i_n_p_a155a6ee8de4f6c914625d29309be0a91}{write}}(\mbox{\hyperlink{class_wire}{Wire}}*\ base\_address,\ std::ostream\&\ os\ =\ std::cout);}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_s_t_d___i_n_p_a77ecbb15626d7ee042134b9f5676dc58}{get\_name}}()\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ name;}
+\DoxyCodeLine{00046\ \ \ \ \ \}}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_s_t_d___i_n_p}{\string~STD\_INP}}();}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

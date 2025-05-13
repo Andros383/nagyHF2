@@ -1,18 +1,27 @@
 var indexSectionsWithContent =
 {
-  0: "clw",
-  1: "clw"
+  0: "abcgilmnoprsuwx",
+  1: "acilnopswx",
+  2: "cilmnopswx",
+  3: "abgilnoprsuwx",
+  4: "als"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "classes"
+  1: "classes",
+  2: "files",
+  3: "functions",
+  4: "pages"
 };
 
 var indexSectionLabels =
 {
-  0: "All",
-  1: "Classes"
+  0: "Összes",
+  1: "Osztályok",
+  2: "Fájlok",
+  3: "Függvények",
+  4: "Oldalak"
 };
 

@@ -1,0 +1,11 @@
+<map id="component.h" name="component.h">
+<area shape="rect" id="Node000001" title="A komponensek absztrakt bázisosztálya." alt="" coords="46,5,142,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,155,77,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,34,70,55,57,81,49,111,45,140,39,139,43,110,52,79,66,52,82,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="108,155,198,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="107,31,122,53,137,79,147,110,152,139,147,140,142,111,132,81,118,55,103,34"/>
+<area shape="rect" id="Node000004" href="$wire_8h.html" title="Vezetéket megvalósító osztály." alt="" coords="66,80,122,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="97,33,97,64,92,64,92,33"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="87,109,61,144,57,141,83,106"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="107,106,135,141,131,144,102,109"/>
+</map>

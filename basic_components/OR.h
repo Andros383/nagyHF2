@@ -1,4 +1,7 @@
-
+/**
+ * @file OR.h
+ * @brief OR kaput megvalósító komponens
+ */
 
 #ifndef OR_H
 #define OR_H
@@ -14,9 +17,24 @@ class OR : public Component {
     OR& operator=(const OR&);
 
    public:
+    /**
+     * @brief OR komponens konstruktora
+     *
+     * @param inpA Első bemenet
+     * @param inpB Második bemenet
+     * @param out Kimenet
+     */
     OR(Wire* inpA, Wire* inpB, Wire* out);
+    /**
+     * @brief Kimeneti jel a bemeneteken végzett OR eredménye
+     */
     void update();
     void write(Wire* base_address, std::ostream& os = std::cout);
+    /**
+     * @brief Visszaadja a komponens elmentésekor használt nevet
+     *
+     * @return A komponens neve
+     */
     static const char* get_name() {
         return name;
     }

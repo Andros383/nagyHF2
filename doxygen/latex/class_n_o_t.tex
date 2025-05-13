@@ -1,0 +1,98 @@
+\doxysection{NOT osztályreferencia}
+\hypertarget{class_n_o_t}{}\label{class_n_o_t}\index{NOT@{NOT}}
+
+
+A NOT osztály származási diagramja\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_n_o_t__inherit__graph}
+\end{center}
+\end{figure}
+
+
+A NOT osztály együttműködési diagramja\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_n_o_t__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_n_o_t_afaf6f7e466327cccf829424f136f2e35}{NOT}} (\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}inpA, \mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}out)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_n_o_t}{NOT} komponens konstruktora. \end{DoxyCompactList}\item 
+\Hypertarget{class_n_o_t_a9753d43818ea4b7fa82acaccee60f6d1}\label{class_n_o_t_a9753d43818ea4b7fa82acaccee60f6d1} 
+void {\bfseries update} ()
+\begin{DoxyCompactList}\small\item\em Kimeneti jel a bemeneten végzett \doxylink{class_n_o_t}{NOT} eredménye. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_o_t_ae133179ad283181f75343b570f5ca70b}{write}} (\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}base\+\_\+address, std\+::ostream \&os=std\+::cout)
+\begin{DoxyCompactList}\small\item\em Komponens kiírása a fájlba mentéshez. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Statikus publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+static const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_n_o_t_acc204e38cf65a176a6d792a697acf504}{get\+\_\+name}} ()
+\begin{DoxyCompactList}\small\item\em Visszaadja a komponens elmentésekor használt nevet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Konstruktorok és destruktorok dokumentációja}
+\Hypertarget{class_n_o_t_afaf6f7e466327cccf829424f136f2e35}\index{NOT@{NOT}!NOT@{NOT}}
+\index{NOT@{NOT}!NOT@{NOT}}
+\doxysubsubsection{\texorpdfstring{NOT()}{NOT()}}
+{\footnotesize\ttfamily \label{class_n_o_t_afaf6f7e466327cccf829424f136f2e35} 
+NOT\+::\+NOT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}}]{inpA}{, }\item[{\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}}]{out}{}\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_n_o_t}{NOT} komponens konstruktora. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em inpA} & Bemenet \\
+\hline
+{\em out} & Kimenet \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Tagfüggvények dokumentációja}
+\Hypertarget{class_n_o_t_acc204e38cf65a176a6d792a697acf504}\index{NOT@{NOT}!get\_name@{get\_name}}
+\index{get\_name@{get\_name}!NOT@{NOT}}
+\doxysubsubsection{\texorpdfstring{get\_name()}{get\_name()}}
+{\footnotesize\ttfamily \label{class_n_o_t_acc204e38cf65a176a6d792a697acf504} 
+static const char \texorpdfstring{$\ast$}{*} NOT\+::get\+\_\+name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Visszaadja a komponens elmentésekor használt nevet. 
+
+\begin{DoxyReturn}{Visszatérési érték}
+A komponens neve 
+\end{DoxyReturn}
+\Hypertarget{class_n_o_t_ae133179ad283181f75343b570f5ca70b}\index{NOT@{NOT}!write@{write}}
+\index{write@{write}!NOT@{NOT}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_n_o_t_ae133179ad283181f75343b570f5ca70b} 
+void NOT\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}}]{base\+\_\+address}{, }\item[{std\+::ostream \&}]{os}{ = {\ttfamily std\+:\+:cout}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Komponens kiírása a fájlba mentéshez. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em base\+\_\+address} & A logikai hálózat vezetékeket tároló tömbjének kezdőcíme \\
+\hline
+{\em os} & A kimeneti adatfolyam, amire a kapu kiírja magát \\
+\hline
+\end{DoxyParams}
+
+
+Megvalósítja a következőket\+: \mbox{\hyperlink{class_component_a60c1995ed8c270084ba7703579f5684a}{Component}}.
+
+
+
+Ez a dokumentáció az osztályról a következő fájlok alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_n_o_t_8h}{NOT.\+h}}\item 
+NOT.\+cpp\end{DoxyCompactItemize}

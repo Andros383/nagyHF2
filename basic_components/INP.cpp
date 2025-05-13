@@ -4,7 +4,6 @@
 
 // kapu neve a beolvasáshoz / kiíráshoz
 const char* INP::name = "INP";
-// TODO init listával megoldani? csak akkor az output-ot nem lehet beállítani
 // annyira nem baj
 INP::INP(Wire* out, int outer_signal) {
     output = out;

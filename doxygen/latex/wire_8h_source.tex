@@ -1,33 +1,25 @@
-\doxysection{C\+:/egyetem/nagy\+HF2/wire.h}
-\hypertarget{wire_8h_source}{}\label{wire_8h_source}
+\doxysection{wire.\+h}
+\hypertarget{wire_8h_source}{}\label{wire_8h_source}\mbox{\hyperlink{wire_8h}{Ugrás a fájl dokumentációjához.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ WIRE\_H}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ WIRE\_H}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
-\DoxyCodeLine{00004\ }
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}memtrace.h"{}}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ DEBUG}}
-\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }Wire\ \{}
-\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordtype}{int}\ input;}
-\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{int}\ output;}
-\DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00012\ \ \ \ \ Wire()\ :\ input(0),\ output(0)\ \{\}}
-\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{//\ elejéről\ a\ végére\ rakja\ a\ jelet}}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ update();}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{//\ beállítja\ a\ jelet\ a\ bemenetén}}
-\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_signal(\textcolor{keywordtype}{int}\ signal);}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ visszaadja\ a\ kimenetén\ lévő\ jelet}}
-\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ get\_signal()\textcolor{keyword}{\ const\ }\{}
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ output;}
-\DoxyCodeLine{00020\ \ \ \ \ \}}
-\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#ifdef\ DEBUG}}
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ debug()\ \{}
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}wire:\ "{}}\ <<\ (\textcolor{keywordtype}{void}*)\textcolor{keyword}{this}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)tinput:\ \ "{}}\ <<\ input\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)toutput:\ "{}}\ <<\ output\ <<\ std::endl;}
-\DoxyCodeLine{00024\ \ \ \ \ \}}
-\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{00026\ \};}
-\DoxyCodeLine{00027\ }
-\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ WIRE\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ WIRE\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}memtrace.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }Wire\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{int}\ input;}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{int}\ output;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ Wire()\ :\ input(0),\ output(0)\ \{\}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wire_a51c7528796abe2531ce8174c64876886}{update}}();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wire_a72745864d2a3d0a3ca5baae5cc62a69a}{set\_signal}}(\textcolor{keywordtype}{int}\ signal);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_wire_a411b56b5e652298d169697b10374de16}{get\_signal}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ output;}
+\DoxyCodeLine{00034\ \ \ \ \ \}}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

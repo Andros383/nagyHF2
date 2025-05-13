@@ -16,7 +16,8 @@ class LogicNetwork{
 	- Wires: Wire*[]
 	- Components: Component*[]
 	+LogicNetwork()
-	+update(): void	
+	+update(): void
+	+bulk_update(): void
 }
 
 note left of LogicNetwork::"configure(char* filename): void"
@@ -40,11 +41,11 @@ note right of Wire::update()
 end note
 
 abstract class Component{
-
-	- inputs: Wire*[]
+	- inputs: Wire**
 	- output: Wire*
 	+ Component()
 	+ virtual update() : void = 0
+	+ virtual write(Wire* base_address, std::ostream& os = std::cout): void = 0
 	+ virtual ~Component()
 }
 note right of Component::update()
@@ -57,10 +58,18 @@ end note
 class XOR{
 	+XOR(Wire* inpA, Wire* inpB, Wire* out)
 	+ update() : void
+	+ write(Wire* base_address, std::ostream& os = std::cout): void
+	+ static get_name(): const char*
 }
 class NOT{
 	+NOT(Wire* inp, Wire* out)
 	+ update() : void
+}
+class INP{
+	+ INP(Wire* out, int signal)
+	+ update() : void
+	+ static get_name(): const char*
+	+ write(Wire* base_address, std::ostream& os = std::cout): void
 }
 
 XOR --u|> Component

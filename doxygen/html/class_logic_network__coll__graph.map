@@ -1,0 +1,8 @@
+<map id="LogicNetwork" name="LogicNetwork">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,416,177,672"/>
+<area shape="rect" id="Node000002" href="$class_wire.html" title=" " alt="" coords="19,5,164,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,133,84,213,86,399,80,399,79,213,83,133"/>
+<area shape="rect" id="Node000003" href="$class_component.html" title=" " alt="" coords="136,213,290,352"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="130,132,167,197,163,200,125,135"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,353,160,402,156,399,178,351"/>
+</map>

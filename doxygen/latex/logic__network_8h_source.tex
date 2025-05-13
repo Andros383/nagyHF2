@@ -1,59 +1,45 @@
-\doxysection{C\+:/egyetem/nagy\+HF2/logic\+\_\+network.h}
-\hypertarget{logic__network_8h_source}{}\label{logic__network_8h_source}
+\doxysection{logic\+\_\+network.\+h}
+\hypertarget{logic__network_8h_source}{}\label{logic__network_8h_source}\mbox{\hyperlink{logic__network_8h}{Ugrás a fájl dokumentációjához.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LOGIC\_NETWORK\_H}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LOGIC\_NETWORK\_H}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
-\DoxyCodeLine{00004\ }
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}component.h"{}}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}memtrace.h"{}}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}wire.h"{}}}
-\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ DEBUG}}
-\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }LogicNetwork\ \{}
-\DoxyCodeLine{00010\ \ \ \ \ \textcolor{comment}{//\ lehet\ privátan\ kéne?\ majd\ átírom,\ ha\ igen}}
-\DoxyCodeLine{00011\ \ \ \ \ \textcolor{comment}{//\ kiíratás\ miatt}}
-\DoxyCodeLine{00012\ \ \ \ \ \textcolor{comment}{//\ lehetne\ mindent\ függvénybe\ adni,\ csak\ az\ tök\ felesleges}}
-\DoxyCodeLine{00013\ \ \ \ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ UML-\/ben\ frissíteni,\ ez\ wire\ tömböt\ tárol,\ nem\ Wire*[]-\/t}}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{//\ mert\ asszem\ végül\ nem\ lehet\ felüldefelni\ a\ wire-\/t?}}
-\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_wire}{Wire}}*\ wires;}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ wires\_size;}
-\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//\ ide\ kell\ a\ **,\ mert\ heterogén\ kollekció}}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{//\ ezeket\ is\ birtokolja,\ törli\ ha\ törlődik}}
-\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_component}{Component}}**\ components;}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ components\_size;}
-\DoxyCodeLine{00022\ \ \ \ \ std::ostream\&\ os;}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//\ protecteden,\ mert\ nem\ kell\ tudnia\ a\ felhasználónak,\ hogy\ mennyi\ van\ a\ komponensekből,\ meg\ hogy\ mik\ azok}}
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ viszont\ ki\ szeretném\ írni}}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ létrehozáskor\ meg\ kell\ adni\ a\ kábelek\ számát,\ hogy\ rá\ lehessen\ kötni\ a\ kapukat}}
-\DoxyCodeLine{00029\ \ \ \ \ LogicNetwork(\textcolor{keywordtype}{size\_t}\ wires\_size,\ std::ostream\&\ os\ =\ std::cout);}
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ lefrissíti\ először\ a\ wireokat,\ utána\ a\ komponenseket}}
-\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ update();}
-\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ egyszerre\ több\ frissítést\ futtat}}
-\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ bulk\_update(\textcolor{keywordtype}{size\_t}\ update\_count);}
-\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ visszaad\ egy\ wire-\/t\ manuális\ kötéshez}}
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{//\ ha\ nincs\ elég\ wire,\ akkor\ hibát\ dob}}
-\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_wire}{Wire}}*\ get\_wire(\textcolor{keywordtype}{size\_t}\ wire\_id);}
-\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{//\ hozzáad\ egy\ komponenst\ mutatója\ alapján\ a\ hálózathoz}}
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ add\_component(\mbox{\hyperlink{class_component}{Component}}*\ component);}
-\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#ifdef\ DEBUG}}
-\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ debug()\ \{}
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Logic\ network"{}}\ <<\ std::endl}
-\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}Containts\ "{}}\ <<\ wires\_size\ <<\ \textcolor{stringliteral}{"{}\ wires"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ wires\_size;\ i++)\ \{}
-\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ wires[i].debug();}
-\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Contains\ "{}}\ <<\ components\_size\ <<\ \textcolor{stringliteral}{"{}\ components"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ components\_size;\ i++)\ \{}
-\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ components[i]-\/>debug();}
-\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00050\ \ \ \ \ \}}
-\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{virtual}\ \string~LogicNetwork();}
-\DoxyCodeLine{00053\ \};}
-\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ LOGIC\_NETWORK\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ LOGIC\_NETWORK\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{component_8h}{component.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}memtrace.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{wire_8h}{wire.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }LogicNetwork\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{//\ ne\ lehessen\ lemásolni,\ mert\ nincs\ sok\ értelme}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ és\ lehetetlen\ lenne\ lemásolni\ a\ mutatók\ miatt,\ valójában\ kirakná\ egy\ streamre\ és\ visszaolvasná}}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{//\ automatikusan\ a\ configurert\ se\ lehet\ lemásolni}}
+\DoxyCodeLine{00016\ \ \ \ \ LogicNetwork(\textcolor{keyword}{const}\ LogicNetwork\&);}
+\DoxyCodeLine{00017\ \ \ \ \ LogicNetwork\&\ operator=(\textcolor{keyword}{const}\ LogicNetwork\&);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ UML-\/ben\ frissíteni,\ ez\ wire\ tömböt\ tárol,\ nem\ Wire*[]-\/t}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ mert\ asszem\ végül\ nem\ lehet\ felüldefelni\ a\ wire-\/t?}}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_wire}{Wire}}*\ wires;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ wires\_size;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_component}{Component}}**\ components;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ components\_size;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ protecteden,\ mert\ nem\ kell\ tudnia\ a\ felhasználónak,\ hogy\ mennyi\ van\ a\ komponensekből,\ meg\ hogy\ mik\ azok}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ viszont\ ki\ szeretném\ írni}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ std::ostream\&\ os;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ \ \ \ \ LogicNetwork(\textcolor{keywordtype}{size\_t}\ wires\_size,\ std::ostream\&\ os\ =\ std::cout);}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_logic_network_a02eeb4f1843d6df878832c8db6c9d649}{update}}();}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_logic_network_a939a492bcc688188b79d7715aa632f95}{bulk\_update}}(\textcolor{keywordtype}{size\_t}\ update\_count);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{class_wire}{Wire}}*\ \mbox{\hyperlink{class_logic_network_ad5584c528295b333ca5d898825b78b77}{get\_wire}}(\textcolor{keywordtype}{size\_t}\ wire\_id);}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_logic_network_a52198c2d05ba83550b2bdf835a837698}{add\_component}}(\mbox{\hyperlink{class_component}{Component}}*\ component);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00072\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{class_logic_network_aa5fb94382274f892ca2f4feb9da97f30}{get\_os}}()\ \{\ \textcolor{keywordflow}{return}\ os;\ \}}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_logic_network}{\string~LogicNetwork}}();}
+\DoxyCodeLine{00074\ \};}
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

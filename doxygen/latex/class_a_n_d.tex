@@ -1,0 +1,100 @@
+\doxysection{AND osztályreferencia}
+\hypertarget{class_a_n_d}{}\label{class_a_n_d}\index{AND@{AND}}
+
+
+Az AND osztály származási diagramja\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_a_n_d__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Az AND osztály együttműködési diagramja\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_a_n_d__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_n_d_a03b9a26d06bbb416522c3229e9d3226c}{AND}} (\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}inpA, \mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}inpB, \mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}out)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_a_n_d}{AND} komponens konstruktora. \end{DoxyCompactList}\item 
+\Hypertarget{class_a_n_d_a0cbf1ff9790cfe81ea95cee3b66c2121}\label{class_a_n_d_a0cbf1ff9790cfe81ea95cee3b66c2121} 
+void {\bfseries update} ()
+\begin{DoxyCompactList}\small\item\em Kimeneti jel a bemeneteken végzett \doxylink{class_a_n_d}{AND} eredménye. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_n_d_a1f5e0de5f526fba0108f7226d658f301}{write}} (\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}base\+\_\+address, std\+::ostream \&os=std\+::cout)
+\begin{DoxyCompactList}\small\item\em Komponens kiírása a fájlba mentéshez. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Statikus publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+static const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_n_d_a013df7d14b2de1d02f0eeaebd45052c0}{get\+\_\+name}} ()
+\begin{DoxyCompactList}\small\item\em Visszaadja a komponens elmentésekor használt nevet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Konstruktorok és destruktorok dokumentációja}
+\Hypertarget{class_a_n_d_a03b9a26d06bbb416522c3229e9d3226c}\index{AND@{AND}!AND@{AND}}
+\index{AND@{AND}!AND@{AND}}
+\doxysubsubsection{\texorpdfstring{AND()}{AND()}}
+{\footnotesize\ttfamily \label{class_a_n_d_a03b9a26d06bbb416522c3229e9d3226c} 
+AND\+::\+AND (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}}]{inpA}{, }\item[{\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}}]{inpB}{, }\item[{\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}}]{out}{}\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_a_n_d}{AND} komponens konstruktora. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em inpA} & Első bemenet \\
+\hline
+{\em inpB} & Második bemenet \\
+\hline
+{\em out} & Kimenet \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Tagfüggvények dokumentációja}
+\Hypertarget{class_a_n_d_a013df7d14b2de1d02f0eeaebd45052c0}\index{AND@{AND}!get\_name@{get\_name}}
+\index{get\_name@{get\_name}!AND@{AND}}
+\doxysubsubsection{\texorpdfstring{get\_name()}{get\_name()}}
+{\footnotesize\ttfamily \label{class_a_n_d_a013df7d14b2de1d02f0eeaebd45052c0} 
+static const char \texorpdfstring{$\ast$}{*} AND\+::get\+\_\+name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Visszaadja a komponens elmentésekor használt nevet. 
+
+\begin{DoxyReturn}{Visszatérési érték}
+A komponens neve 
+\end{DoxyReturn}
+\Hypertarget{class_a_n_d_a1f5e0de5f526fba0108f7226d658f301}\index{AND@{AND}!write@{write}}
+\index{write@{write}!AND@{AND}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_a_n_d_a1f5e0de5f526fba0108f7226d658f301} 
+void AND\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_wire}{Wire}} \texorpdfstring{$\ast$}{*}}]{base\+\_\+address}{, }\item[{std\+::ostream \&}]{os}{ = {\ttfamily std\+:\+:cout}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Komponens kiírása a fájlba mentéshez. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em base\+\_\+address} & A logikai hálózat vezetékeket tároló tömbjének kezdőcíme \\
+\hline
+{\em os} & A kimeneti adatfolyam, amire a kapu kiírja magát \\
+\hline
+\end{DoxyParams}
+
+
+Megvalósítja a következőket\+: \mbox{\hyperlink{class_component_a60c1995ed8c270084ba7703579f5684a}{Component}}.
+
+
+
+Ez a dokumentáció az osztályról a következő fájlok alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+AND.\+h\item 
+AND.\+cpp\end{DoxyCompactItemize}

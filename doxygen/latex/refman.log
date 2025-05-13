@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.10)  10 MAY 2025 13:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.10)  13 MAY 2025 15:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -394,6 +394,239 @@ LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 ) (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+ (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2aenc.def
+File: t2aenc.def 2023/11/07 v1.0k Cyrillic encoding definition file
+Now handling font encoding T2A ...
+... processing UTF-8 mapping file for font encoding T2A
+ (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/base\t2aenc.dfu
+File: t2aenc.dfu 2022/06/07 v1.3c UTF-8 support
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+0400 (decimal 1024)
+   defining Unicode char U+0401 (decimal 1025)
+   defining Unicode char U+0402 (decimal 1026)
+   defining Unicode char U+0403 (decimal 1027)
+   defining Unicode char U+0404 (decimal 1028)
+   defining Unicode char U+0405 (decimal 1029)
+   defining Unicode char U+0406 (decimal 1030)
+   defining Unicode char U+0407 (decimal 1031)
+   defining Unicode char U+0408 (decimal 1032)
+   defining Unicode char U+0409 (decimal 1033)
+   defining Unicode char U+040A (decimal 1034)
+   defining Unicode char U+040B (decimal 1035)
+   defining Unicode char U+040C (decimal 1036)
+   defining Unicode char U+040D (decimal 1037)
+   defining Unicode char U+040E (decimal 1038)
+   defining Unicode char U+040F (decimal 1039)
+   defining Unicode char U+0410 (decimal 1040)
+   defining Unicode char U+0411 (decimal 1041)
+   defining Unicode char U+0412 (decimal 1042)
+   defining Unicode char U+0413 (decimal 1043)
+   defining Unicode char U+0414 (decimal 1044)
+   defining Unicode char U+0415 (decimal 1045)
+   defining Unicode char U+0416 (decimal 1046)
+   defining Unicode char U+0417 (decimal 1047)
+   defining Unicode char U+0418 (decimal 1048)
+   defining Unicode char U+0419 (decimal 1049)
+   defining Unicode char U+041A (decimal 1050)
+   defining Unicode char U+041B (decimal 1051)
+   defining Unicode char U+041C (decimal 1052)
+   defining Unicode char U+041D (decimal 1053)
+   defining Unicode char U+041E (decimal 1054)
+   defining Unicode char U+041F (decimal 1055)
+   defining Unicode char U+0420 (decimal 1056)
+   defining Unicode char U+0421 (decimal 1057)
+   defining Unicode char U+0422 (decimal 1058)
+   defining Unicode char U+0423 (decimal 1059)
+   defining Unicode char U+0424 (decimal 1060)
+   defining Unicode char U+0425 (decimal 1061)
+   defining Unicode char U+0426 (decimal 1062)
+   defining Unicode char U+0427 (decimal 1063)
+   defining Unicode char U+0428 (decimal 1064)
+   defining Unicode char U+0429 (decimal 1065)
+   defining Unicode char U+042A (decimal 1066)
+   defining Unicode char U+042B (decimal 1067)
+   defining Unicode char U+042C (decimal 1068)
+   defining Unicode char U+042D (decimal 1069)
+   defining Unicode char U+042E (decimal 1070)
+   defining Unicode char U+042F (decimal 1071)
+   defining Unicode char U+0430 (decimal 1072)
+   defining Unicode char U+0431 (decimal 1073)
+   defining Unicode char U+0432 (decimal 1074)
+   defining Unicode char U+0433 (decimal 1075)
+   defining Unicode char U+0434 (decimal 1076)
+   defining Unicode char U+0435 (decimal 1077)
+   defining Unicode char U+0436 (decimal 1078)
+   defining Unicode char U+0437 (decimal 1079)
+   defining Unicode char U+0438 (decimal 1080)
+   defining Unicode char U+0439 (decimal 1081)
+   defining Unicode char U+043A (decimal 1082)
+   defining Unicode char U+043B (decimal 1083)
+   defining Unicode char U+043C (decimal 1084)
+   defining Unicode char U+043D (decimal 1085)
+   defining Unicode char U+043E (decimal 1086)
+   defining Unicode char U+043F (decimal 1087)
+   defining Unicode char U+0440 (decimal 1088)
+   defining Unicode char U+0441 (decimal 1089)
+   defining Unicode char U+0442 (decimal 1090)
+   defining Unicode char U+0443 (decimal 1091)
+   defining Unicode char U+0444 (decimal 1092)
+   defining Unicode char U+0445 (decimal 1093)
+   defining Unicode char U+0446 (decimal 1094)
+   defining Unicode char U+0447 (decimal 1095)
+   defining Unicode char U+0448 (decimal 1096)
+   defining Unicode char U+0449 (decimal 1097)
+   defining Unicode char U+044A (decimal 1098)
+   defining Unicode char U+044B (decimal 1099)
+   defining Unicode char U+044C (decimal 1100)
+   defining Unicode char U+044D (decimal 1101)
+   defining Unicode char U+044E (decimal 1102)
+   defining Unicode char U+044F (decimal 1103)
+   defining Unicode char U+0450 (decimal 1104)
+   defining Unicode char U+0451 (decimal 1105)
+   defining Unicode char U+0452 (decimal 1106)
+   defining Unicode char U+0453 (decimal 1107)
+   defining Unicode char U+0454 (decimal 1108)
+   defining Unicode char U+0455 (decimal 1109)
+   defining Unicode char U+0456 (decimal 1110)
+   defining Unicode char U+0457 (decimal 1111)
+   defining Unicode char U+0458 (decimal 1112)
+   defining Unicode char U+0459 (decimal 1113)
+   defining Unicode char U+045A (decimal 1114)
+   defining Unicode char U+045B (decimal 1115)
+   defining Unicode char U+045C (decimal 1116)
+   defining Unicode char U+045D (decimal 1117)
+   defining Unicode char U+045E (decimal 1118)
+   defining Unicode char U+045F (decimal 1119)
+   defining Unicode char U+0490 (decimal 1168)
+   defining Unicode char U+0491 (decimal 1169)
+   defining Unicode char U+0492 (decimal 1170)
+   defining Unicode char U+0493 (decimal 1171)
+   defining Unicode char U+0496 (decimal 1174)
+   defining Unicode char U+0497 (decimal 1175)
+   defining Unicode char U+0498 (decimal 1176)
+   defining Unicode char U+0499 (decimal 1177)
+   defining Unicode char U+049A (decimal 1178)
+   defining Unicode char U+049B (decimal 1179)
+   defining Unicode char U+049C (decimal 1180)
+   defining Unicode char U+049D (decimal 1181)
+   defining Unicode char U+04A0 (decimal 1184)
+   defining Unicode char U+04A1 (decimal 1185)
+   defining Unicode char U+04A2 (decimal 1186)
+   defining Unicode char U+04A3 (decimal 1187)
+   defining Unicode char U+04A4 (decimal 1188)
+   defining Unicode char U+04A5 (decimal 1189)
+   defining Unicode char U+04AA (decimal 1194)
+   defining Unicode char U+04AB (decimal 1195)
+   defining Unicode char U+04AE (decimal 1198)
+   defining Unicode char U+04AF (decimal 1199)
+   defining Unicode char U+04B0 (decimal 1200)
+   defining Unicode char U+04B1 (decimal 1201)
+   defining Unicode char U+04B2 (decimal 1202)
+   defining Unicode char U+04B3 (decimal 1203)
+   defining Unicode char U+04B6 (decimal 1206)
+   defining Unicode char U+04B7 (decimal 1207)
+   defining Unicode char U+04B8 (decimal 1208)
+   defining Unicode char U+04B9 (decimal 1209)
+   defining Unicode char U+04BA (decimal 1210)
+   defining Unicode char U+04BB (decimal 1211)
+   defining Unicode char U+04C0 (decimal 1216)
+   defining Unicode char U+04C1 (decimal 1217)
+   defining Unicode char U+04C2 (decimal 1218)
+   defining Unicode char U+04D0 (decimal 1232)
+   defining Unicode char U+04D1 (decimal 1233)
+   defining Unicode char U+04D2 (decimal 1234)
+   defining Unicode char U+04D3 (decimal 1235)
+   defining Unicode char U+04D4 (decimal 1236)
+   defining Unicode char U+04D5 (decimal 1237)
+   defining Unicode char U+04D6 (decimal 1238)
+   defining Unicode char U+04D7 (decimal 1239)
+   defining Unicode char U+04D8 (decimal 1240)
+   defining Unicode char U+04D9 (decimal 1241)
+   defining Unicode char U+04DA (decimal 1242)
+   defining Unicode char U+04DB (decimal 1243)
+   defining Unicode char U+04DC (decimal 1244)
+   defining Unicode char U+04DD (decimal 1245)
+   defining Unicode char U+04DE (decimal 1246)
+   defining Unicode char U+04DF (decimal 1247)
+   defining Unicode char U+04E2 (decimal 1250)
+   defining Unicode char U+04E3 (decimal 1251)
+   defining Unicode char U+04E4 (decimal 1252)
+   defining Unicode char U+04E5 (decimal 1253)
+   defining Unicode char U+04E6 (decimal 1254)
+   defining Unicode char U+04E7 (decimal 1255)
+   defining Unicode char U+04E8 (decimal 1256)
+   defining Unicode char U+04E9 (decimal 1257)
+   defining Unicode char U+04EC (decimal 1260)
+   defining Unicode char U+04ED (decimal 1261)
+   defining Unicode char U+04EE (decimal 1262)
+   defining Unicode char U+04EF (decimal 1263)
+   defining Unicode char U+04F0 (decimal 1264)
+   defining Unicode char U+04F1 (decimal 1265)
+   defining Unicode char U+04F2 (decimal 1266)
+   defining Unicode char U+04F3 (decimal 1267)
+   defining Unicode char U+04F4 (decimal 1268)
+   defining Unicode char U+04F5 (decimal 1269)
+   defining Unicode char U+04F8 (decimal 1272)
+   defining Unicode char U+04F9 (decimal 1273)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+3008 (decimal 12296)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+3009 (decimal 12297)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+27E8 (decimal 10216)
+   defining Unicode char U+27E9 (decimal 10217)
+   defining Unicode char U+FB00 (decimal 64256)
+   defining Unicode char U+FB01 (decimal 64257)
+   defining Unicode char U+FB02 (decimal 64258)
+   defining Unicode char U+FB03 (decimal 64259)
+   defining Unicode char U+FB04 (decimal 64260)
+   defining Unicode char U+FB05 (decimal 64261)
+   defining Unicode char U+FB06 (decimal 64262)
+))
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 116.
+ (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)) (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/04/29 v25.8 The multilingual framework for pdfLaTeX, LuaLaTeX and XeLaTeX
+\babel@savecnt=\count341
+\U@D=\dimen196
+\l@unhyphenated=\language79
+ (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read4
+\bbl@dirlevel=\count342
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/babel-hungarian\magyar.ldf
+Language: magyar 2025/05/02 v1.5d Hungarian support for babel
+ (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/hu\babel-magyar.tex
+Package babel Info: Importing font and identification data for magyar
+(babel)             from babel-hu.ini. Reported on input line 11.
+)
+Package babel Info: Making ` an active character on input line 2778.
+\c@footnote@add=\count343
+\c@footnote@ch=\count344
+)) (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 ) (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\helvet.sty
 Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
 ) (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\courier.sty
@@ -403,22 +636,22 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count341
-\Gm@cntv=\count342
-\c@Gm@tempcnt=\count343
-\Gm@bindingoffset=\dimen196
-\Gm@wd@mp=\dimen197
-\Gm@odd@mp=\dimen198
-\Gm@even@mp=\dimen199
-\Gm@layoutwidth=\dimen256
-\Gm@layoutheight=\dimen257
-\Gm@layouthoffset=\dimen258
-\Gm@layoutvoffset=\dimen259
+\Gm@cnth=\count345
+\Gm@cntv=\count346
+\c@Gm@tempcnt=\count347
+\Gm@bindingoffset=\dimen197
+\Gm@wd@mp=\dimen198
+\Gm@odd@mp=\dimen199
+\Gm@even@mp=\dimen256
+\Gm@layoutwidth=\dimen257
+\Gm@layoutheight=\dimen258
+\Gm@layouthoffset=\dimen259
+\Gm@layoutvoffset=\dimen260
 \Gm@dimlist=\toks35
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/changepage\changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count344
-\cp@tempcnt=\count345
+\c@cp@cntr=\count348
+\cp@tempcnt=\count349
 LaTeX Info: Redefining \checkoddpage on input line 59.
 ) (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
@@ -442,7 +675,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip98
 \bibsep=\skip99
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count346
+\c@NAT@ctr=\count350
 ) (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
@@ -475,8 +708,8 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforefigskip=\skip126
 \cftfigindent=\skip127
 \cftfignumwidth=\skip128
-\c@lofdepth=\count347
-\c@lotdepth=\count348
+\c@lofdepth=\count351
+\c@lotdepth=\count352
 \cftbeforelottitleskip=\skip129
 \cftafterlottitleskip=\skip130
 \cftbeforetabskip=\skip131
@@ -516,19 +749,19 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count349
+\c@section@level=\count353
 ) (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen260
-\Hy@linkcounter=\count350
-\Hy@pagecounter=\count351
+\@linkdim=\dimen261
+\Hy@linkcounter=\count354
+\Hy@pagecounter=\count355
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count352
+\Hy@SavedSpaceFactor=\count356
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -555,19 +788,19 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 ))
-\c@Hy@tempcnt=\count353
+\c@Hy@tempcnt=\count357
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen261
+\XeTeXLinkMargin=\dimen262
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 )
-\Fld@menulength=\count354
-\Field@Width=\dimen262
-\Fld@charsize=\dimen263
+\Fld@menulength=\count358
+\Field@Width=\dimen263
+\Fld@charsize=\dimen264
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -579,38 +812,40 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count355
-\c@Item=\count356
-\c@Hfootnote=\count357
+\Hy@abspage=\count359
+\c@Item=\count360
+\c@Hfootnote=\count361
 )
 Package hyperref Info: Driver: hpdftex.
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
-\Fld@listcount=\count358
-\c@bookmark@seq@number=\count359
+\Fld@listcount=\count362
+\c@bookmark@seq@number=\count363
 \Hy@SectionHShift=\skip134
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 187.
-Package hyperref Info: Option `unicode' set `true' on input line 187.
+Package hyperref Info: Option `colorlinks' set `true' on input line 189.
+Package hyperref Info: Option `unicode' set `true' on input line 189.
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen264
-\captionmargin=\dimen265
-\caption@leftmargin=\dimen266
-\caption@rightmargin=\dimen267
-\caption@width=\dimen268
-\caption@indent=\dimen269
-\caption@parindent=\dimen270
-\caption@hangindent=\dimen271
+\caption@tempdima=\dimen265
+\captionmargin=\dimen266
+\caption@leftmargin=\dimen267
+\caption@rightmargin=\dimen268
+\caption@width=\dimen269
+\caption@indent=\dimen270
+\caption@parindent=\dimen271
+\caption@hangindent=\dimen272
 Package caption Info: Standard document class detected.
+Package caption Info: hungarian babel package is loaded.
 )
-\c@caption@flags=\count360
-\c@continuedfloat=\count361
+\c@caption@flags=\count364
+\c@continuedfloat=\count365
+Package caption Info: hungarian babel package is loaded.
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen272
-\caption@adjustwidth@linewidth=\dimen273
+\caption@adjustwidth@hsize=\dimen273
+\caption@adjustwidth@linewidth=\dimen274
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
@@ -619,52 +854,54 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )) (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/etoc\etoc.sty
 Package: etoc 2023/10/29 v1.2d Completely customisable TOCs (JFB)
 \Etoc@toctoks=\toks37
-\c@etoc@tocid=\count362
+\c@etoc@tocid=\count366
 \etoc@framed@titlebox=\box123
 \etoc@framed@contentsbox=\box124
 )
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 209.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 211.
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 209.
+(Font)              scaled to size 8.99994pt on input line 211.
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-04-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count363
+\l__color_backend_stack_int=\count367
 ) (refman.aux)
 \openout1 = `refman.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 209.
-LaTeX Font Info:    ... okay on input line 209.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count364
-\scratchdimen=\dimen274
+\scratchcounter=\count368
+\scratchdimen=\dimen275
 \scratchbox=\box125
-\nofMPsegments=\count365
-\nofMParguments=\count366
+\nofMPsegments=\count369
+\nofMParguments=\count370
 \everyMPshowfont=\toks38
-\MPscratchCnt=\count367
-\MPscratchDim=\dimen275
-\MPnumerator=\count368
-\makeMPintoPDFobject=\count369
+\MPscratchCnt=\count371
+\MPscratchDim=\dimen276
+\MPnumerator=\count372
+\makeMPintoPDFobject=\count373
 \everyMPtoPDFconversion=\toks39
 ) (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -706,25 +943,32 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package backref Info: ** backref set up for natbib ** on input line 209.
-Package hyperref Info: Link coloring ON on input line 209.
+Package backref Info: ** backref set up for natbib ** on input line 211.
+Package hyperref Info: Link coloring ON on input line 211.
 (refman.out) (refman.out)
 \@outlinefile=\write5
 \openout5 = `refman.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-\Etoc@tf=\read4
-Package hyperref Info: Option `pageanchor' set `false' on input line 217.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 217.
-Package hyperref Info: Option `unicode' set `true' on input line 217.
+\Etoc@tf=\read5
+ (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+LaTeX Info: Redefining \cal on input line 583.
+LaTeX Info: Redefining \mit on input line 584.
+)
+Package babel Info: 'magyar' activates 'magyar' shorthands.
+(babel)             Reported  on input line 211.
+Package hyperref Info: Option `pageanchor' set `false' on input line 219.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 219.
+Package hyperref Info: Option `unicode' set `true' on input line 219.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 222.
+(Font)              scaled to size 12.9599pt on input line 224.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 224.
+(Font)              scaled to size 10.79993pt on input line 226.
 
 
 [1
+
 
 
 {C:/Users/user/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
@@ -736,42 +980,43 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 \openout6 = `refman.toc'.
 
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 230.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 230.
+(Font)              scaled to size 8.99994pt on input line 232.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 232.
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 230.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 232.
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 230.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 232.
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 230.
+(Font)              scaled to size 6.29996pt on input line 232.
 
 
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 230.
+(Font)              scaled to size 6.29996pt on input line 232.
 [1]
 
-[2
+[2]
+
+[3]
+
+[4
 
 ]
-Package hyperref Info: Option `pageanchor' set `true' on input line 233.
-
-Chapter 1.
+Package hyperref Info: Option `pageanchor' set `true' on input line 235.
+ (index.tex
+1. fejezet.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 235.
+(Font)              scaled to size 18.66588pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 18.66588pt on input line 235.
+(Font)              scaled to size 18.66588pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 22.39185pt on input line 235.
-(hierarchy.tex
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 1.
+(Font)              scaled to size 22.39185pt on input line 1.
 )
 
 [1
@@ -781,83 +1026,478 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 [2
 
 ]
-Chapter 2.
-(annotated.tex)
+2. fejezet.
+(hierarchy.tex
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 1.
+)
 
 [3]
 
 [4
 
 ]
-Chapter 3.
-(files.tex)
+3. fejezet.
+(annotated.tex)
 
 [5]
 
 [6
 
 ]
-Chapter 4.
-(class_component.tex
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 6.
+4. fejezet.
+(files.tex)
+
+[7]
+
+[8
+
+]
+5. fejezet.
+(class_a_n_d.tex <./class_a_n_d__inherit__graph.pdf>
+<class_a_n_d__inherit__graph.pdf, id=678, 199.74625pt x 369.38pt>
+File: class_a_n_d__inherit__graph.pdf Graphic file (type pdf)
+<use class_a_n_d__inherit__graph.pdf>
+Package pdftex.def Info: class_a_n_d__inherit__graph.pdf  used on input line 9.
+(pdftex.def)             Requested size: 199.0pt x 368.02074pt.
+ <./class_a_n_d__coll__graph.pdf>
+<class_a_n_d__coll__graph.pdf, id=693, 199.74625pt x 526.96875pt>
+File: class_a_n_d__coll__graph.pdf Graphic file (type pdf)
+<use class_a_n_d__coll__graph.pdf>
+Package pdftex.def Info: class_a_n_d__coll__graph.pdf  used on input line 18.
+(pdftex.def)             Requested size: 199.0pt x 525.02959pt.
+
+
+[9]
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 24.
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 6.
-) (class_logic_network.tex <./class_logic_network.pdf>
-<class_logic_network.pdf, id=176, 501.875pt x 254.9525pt>
-File: class_logic_network.pdf Graphic file (type pdf)
-<use class_logic_network.pdf>
-Package pdftex.def Info: class_logic_network.pdf  used on input line 6.
-(pdftex.def)             Requested size: 112.01335pt x 56.9055pt.
+(Font)              scaled to size 8.99994pt on input line 24.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 25.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 25.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 25.
 
 
-[7]) (class_logic_network_configurer.tex <./class_logic_network_configurer.pdf>
-<class_logic_network_configurer.pdf, id=199, 501.875pt x 254.9525pt>
-File: class_logic_network_configurer.pdf Graphic file (type pdf)
-<use class_logic_network_configurer.pdf>
-Package pdftex.def Info: class_logic_network_configurer.pdf  used on input line 6.
-(pdftex.def)             Requested size: 112.01335pt x 56.9055pt.
+[10]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 21.
-
-
-[8]) (class_wire.tex)
-
-[9]
-
-[10
-
-]
-Chapter 5.
-(basic__components_8h_source.tex
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 3.
+(Font)              scaled to size 10.79993pt on input line 38.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 42.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 42.
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)) (component_8h_source.tex) (logic__network_8h_source.tex
+)
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 43.
 
-[11]) (logic__network__configurer_8h_source.tex) (memtrace_8h_source.tex
+Underfull \hbox (badness 10000) detected at line 71
+[][][]
+ []
 
-[12]
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 78.
+) (class_component.tex <./class_component__inherit__graph.pdf>
+<class_component__inherit__graph.pdf, id=741, 1054.94125pt x 393.47pt>
+File: class_component__inherit__graph.pdf Graphic file (type pdf)
+<use class_component__inherit__graph.pdf>
+Package pdftex.def Info: class_component__inherit__graph.pdf  used on input line 9.
+(pdftex.def)             Requested size: 350.0pt x 130.54195pt.
+
+
+[11] <./class_component__coll__graph.pdf>
+<class_component__coll__graph.pdf, id=769, 196.735pt x 341.275pt>
+File: class_component__coll__graph.pdf Graphic file (type pdf)
+<use class_component__coll__graph.pdf>
+Package pdftex.def Info: class_component__coll__graph.pdf  used on input line 18.
+(pdftex.def)             Requested size: 196.0pt x 339.99832pt.
+
+
+[12]) (class_i_n_p.tex <./class_i_n_p__inherit__graph.pdf>
+<class_i_n_p__inherit__graph.pdf, id=804, 199.74625pt x 369.38pt>
+File: class_i_n_p__inherit__graph.pdf Graphic file (type pdf)
+<use class_i_n_p__inherit__graph.pdf>
+Package pdftex.def Info: class_i_n_p__inherit__graph.pdf  used on input line 9.
+(pdftex.def)             Requested size: 199.0pt x 368.02074pt.
+ <./class_i_n_p__coll__graph.pdf>
+<class_i_n_p__coll__graph.pdf, id=819, 199.74625pt x 526.96875pt>
+File: class_i_n_p__coll__graph.pdf Graphic file (type pdf)
+<use class_i_n_p__coll__graph.pdf>
+Package pdftex.def Info: class_i_n_p__coll__graph.pdf  used on input line 18.
+(pdftex.def)             Requested size: 199.0pt x 525.02959pt.
+
 
 [13]
 
-[14]) (wire_8h_source.tex
+[14]
+Underfull \hbox (badness 10000) detected at line 67
+[][][]
+ []
 
-[15])
+) (class_logic_network.tex <./class_logic_network__inherit__graph.pdf>
+<class_logic_network__inherit__graph.pdf, id=868, 209.78375pt x 401.5pt>
+File: class_logic_network__inherit__graph.pdf Graphic file (type pdf)
+<use class_logic_network__inherit__graph.pdf>
+Package pdftex.def Info: class_logic_network__inherit__graph.pdf  used on input line 9.
+(pdftex.def)             Requested size: 209.0pt x 399.99803pt.
 
-[16] (refman.ind
+
+[15] <./class_logic_network__coll__graph.pdf>
+<class_logic_network__coll__graph.pdf, id=891, 294.09875pt x 582.175pt>
+File: class_logic_network__coll__graph.pdf Graphic file (type pdf)
+<use class_logic_network__coll__graph.pdf>
+Package pdftex.def Info: class_logic_network__coll__graph.pdf  used on input line 18.
+(pdftex.def)             Requested size: 277.86644pt x 550.0pt.
+
+
+[16]
+
+[17]
+
+[18]
+Underfull \hbox (badness 10000) detected at line 100
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 123
+[][][]
+ []
+
+) (class_logic_network_configurer.tex <./class_logic_network_configurer__inherit__graph.pdf>
+<class_logic_network_configurer__inherit__graph.pdf, id=942, 209.78375pt x 401.5pt>
+File: class_logic_network_configurer__inherit__graph.pdf Graphic file (type pdf)
+<use class_logic_network_configurer__inherit__graph.pdf>
+Package pdftex.def Info: class_logic_network_configurer__inherit__graph.pdf  used on input line 9.
+(pdftex.def)             Requested size: 209.0pt x 399.99803pt.
+
+
+[19] <./class_logic_network_configurer__coll__graph.pdf>
+<class_logic_network_configurer__coll__graph.pdf, id=966, 294.09875pt x 711.65875pt>
+File: class_logic_network_configurer__coll__graph.pdf Graphic file (type pdf)
+<use class_logic_network_configurer__coll__graph.pdf>
+Package pdftex.def Info: class_logic_network_configurer__coll__graph.pdf  used on input line 18.
+(pdftex.def)             Requested size: 227.30038pt x 550.0pt.
+
+
+[20]
+
+[21]) (class_n_o_t.tex <./class_n_o_t__inherit__graph.pdf>
+<class_n_o_t__inherit__graph.pdf, id=1007, 199.74625pt x 369.38pt>
+File: class_n_o_t__inherit__graph.pdf Graphic file (type pdf)
+<use class_n_o_t__inherit__graph.pdf>
+Package pdftex.def Info: class_n_o_t__inherit__graph.pdf  used on input line 9.
+(pdftex.def)             Requested size: 199.0pt x 368.02074pt.
+
+
+[22] <./class_n_o_t__coll__graph.pdf>
+<class_n_o_t__coll__graph.pdf, id=1029, 199.74625pt x 526.96875pt>
+File: class_n_o_t__coll__graph.pdf Graphic file (type pdf)
+<use class_n_o_t__coll__graph.pdf>
+Package pdftex.def Info: class_n_o_t__coll__graph.pdf  used on input line 18.
+(pdftex.def)             Requested size: 199.0pt x 525.02959pt.
+
+
+[23]
+
+[24]
+Underfull \hbox (badness 10000) detected at line 69
+[][][]
+ []
+
+) (class_o_r.tex <./class_o_r__inherit__graph.pdf>
+<class_o_r__inherit__graph.pdf, id=1073, 199.74625pt x 369.38pt>
+File: class_o_r__inherit__graph.pdf Graphic file (type pdf)
+<use class_o_r__inherit__graph.pdf>
+Package pdftex.def Info: class_o_r__inherit__graph.pdf  used on input line 9.
+(pdftex.def)             Requested size: 199.0pt x 368.02074pt.
+
+
+[25] <./class_o_r__coll__graph.pdf>
+<class_o_r__coll__graph.pdf, id=1097, 199.74625pt x 526.96875pt>
+File: class_o_r__coll__graph.pdf Graphic file (type pdf)
+<use class_o_r__coll__graph.pdf>
+Package pdftex.def Info: class_o_r__coll__graph.pdf  used on input line 18.
+(pdftex.def)             Requested size: 199.0pt x 525.02959pt.
+
+
+[26]
+
+[27]
+Underfull \hbox (badness 10000) detected at line 71
+[][][]
+ []
+
+) (class_p_r_i_n_t.tex <./class_p_r_i_n_t__inherit__graph.pdf>
+<class_p_r_i_n_t__inherit__graph.pdf, id=1143, 223.83624pt x 393.47pt>
+File: class_p_r_i_n_t__inherit__graph.pdf Graphic file (type pdf)
+<use class_p_r_i_n_t__inherit__graph.pdf>
+Package pdftex.def Info: class_p_r_i_n_t__inherit__graph.pdf  used on input line 9.
+(pdftex.def)             Requested size: 223.0pt x 392.01009pt.
+
+
+[28] <./class_p_r_i_n_t__coll__graph.pdf>
+<class_p_r_i_n_t__coll__graph.pdf, id=1166, 223.83624pt x 551.05875pt>
+File: class_p_r_i_n_t__coll__graph.pdf Graphic file (type pdf)
+<use class_p_r_i_n_t__coll__graph.pdf>
+Package pdftex.def Info: class_p_r_i_n_t__coll__graph.pdf  used on input line 18.
+(pdftex.def)             Requested size: 223.0pt x 549.01413pt.
+
+
+[29]
+
+[30]
+Underfull \hbox (badness 10000) detected at line 71
+[][][]
+ []
+
+) (class_s_t_d___i_n_p.tex <./class_s_t_d___i_n_p__inherit__graph.pdf>
+<class_s_t_d___i_n_p__inherit__graph.pdf, id=1207, 205.76875pt x 381.425pt>
+File: class_s_t_d___i_n_p__inherit__graph.pdf Graphic file (type pdf)
+<use class_s_t_d___i_n_p__inherit__graph.pdf>
+Package pdftex.def Info: class_s_t_d___i_n_p__inherit__graph.pdf  used on input line 9.
+(pdftex.def)             Requested size: 205.0pt x 380.00395pt.
+
+
+[31] <./class_s_t_d___i_n_p__coll__graph.pdf>
+<class_s_t_d___i_n_p__coll__graph.pdf, id=1231, 205.76875pt x 539.01375pt>
+File: class_s_t_d___i_n_p__coll__graph.pdf Graphic file (type pdf)
+<use class_s_t_d___i_n_p__coll__graph.pdf>
+Package pdftex.def Info: class_s_t_d___i_n_p__coll__graph.pdf  used on input line 18.
+(pdftex.def)             Requested size: 205.0pt x 537.00558pt.
+
+
+[32]
+
+[33]
+Underfull \hbox (badness 10000) detected at line 68
+[][][]
+ []
+
+
+
+[34]) (class_wire.tex <./class_wire__coll__graph.pdf>
+<class_wire__coll__graph.pdf, id=1285, 189.70876pt x 176.66pt>
+File: class_wire__coll__graph.pdf Graphic file (type pdf)
+<use class_wire__coll__graph.pdf>
+Package pdftex.def Info: class_wire__coll__graph.pdf  used on input line 9.
+(pdftex.def)             Requested size: 189.0pt x 176.00452pt.
+
+Underfull \hbox (badness 10000) detected at line 35
+[][][]
+ []
+
+
+
+[35]) (class_x_o_r.tex <./class_x_o_r__inherit__graph.pdf>
+<class_x_o_r__inherit__graph.pdf, id=1313, 199.74625pt x 369.38pt>
+File: class_x_o_r__inherit__graph.pdf Graphic file (type pdf)
+<use class_x_o_r__inherit__graph.pdf>
+Package pdftex.def Info: class_x_o_r__inherit__graph.pdf  used on input line 9.
+(pdftex.def)             Requested size: 199.0pt x 368.02074pt.
+ <./class_x_o_r__coll__graph.pdf>
+<class_x_o_r__coll__graph.pdf, id=1328, 199.74625pt x 526.96875pt>
+File: class_x_o_r__coll__graph.pdf Graphic file (type pdf)
+<use class_x_o_r__coll__graph.pdf>
+Package pdftex.def Info: class_x_o_r__coll__graph.pdf  used on input line 18.
+(pdftex.def)             Requested size: 199.0pt x 525.02959pt.
+
+
+[36]
+
+[37]
+Underfull \hbox (badness 10000) detected at line 71
+[][][]
+ []
+
+)
+
+[38]
+6. fejezet.
+(basic__components_8h_source.tex) (_a_n_d_8h_source.tex) (_i_n_p_8h.tex <./_i_n_p_8h__incl.pdf>
+<_i_n_p_8h__incl.pdf, id=1398, 283.0575pt x 269.005pt>
+File: _i_n_p_8h__incl.pdf Graphic file (type pdf)
+<use _i_n_p_8h__incl.pdf>
+Package pdftex.def Info: _i_n_p_8h__incl.pdf  used on input line 14.
+(pdftex.def)             Requested size: 282.0pt x 268.0233pt.
+
+
+[39
+
+] <./_i_n_p_8h__dep__incl.pdf>
+<_i_n_p_8h__dep__incl.pdf, id=1410, 186.6975pt x 212.795pt>
+File: _i_n_p_8h__dep__incl.pdf Graphic file (type pdf)
+<use _i_n_p_8h__dep__incl.pdf>
+Package pdftex.def Info: _i_n_p_8h__dep__incl.pdf  used on input line 21.
+(pdftex.def)             Requested size: 186.0pt x 212.00868pt.
+) (_i_n_p_8h_source.tex
+
+[40]) (_n_o_t_8h.tex <./_n_o_t_8h__incl.pdf>
+<_n_o_t_8h__incl.pdf, id=1435, 283.0575pt x 269.005pt>
+File: _n_o_t_8h__incl.pdf Graphic file (type pdf)
+<use _n_o_t_8h__incl.pdf>
+Package pdftex.def Info: _n_o_t_8h__incl.pdf  used on input line 14.
+(pdftex.def)             Requested size: 282.0pt x 268.0233pt.
+ <./_n_o_t_8h__dep__incl.pdf>
+<_n_o_t_8h__dep__incl.pdf, id=1443, 186.6975pt x 212.795pt>
+File: _n_o_t_8h__dep__incl.pdf Graphic file (type pdf)
+<use _n_o_t_8h__dep__incl.pdf>
+Package pdftex.def Info: _n_o_t_8h__dep__incl.pdf  used on input line 21.
+(pdftex.def)             Requested size: 186.0pt x 212.00868pt.
+
+
+[41]) (_n_o_t_8h_source.tex) (_o_r_8h.tex <./_o_r_8h__incl.pdf>
+<_o_r_8h__incl.pdf, id=1469, 283.0575pt x 269.005pt>
+File: _o_r_8h__incl.pdf Graphic file (type pdf)
+<use _o_r_8h__incl.pdf>
+Package pdftex.def Info: _o_r_8h__incl.pdf  used on input line 14.
+(pdftex.def)             Requested size: 282.0pt x 268.0233pt.
+
+
+[42] <./_o_r_8h__dep__incl.pdf>
+<_o_r_8h__dep__incl.pdf, id=1485, 186.6975pt x 212.795pt>
+File: _o_r_8h__dep__incl.pdf Graphic file (type pdf)
+<use _o_r_8h__dep__incl.pdf>
+Package pdftex.def Info: _o_r_8h__dep__incl.pdf  used on input line 21.
+(pdftex.def)             Requested size: 186.0pt x 212.00868pt.
+) (_o_r_8h_source.tex
+
+[43]) (_p_r_i_n_t_8h.tex <./_p_r_i_n_t_8h__incl.pdf>
+<_p_r_i_n_t_8h__incl.pdf, id=1513, 283.0575pt x 269.005pt>
+File: _p_r_i_n_t_8h__incl.pdf Graphic file (type pdf)
+<use _p_r_i_n_t_8h__incl.pdf>
+Package pdftex.def Info: _p_r_i_n_t_8h__incl.pdf  used on input line 15.
+(pdftex.def)             Requested size: 282.0pt x 268.0233pt.
+
+
+[44] <./_p_r_i_n_t_8h__dep__incl.pdf>
+<_p_r_i_n_t_8h__dep__incl.pdf, id=1527, 186.6975pt x 212.795pt>
+File: _p_r_i_n_t_8h__dep__incl.pdf Graphic file (type pdf)
+<use _p_r_i_n_t_8h__dep__incl.pdf>
+Package pdftex.def Info: _p_r_i_n_t_8h__dep__incl.pdf  used on input line 22.
+(pdftex.def)             Requested size: 186.0pt x 212.00868pt.
+) (_p_r_i_n_t_8h_source.tex
+
+[45]) (_s_t_d___i_n_p_8h.tex <./_s_t_d___i_n_p_8h__incl.pdf>
+<_s_t_d___i_n_p_8h__incl.pdf, id=1553, 283.0575pt x 269.005pt>
+File: _s_t_d___i_n_p_8h__incl.pdf Graphic file (type pdf)
+<use _s_t_d___i_n_p_8h__incl.pdf>
+Package pdftex.def Info: _s_t_d___i_n_p_8h__incl.pdf  used on input line 14.
+(pdftex.def)             Requested size: 282.0pt x 268.0233pt.
+ <./_s_t_d___i_n_p_8h__dep__incl.pdf>
+<_s_t_d___i_n_p_8h__dep__incl.pdf, id=1561, 186.6975pt x 212.795pt>
+File: _s_t_d___i_n_p_8h__dep__incl.pdf Graphic file (type pdf)
+<use _s_t_d___i_n_p_8h__dep__incl.pdf>
+Package pdftex.def Info: _s_t_d___i_n_p_8h__dep__incl.pdf  used on input line 21.
+(pdftex.def)             Requested size: 186.0pt x 212.00868pt.
+
+
+[46]) (_s_t_d___i_n_p_8h_source.tex) (_x_o_r_8h.tex
+
+[47] <./_x_o_r_8h__incl.pdf>
+<_x_o_r_8h__incl.pdf, id=1595, 283.0575pt x 269.005pt>
+File: _x_o_r_8h__incl.pdf Graphic file (type pdf)
+<use _x_o_r_8h__incl.pdf>
+Package pdftex.def Info: _x_o_r_8h__incl.pdf  used on input line 14.
+(pdftex.def)             Requested size: 282.0pt x 268.0233pt.
+ <./_x_o_r_8h__dep__incl.pdf>
+<_x_o_r_8h__dep__incl.pdf, id=1603, 186.6975pt x 212.795pt>
+File: _x_o_r_8h__dep__incl.pdf Graphic file (type pdf)
+<use _x_o_r_8h__dep__incl.pdf>
+Package pdftex.def Info: _x_o_r_8h__dep__incl.pdf  used on input line 21.
+(pdftex.def)             Requested size: 186.0pt x 212.00868pt.
+) (_x_o_r_8h_source.tex
+
+[48]) (component_8h.tex <./component_8h__incl.pdf>
+<component_8h__incl.pdf, id=1630, 225.84375pt x 212.795pt>
+File: component_8h__incl.pdf Graphic file (type pdf)
+<use component_8h__incl.pdf>
+Package pdftex.def Info: component_8h__incl.pdf  used on input line 15.
+(pdftex.def)             Requested size: 225.0pt x 212.01193pt.
+ <./component_8h__dep__incl.pdf>
+<component_8h__dep__incl.pdf, id=1638, 652.4375pt x 269.005pt>
+File: component_8h__dep__incl.pdf Graphic file (type pdf)
+<use component_8h__dep__incl.pdf>
+Package pdftex.def Info: component_8h__dep__incl.pdf  used on input line 22.
+(pdftex.def)             Requested size: 350.0pt x 144.31235pt.
+
+
+[49]) (component_8h_source.tex) (logic__network_8h.tex <./logic__network_8h__incl.pdf>
+<logic__network_8h__incl.pdf, id=1662, 233.87375pt x 269.005pt>
+File: logic__network_8h__incl.pdf Graphic file (type pdf)
+<use logic__network_8h__incl.pdf>
+Package pdftex.def Info: logic__network_8h__incl.pdf  used on input line 16.
+(pdftex.def)             Requested size: 233.0pt x 268.01509pt.
+
+
+[50] <./logic__network_8h__dep__incl.pdf>
+<logic__network_8h__dep__incl.pdf, id=1678, 235.88126pt x 212.795pt>
+File: logic__network_8h__dep__incl.pdf Graphic file (type pdf)
+<use logic__network_8h__dep__incl.pdf>
+Package pdftex.def Info: logic__network_8h__dep__incl.pdf  used on input line 23.
+(pdftex.def)             Requested size: 235.0pt x 212.0022pt.
+) (logic__network_8h_source.tex
+
+[51]) (logic__network__configurer_8h.tex <./logic__network__configurer_8h__incl.pdf>
+<logic__network__configurer_8h__incl.pdf, id=1708, 272.01625pt x 325.215pt>
+File: logic__network__configurer_8h__incl.pdf Graphic file (type pdf)
+<use logic__network__configurer_8h__incl.pdf>
+Package pdftex.def Info: logic__network__configurer_8h__incl.pdf  used on input line 15.
+(pdftex.def)             Requested size: 271.0pt x 324.01826pt.
+
+
+[52] <./logic__network__configurer_8h__dep__incl.pdf>
+<logic__network__configurer_8h__dep__incl.pdf, id=1721, 212.795pt x 156.585pt>
+File: logic__network__configurer_8h__dep__incl.pdf Graphic file (type pdf)
+<use logic__network__configurer_8h__dep__incl.pdf>
+Package pdftex.def Info: logic__network__configurer_8h__dep__incl.pdf  used on input line 22.
+(pdftex.def)             Requested size: 212.0pt x 156.00879pt.
+) (logic__network__configurer_8h_source.tex
+
+[53]) (main_8cpp.tex <./main_8cpp__incl.pdf>
+<main_8cpp__incl.pdf, id=1742, 1617.04124pt x 393.47pt>
+File: main_8cpp__incl.pdf Graphic file (type pdf)
+<use main_8cpp__incl.pdf>
+Package pdftex.def Info: main_8cpp__incl.pdf  used on input line 21.
+(pdftex.def)             Requested size: 350.0pt x 85.16476pt.
+) (wire_8h.tex <./wire_8h__incl.pdf>
+<wire_8h__incl.pdf, id=1750, 220.825pt x 156.585pt>
+File: wire_8h__incl.pdf Graphic file (type pdf)
+<use wire_8h__incl.pdf>
+Package pdftex.def Info: wire_8h__incl.pdf  used on input line 14.
+(pdftex.def)             Requested size: 220.0pt x 156.0064pt.
+
+
+[54] <./wire_8h__dep__incl.pdf>
+<wire_8h__dep__incl.pdf, id=1765, 661.47125pt x 325.215pt>
+File: wire_8h__dep__incl.pdf Graphic file (type pdf)
+<use wire_8h__dep__incl.pdf>
+Package pdftex.def Info: wire_8h__dep__incl.pdf  used on input line 21.
+(pdftex.def)             Requested size: 350.0pt x 172.0753pt.
+) (wire_8h_source.tex
+
+[55])
+
+[56] (refman.ind
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 22.39185pt on input line 1.
 
 
 
 
-[17
+[57
 
 
 
+]
+
+
+
+[58
 
 ]) (refman.aux)
  ***********
@@ -865,20 +1505,20 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-14>
  ***********
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: CAB98803690E17EC29F8EABBA8DC7398;3526.
+(rerunfilecheck)             Checksum: A07A99D61C0EA938644EBE8631B80008;20676.
  ) 
 Here is how much of TeX's memory you used:
- 18218 strings out of 469940
- 296912 string characters out of 5469893
- 712849 words of memory out of 5000000
- 44614 multiletter control sequences out of 15000+600000
- 661243 words of font info for 77 fonts, out of 8000000 for 9000
+ 22106 strings out of 469940
+ 374352 string characters out of 5469893
+ 782652 words of memory out of 5000000
+ 48134 multiletter control sequences out of 15000+600000
+ 681966 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,16n,117p,582b,567s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on refman.pdf (21 pages, 127558 bytes).
+ 101i,16n,117p,645b,775s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (64 pages, 1310694 bytes).
 PDF statistics:
- 335 PDF objects out of 1000 (max. 8388607)
- 82 named destinations out of 1000 (max. 500000)
- 163 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2007 PDF objects out of 2073 (max. 8388607)
+ 338 named destinations out of 1000 (max. 500000)
+ 1059 words of extra memory for PDF output out of 10000 (max. 10000000)
 
