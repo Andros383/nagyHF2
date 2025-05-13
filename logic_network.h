@@ -6,7 +6,12 @@
 #include "memtrace.h"
 #include "wire.h"
 class LogicNetwork {
-    // kiíratás miatt
+    // ne lehessen lemásolni, mert nincs sok értelme
+    // és lehetetlen lenne lemásolni a mutatók miatt, valójában kirakná egy streamre és visszaolvasná
+    // automatikusan a configurert se lehet lemásolni
+    LogicNetwork(const LogicNetwork&);
+    LogicNetwork& operator=(const LogicNetwork&);
+
    protected:
     // UML-ben frissíteni, ez wire tömböt tárol, nem Wire*[]-t
     // mert asszem végül nem lehet felüldefelni a wire-t?

@@ -1,9 +1,15 @@
+/**
+ * @file main.cpp
+ * @brief Main file az összes teszttel
+ * Minden teszt gtest_lita-al írt. Az utolsó pedig standard bemenetről olvas be biteket, amiknek ha az értéke 5, a kimenete a hálózatnak 1 lesz
+ *
+ */
+
 #include <fstream>
 #include <iostream>
 #include <sstream>
 
 #include "basic_components.h"
-#include "fstream"
 #include "gtest_lite.h"
 #include "logic_network.h"
 #include "logic_network_configurer.h"
@@ -324,7 +330,7 @@ int main() {
             << "Nem sikerült a hálózat kiírása";
     }
     END
-    TEST(LogicNetwork, túl sok wire) {
+    TEST(LogicNetworkConfigurer, túl sok wire) {
         LogicNetworkConfigurer lnc(0);
         std::stringstream config;
         // az egyetlen wire ami létezik a 0-s, így hibát dob
@@ -333,7 +339,7 @@ int main() {
         EXPECT_THROW(lnc.read_logic_network(config), const char*);
     }
     END
-    TEST(LogicNetwork, túl hamar vége) {
+    TEST(LogicNetworkConfigurer, túl hamar vége) {
         LogicNetworkConfigurer lnc(0);
         std::stringstream config;
         // 3 komponenst próbál beolvasni, de csak egy van
@@ -341,7 +347,7 @@ int main() {
         EXPECT_THROW(lnc.read_logic_network(config), const char*);
     }
     END
-    TEST(LogicNetwork, értelmetlen bemenet) {
+    TEST(LogicNetworkConfigurer, értelmetlen bemenet) {
         LogicNetworkConfigurer lnc(0);
         std::stringstream config;
         // 3 komponenst próbál beolvasni, de csak egy van
@@ -349,6 +355,28 @@ int main() {
         EXPECT_THROW(lnc.read_logic_network(config), const char*);
     }
     END
+    TEST(LogicNetworkConfigurer, sorvége) {
+        std::stringstream input_configuration;
+        // lemaradt az utolsó komponens utáni sorvége jel
+        // ha az utolsó komponenssel van a hiba, külön felhívja erre a gyakori hibára a figyelmet
+        input_configuration << "1 2\n"
+                               "PRINT 0 Kimenet\n"
+                               "INP 0 1";
+        LogicNetworkConfigurer lnc(0);
+        EXPECT_THROW(lnc.read_logic_network(input_configuration), const char*);
+    }
+    END
 
-        return 0;
+        LogicNetworkConfigurer lnc(0);
+    std::ifstream f("fivetest.txt");
+    try {
+        lnc.read_logic_network(f);
+        lnc.bulk_update(6);
+    } catch (const char* error) {
+        std::cout << "Futtatás közbeni hiba: " << std::endl;
+        std::cout << error << '\n';
+    }
+
+    f.close();
+    return 0;
 }

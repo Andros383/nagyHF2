@@ -1,0 +1,14 @@
+100 13
+STD_INP 0 Bemenet bit 0
+STD_INP 1 Bemenet bit 1
+STD_INP 2 Bemenet bit 2
+STD_INP 3 Bemenet bit 3
+STD_INP 4 Bemenet bit 4
+NOT 1 11
+NOT 3 13
+NOT 4 14
+AND 0 11 20
+AND 20 2 21
+AND 21 13 22
+AND 22 14 23
+PRINT 23 Ha a bemenet 5 volt valamikor itt a kimenet 1 lesz

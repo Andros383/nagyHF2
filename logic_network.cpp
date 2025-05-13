@@ -1,6 +1,7 @@
 #include "logic_network.h"
 
 #include "memtrace.h"
+
 LogicNetwork::LogicNetwork(size_t wires_size, std::ostream& os) : wires(nullptr), wires_size(wires_size), components(nullptr), components_size(0), os(os) {
     // le kell foglalni előre, mert másolásnál nem lehet valid
     wires = new Wire[wires_size];

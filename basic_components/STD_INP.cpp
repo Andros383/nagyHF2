@@ -14,6 +14,7 @@ void STD_INP::update() {
     if (!is_signal_set) {
         std::cout << "Input signal for " << label << ": ";
         std::cin >> signal;
+        if (!std::cin.good()) throw "Hibás bement az STD_INP kapunak";
         is_signal_set = true;
     }
     int out_signal = signal;

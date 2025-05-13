@@ -32,7 +32,6 @@ void read_label(std::istream& is, char** buffer) {
     *buffer = label;
 }
 
-// TODO write és read a >> helyett, hogy ne legyen a \n\r-el baj!!!
 void LogicNetworkConfigurer::read_logic_network(std::istream& is) {
     // előző adatok törlése
     delete[] wires;
@@ -99,7 +98,12 @@ void LogicNetworkConfigurer::read_logic_network(std::istream& is) {
             this->add_component(new PRINT(this->get_wire(in), label, os));
             delete[] label;
         }
-        if (!is.good()) throw "Hiba a beolvasas kozben";
+        if (!is.good()) {
+            if (i == components_cnt - 1)
+                throw "Hiba az utolso komponens beolvasasanal, lemaradt a sorvege jel?";
+            else
+                throw "Hiba a beolvasas kozben";
+        }
         // ez szól ha túl hamar van vége / nem jó formátumút olvas be
     }
 }
