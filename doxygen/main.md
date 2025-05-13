@@ -25,23 +25,35 @@ A logikai hálózatnak van bulk_update() függvénye, ami egymás után több fr
 ### Hálózat létrehozása
 Hálózatot a main.cpp fájl példái alapján lehet létrehozni kódban a logikai hálózatok tagfüggvényeivel, vagy pedig szöveges fájl alapján is. A fájl szerinti beolvasásra is van példa a main.cpp-ben.
 
-Hálózat létrehozásakor meg kell adni a kábelek számát, és az adatfolyamot ahova a frissítéseket kezdetét jelző szöveget írni fogja.
+Hálózat létrehozásakor meg kell adni a kábelek számát, és az adatfolyamot ahova a frissítéseket kezdetét jelző szöveget írni fogja. Fájlból olvasásnál a PRINT komponensek is ide írnak.
 
 A fájlból beolvasásnál az első sorban a kábelek, majd a komponensek számát kell megadni, utána soronként az egyes komponenseket a nekik megfelelő formátumban. A bemenetek a kábel sorszámát jelzik a hálózatban (0-tól indexelve):
-AND/OR/XOR \[1. bemenet\] \[2. bemenet\] \[kimenet\]
-NOT \[bemenet\] \[kimenet\]
-INP \[kimenet\] \[kimeneti jel\]
-STD_INP \[kimenet\] \[tetszőleges címke\]
-PRINT \[bemenet\] \[tetszőleges címke\]
+- AND / OR / XOR \[1. bemenet\] \[2. bemenet\] \[kimenet\]
+- NOT \[bemenet\] \[kimenet\]
+- INP \[kimenet\] \[kimeneti jel\]
+- STD_INP \[kimenet\] \[tetszőleges címke\]
+- PRINT \[bemenet\] \[tetszőleges címke\]
 
-## Programozói megjegyzések
+## Programozói dokumentáció
 ### Hibák, kivételek
 - A logikai hálózat beolvasása ha nem sikerült, szövegesen eldobja, hol érzékelt hibát.
 - A logikai hálózatban a vezeték lekérésekor szöveges hibát dob, ha nincs elég kábel.
 - STD_INP komponens szöveges hibát dob, ha a bejövő jel nem 0 vagy 1. Bár a program tudna más jeleket is kezelni, a megvalósított komponensek csak ezt a két értéket értelmezik.
 
 ### Tesztesetek
-A main.cpp fájlban vannak a gtest_lite-al megvalósított tesztek. Az utolsó teszteset standard bemenetről olvas.
+A main.cpp fájlban vannak a gtest_lite-al megvalósított tesztek. Az utolsó teszteset standard bemenetről olvas, amihez példabemenetet kap a Jporta.
 
 ### Egyéb megjegyzések
 A komponensek mutatókkal tárolják, melyik vezetékhez kapcsolódnak. Emiatt minden osztálynál le van tiltva a másoló konstruktor és az értékadó operátor, mivel nem lehet / nincs értelme ugyan olyan objektumokat létrehozni.
+
+### Új komponens felvétele
+Az új komponens felvételéhez az osztálynak a többi komponenshez hasonlóan a Component leszármazottjának kell lennie. Ezen felül tetszőlegesen megvalósítható a beolvasás / kiírás.
+A beolvasást a LogicNetworkConfigurer read_logic_network() függvényében kell megvalósítani a többihez hasonlóan. A komponens nevében nem szerepelhet whitespace, és legfeljebb 100 karakter hosszú lehet.
+\n
+\n
+\n
+\n
+\n
+\n
+\n
+## UML diagram

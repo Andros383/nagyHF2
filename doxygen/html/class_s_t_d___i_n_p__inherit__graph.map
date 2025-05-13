@@ -1,5 +1,5 @@
 <map id="STD_INP" name="STD_INP">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,192,171,405"/>
-<area shape="rect" id="Node000002" href="$class_component.html" title=" " alt="" coords="11,5,165,144"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,159,91,192,86,192,86,159"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,192,210,405"/>
+<area shape="rect" id="Node000002" href="$class_component.html" title=" " alt="" coords="31,5,185,144"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,159,110,192,105,192,105,159"/>
 </map>

@@ -30,7 +30,7 @@ class PRINT : public Component {
      * @param label A címke, ami alapján meg lehet különböztetni a kimeneteket
      * @param os Az adatfolyam, amire a kimenetét írja
      */
-    PRINT(Wire* inpA, const char* label = "unnamed_output", std::ostream& os = std::cout);
+    PRINT(Wire* inpA, const char* label = "Nem elnevezett kimenet", std::ostream& os = std::cout);
     /**
      * @brief Kiírja a bemeneti kábel értékét a megadott adatfolyamra
      *

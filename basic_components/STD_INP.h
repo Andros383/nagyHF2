@@ -29,7 +29,7 @@ class STD_INP : public Component {
      * @param out Kimenet
      * @param label A bemenetek megkülönböztetésére használt címke
      */
-    STD_INP(Wire* out, const char* label = "Nem elnevezett bemenet");
+    STD_INP(Wire* out, const char* label = "Nem elnevezett standard bemenet");
     /**
      * @brief Első frissítéskor elkéri, hogy mit rakjon a kimenetre. Ez után ilyen értékű INP kapuként működik
      * @throw const_char* Első frissítésnél "Hibás bemenet egy STD_INP kapunak" kivételt dob, ha a kapott érték nem 0 vagy 1

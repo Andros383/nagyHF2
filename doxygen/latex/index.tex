@@ -1,4 +1,54 @@
-\chapter{Szeretem az anime lányaidat}
-\hypertarget{index}{}\label{index}\index{Szeretem az anime lányaidat@{Szeretem az anime lányaidat}}
+\chapter{Felhasználói dokumentáció}
+\hypertarget{index}{}\label{index}\index{Felhasználói dokumentáció@{Felhasználói dokumentáció}}
 \label{index_md_main}%
 \Hypertarget{index_md_main}%
+\hypertarget{index_autotoc_md1}{}\doxysubsection{\texorpdfstring{Program leírása}{Program leírása}}\label{index_autotoc_md1}
+A program egy logikai hálózatot modellez. Ebben komponensek vannak, amiknek több bemenete, de csak egy kimenete van (például \doxylink{class_a_n_d}{AND} kapu). A be és kimenetek vezetékre csatlakoznak, amik a jelet ütemezve továbbítják a többi komponens felé.
+
+A programban megvalósuló osztályok\+:
+\begin{DoxyItemize}
+\item \doxylink{class_a_n_d}{AND}, \doxylink{class_x_o_r}{XOR}, \doxylink{class_o_r}{OR}, \doxylink{class_n_o_t}{NOT} bináris kapuk
+\item \doxylink{class_wire}{Wire}\+: Komponenseket összekötő vezeték
+\item \doxylink{class_i_n_p}{INP}\+: Konstans jelet adó komponens
+\item \doxylink{class_s_t_d___i_n_p}{STD\+\_\+\+INP}\+: Olyan \doxylink{class_i_n_p}{INP}, ami a jelet első frissítéskor a standard bemenetről olvassa be
+\item \doxylink{class_logic_network}{Logic\+Network}\+: A vezetékeket és komponenseket egybefoglaló logikai hálózat osztály
+\item \doxylink{class_logic_network_configurer}{Logic\+Network\+Configurer}\+: Olyan logikai hálózat osztály, aminek a felépítését fájlból lehet beolvasni és visszaírni
+\end{DoxyItemize}\hypertarget{index_autotoc_md2}{}\doxysubsection{\texorpdfstring{Szimuláció működése}{Szimuláció működése}}\label{index_autotoc_md2}
+Az időbeli szimulálás miatt a vezetékeknek két része van. A vezeték egyes részeire akárhány komponens csatlakozhat, így csomópontként is funkcionál. A vezeték „elejére” csak írni lehet, a „végéről” pedig csak olvasni lehet a jelet.
+
+A hálózat frissítése („órajele”) két fázisból áll. Első lépésben a komponensek leolvassák a bemenetükre kötött vezetékek végéről az adatot. Az eredmény kirakják a rájuk kötött vezetékek elejére. A nagyobb jelszint felülírja a kisebbet.
+
+A második fázisban minden vezeték átrakja a jelet az elejéről a végére. Így a frissítés sorrendjétől független lesz a hálózat viselkedése.
+
+Ennek megfelelően egy egész logikai hálózat frissítése először az összes komponens, majd az összes vezeték frissítéséből áll. (Ezt valósítja meg a logikai hálózat osztály update() függvénye)
+
+A logikai hálózatnak van bulk\+\_\+update() függvénye, ami egymás után több frissítést végez el. Az egyes frissítések kezdetét a kimeneten jelzi.\hypertarget{index_autotoc_md3}{}\doxysubsection{\texorpdfstring{Hálózat létrehozása}{Hálózat létrehozása}}\label{index_autotoc_md3}
+Hálózatot a \doxylink{main_8cpp}{main.\+cpp} fájl példái alapján lehet létrehozni kódban a logikai hálózatok tagfüggvényeivel, vagy pedig szöveges fájl alapján is. A fájl szerinti beolvasásra is van példa a \doxylink{main_8cpp}{main.\+cpp}-\/ben.
+
+Hálózat létrehozásakor meg kell adni a kábelek számát, és az adatfolyamot ahova a frissítéseket kezdetét jelző szöveget írni fogja. Fájlból olvasásnál a \doxylink{class_p_r_i_n_t}{PRINT} komponensek is ide írnak.
+
+A fájlból beolvasásnál az első sorban a kábelek, majd a komponensek számát kell megadni, utána soronként az egyes komponenseket a nekik megfelelő formátumban. A bemenetek a kábel sorszámát jelzik a hálózatban (0-\/tól indexelve)\+:
+\begin{DoxyItemize}
+\item \doxylink{class_a_n_d}{AND} / \doxylink{class_o_r}{OR} / \doxylink{class_x_o_r}{XOR} \mbox{[}1. bemenet\mbox{]} \mbox{[}2. bemenet\mbox{]} \mbox{[}kimenet\mbox{]}
+\item \doxylink{class_n_o_t}{NOT} \mbox{[}bemenet\mbox{]} \mbox{[}kimenet\mbox{]}
+\item \doxylink{class_i_n_p}{INP} \mbox{[}kimenet\mbox{]} \mbox{[}kimeneti jel\mbox{]}
+\item \doxylink{class_s_t_d___i_n_p}{STD\+\_\+\+INP} \mbox{[}kimenet\mbox{]} \mbox{[}tetszőleges címke\mbox{]}
+\item \doxylink{class_p_r_i_n_t}{PRINT} \mbox{[}bemenet\mbox{]} \mbox{[}tetszőleges címke\mbox{]}
+\end{DoxyItemize}\hypertarget{index_autotoc_md4}{}\doxysection{\texorpdfstring{Programozói dokumentáció}{Programozói dokumentáció}}\label{index_autotoc_md4}
+\hypertarget{index_autotoc_md5}{}\doxysubsection{\texorpdfstring{Hibák, kivételek}{Hibák, kivételek}}\label{index_autotoc_md5}
+
+\begin{DoxyItemize}
+\item A logikai hálózat beolvasása ha nem sikerült, szövegesen eldobja, hol érzékelt hibát.
+\item A logikai hálózatban a vezeték lekérésekor szöveges hibát dob, ha nincs elég kábel.
+\item \doxylink{class_s_t_d___i_n_p}{STD\+\_\+\+INP} komponens szöveges hibát dob, ha a bejövő jel nem 0 vagy 1. Bár a program tudna más jeleket is kezelni, a megvalósított komponensek csak ezt a két értéket értelmezik.
+\end{DoxyItemize}\hypertarget{index_autotoc_md6}{}\doxysubsection{\texorpdfstring{Tesztesetek}{Tesztesetek}}\label{index_autotoc_md6}
+A \doxylink{main_8cpp}{main.\+cpp} fájlban vannak a gtest\+\_\+lite-\/al megvalósított tesztek. Az utolsó teszteset standard bemenetről olvas, amihez példabemenetet kap a Jporta.\hypertarget{index_autotoc_md7}{}\doxysubsection{\texorpdfstring{Egyéb megjegyzések}{Egyéb megjegyzések}}\label{index_autotoc_md7}
+A komponensek mutatókkal tárolják, melyik vezetékhez kapcsolódnak. Emiatt minden osztálynál le van tiltva a másoló konstruktor és az értékadó operátor, mivel nem lehet / nincs értelme ugyan olyan objektumokat létrehozni.\hypertarget{index_autotoc_md8}{}\doxysubsection{\texorpdfstring{Új komponens felvétele}{Új komponens felvétele}}\label{index_autotoc_md8}
+Az új komponens felvételéhez az osztálynak a többi komponenshez hasonlóan a \doxylink{class_component}{Component} leszármazottjának kell lennie. Ezen felül tetszőlegesen megvalósítható a beolvasás / kiírás. A beolvasást a \doxylink{class_logic_network_configurer}{Logic\+Network\+Configurer} read\+\_\+logic\+\_\+network() függvényében kell megvalósítani a többihez hasonlóan. A komponens nevében nem szerepelhet whitespace, és legfeljebb 100 karakter hosszú lehet. ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+\hypertarget{index_autotoc_md9}{}\doxysection{\texorpdfstring{UML diagram}{UML diagram}}\label{index_autotoc_md9}

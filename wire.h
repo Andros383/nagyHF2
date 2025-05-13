@@ -10,6 +10,8 @@
 class Wire {
     int input;
     int output;
+    Wire(const Wire&);
+    Wire& operator=(const Wire&);
 
    public:
     Wire() : input(0), output(0) {}

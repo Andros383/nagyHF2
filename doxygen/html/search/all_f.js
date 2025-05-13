@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['xor_0',['XOR',['../class_x_o_r.html',1,'XOR'],['../class_x_o_r.html#abd88e65bfff952e776ada45e5e9e49bc',1,'XOR::XOR()']]],
-  ['xor_2eh_1',['XOR.h',['../_x_o_r_8h.html',1,'']]]
+  ['read_5flogic_5fnetwork_0',['read_logic_network',['../class_logic_network_configurer.html#ad94bcc3081987d76b4e6bbabbb2ba848',1,'LogicNetworkConfigurer']]]
 ];

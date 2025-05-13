@@ -1,7 +1,7 @@
 <map id="PRINT" name="PRINT">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,401,196,631"/>
-<area shape="rect" id="Node000002" href="$class_component.html" title=" " alt="" coords="24,213,178,352"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,367,104,402,98,402,98,367"/>
-<area shape="rect" id="Node000003" href="$class_wire.html" title=" " alt="" coords="28,5,173,133"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="104,133,104,196,98,196,98,133"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,401,174,631"/>
+<area shape="rect" id="Node000002" href="$class_component.html" title=" " alt="" coords="13,213,167,352"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,367,92,402,87,402,87,367"/>
+<area shape="rect" id="Node000003" href="$class_wire.html" title=" " alt="" coords="17,5,162,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,133,92,196,87,196,87,133"/>
 </map>

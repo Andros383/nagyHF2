@@ -11,7 +11,6 @@
 #include "wire.h"
 
 class Component {
-    static const char* component_name;
     // a leszármazottak állítják be, hogy mik legyenek a be és kimenetek
    protected:
     Wire** inputs;

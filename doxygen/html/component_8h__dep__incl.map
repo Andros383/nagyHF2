@@ -18,7 +18,7 @@
 <area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="384,30,621,78,620,83,383,35"/>
 <area shape="rect" id="Node000003" href="$basic__components_8h_source.html" title=" " alt="" coords="251,155,392,181"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="83,105,269,151,268,157,81,110"/>
-<area shape="rect" id="Node000004" href="$main_8cpp.html" title="Main file az összes teszttel Minden teszt gtest_lita&#45;al írt. Az utolsó pedig standard bemenetről olva..." alt="" coords="515,229,589,256"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html" title="Main file az összes teszttel Minden teszt gtest_lita&#45;al írt. Az utolsó teszteset standard bemenetről ..." alt="" coords="515,229,589,256"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="377,184,515,227,513,232,375,189"/>
 <area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="160,107,286,152,285,157,158,112"/>
 <area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="233,112,301,152,298,156,230,117"/>

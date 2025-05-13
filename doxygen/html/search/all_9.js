@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['print_0',['PRINT',['../class_p_r_i_n_t.html',1,'PRINT'],['../class_p_r_i_n_t.html#a9299f8a018b4c3959fc3083ae810d2d2',1,'PRINT::PRINT()']]],
-  ['print_2eh_1',['PRINT.h',['../_p_r_i_n_t_8h.html',1,'']]]
+  ['kivételek_0',['Hibák, kivételek',['../index.html#autotoc_md5',1,'']]],
+  ['komponens_20felvétele_1',['Új komponens felvétele',['../index.html#autotoc_md8',1,'']]]
 ];

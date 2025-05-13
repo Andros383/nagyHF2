@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Logikai hálózat szimulálórendszer: Szeretem az anime lányaidat</title>
+<title>Logikai hálózat szimulálórendszer: Felhasználói dokumentáció</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,10 +84,66 @@ $(function(){ initResizable(false); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Szeretem az anime lányaidat </div></div>
+  <div class="headertitle"><div class="title">Felhasználói dokumentáció </div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_main"></a></p>
+<h2><a class="anchor" id="autotoc_md1"></a>
+Program leírása</h2>
+<p>A program egy logikai hálózatot modellez. Ebben komponensek vannak, amiknek több bemenete, de csak egy kimenete van (például <a class="el" href="class_a_n_d.html">AND</a> kapu). A be és kimenetek vezetékre csatlakoznak, amik a jelet ütemezve továbbítják a többi komponens felé.</p>
+<p>A programban megvalósuló osztályok:</p><ul>
+<li><a class="el" href="class_a_n_d.html">AND</a>, <a class="el" href="class_x_o_r.html">XOR</a>, <a class="el" href="class_o_r.html">OR</a>, <a class="el" href="class_n_o_t.html">NOT</a> bináris kapuk</li>
+<li><a class="el" href="class_wire.html">Wire</a>: Komponenseket összekötő vezeték</li>
+<li><a class="el" href="class_i_n_p.html">INP</a>: Konstans jelet adó komponens</li>
+<li><a class="el" href="class_s_t_d___i_n_p.html">STD_INP</a>: Olyan <a class="el" href="class_i_n_p.html">INP</a>, ami a jelet első frissítéskor a standard bemenetről olvassa be</li>
+<li><a class="el" href="class_logic_network.html">LogicNetwork</a>: A vezetékeket és komponenseket egybefoglaló logikai hálózat osztály</li>
+<li><a class="el" href="class_logic_network_configurer.html">LogicNetworkConfigurer</a>: Olyan logikai hálózat osztály, aminek a felépítését fájlból lehet beolvasni és visszaírni</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Szimuláció működése</h2>
+<p>Az időbeli szimulálás miatt a vezetékeknek két része van. A vezeték egyes részeire akárhány komponens csatlakozhat, így csomópontként is funkcionál. A vezeték „elejére” csak írni lehet, a „végéről” pedig csak olvasni lehet a jelet.</p>
+<p>A hálózat frissítése („órajele”) két fázisból áll. Első lépésben a komponensek leolvassák a bemenetükre kötött vezetékek végéről az adatot. Az eredmény kirakják a rájuk kötött vezetékek elejére. A nagyobb jelszint felülírja a kisebbet.</p>
+<p>A második fázisban minden vezeték átrakja a jelet az elejéről a végére. Így a frissítés sorrendjétől független lesz a hálózat viselkedése.</p>
+<p>Ennek megfelelően egy egész logikai hálózat frissítése először az összes komponens, majd az összes vezeték frissítéséből áll. (Ezt valósítja meg a logikai hálózat osztály update() függvénye)</p>
+<p>A logikai hálózatnak van bulk_update() függvénye, ami egymás után több frissítést végez el. Az egyes frissítések kezdetét a kimeneten jelzi.</p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Hálózat létrehozása</h2>
+<p>Hálózatot a <a class="el" href="main_8cpp.html" title="Main file az összes teszttel Minden teszt gtest_lita-al írt. Az utolsó teszteset standard bemenetről ...">main.cpp</a> fájl példái alapján lehet létrehozni kódban a logikai hálózatok tagfüggvényeivel, vagy pedig szöveges fájl alapján is. A fájl szerinti beolvasásra is van példa a <a class="el" href="main_8cpp.html" title="Main file az összes teszttel Minden teszt gtest_lita-al írt. Az utolsó teszteset standard bemenetről ...">main.cpp</a>-ben.</p>
+<p>Hálózat létrehozásakor meg kell adni a kábelek számát, és az adatfolyamot ahova a frissítéseket kezdetét jelző szöveget írni fogja. Fájlból olvasásnál a <a class="el" href="class_p_r_i_n_t.html">PRINT</a> komponensek is ide írnak.</p>
+<p>A fájlból beolvasásnál az első sorban a kábelek, majd a komponensek számát kell megadni, utána soronként az egyes komponenseket a nekik megfelelő formátumban. A bemenetek a kábel sorszámát jelzik a hálózatban (0-tól indexelve):</p><ul>
+<li><a class="el" href="class_a_n_d.html">AND</a> / <a class="el" href="class_o_r.html">OR</a> / <a class="el" href="class_x_o_r.html">XOR</a> [1. bemenet] [2. bemenet] [kimenet]</li>
+<li><a class="el" href="class_n_o_t.html">NOT</a> [bemenet] [kimenet]</li>
+<li><a class="el" href="class_i_n_p.html">INP</a> [kimenet] [kimeneti jel]</li>
+<li><a class="el" href="class_s_t_d___i_n_p.html">STD_INP</a> [kimenet] [tetszőleges címke]</li>
+<li><a class="el" href="class_p_r_i_n_t.html">PRINT</a> [bemenet] [tetszőleges címke]</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Programozói dokumentáció</h1>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Hibák, kivételek</h2>
+<ul>
+<li>A logikai hálózat beolvasása ha nem sikerült, szövegesen eldobja, hol érzékelt hibát.</li>
+<li>A logikai hálózatban a vezeték lekérésekor szöveges hibát dob, ha nincs elég kábel.</li>
+<li><a class="el" href="class_s_t_d___i_n_p.html">STD_INP</a> komponens szöveges hibát dob, ha a bejövő jel nem 0 vagy 1. Bár a program tudna más jeleket is kezelni, a megvalósított komponensek csak ezt a két értéket értelmezik.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Tesztesetek</h2>
+<p>A <a class="el" href="main_8cpp.html" title="Main file az összes teszttel Minden teszt gtest_lita-al írt. Az utolsó teszteset standard bemenetről ...">main.cpp</a> fájlban vannak a gtest_lite-al megvalósított tesztek. Az utolsó teszteset standard bemenetről olvas, amihez példabemenetet kap a Jporta.</p>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Egyéb megjegyzések</h2>
+<p>A komponensek mutatókkal tárolják, melyik vezetékhez kapcsolódnak. Emiatt minden osztálynál le van tiltva a másoló konstruktor és az értékadó operátor, mivel nem lehet / nincs értelme ugyan olyan objektumokat létrehozni.</p>
+<h2><a class="anchor" id="autotoc_md8"></a>
+Új komponens felvétele</h2>
+<p>Az új komponens felvételéhez az osztálynak a többi komponenshez hasonlóan a <a class="el" href="class_component.html">Component</a> leszármazottjának kell lennie. Ezen felül tetszőlegesen megvalósítható a beolvasás / kiírás. A beolvasást a <a class="el" href="class_logic_network_configurer.html">LogicNetworkConfigurer</a> read_logic_network() függvényében kell megvalósítani a többihez hasonlóan. A komponens nevében nem szerepelhet whitespace, és legfeljebb 100 karakter hosszú lehet. <br  />
+<br  />
+<br  />
+<br  />
+<br  />
+<br  />
+<br  />
+</p>
+<h1><a class="anchor" id="autotoc_md9"></a>
+UML diagram</h1>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->

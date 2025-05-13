@@ -331,7 +331,7 @@ int main() {
     }
     END
     TEST(LogicNetworkConfigurer, túl sok wire) {
-        LogicNetworkConfigurer lnc(0);
+        LogicNetworkConfigurer lnc;
         std::stringstream config;
         // az egyetlen wire ami létezik a 0-s, így hibát dob
         config << "1 1\nAND 1 1 1";
@@ -340,7 +340,7 @@ int main() {
     }
     END
     TEST(LogicNetworkConfigurer, túl hamar vége) {
-        LogicNetworkConfigurer lnc(0);
+        LogicNetworkConfigurer lnc;
         std::stringstream config;
         // 3 komponenst próbál beolvasni, de csak egy van
         config << "10 3\nAND 1 1 1";
@@ -348,7 +348,7 @@ int main() {
     }
     END
     TEST(LogicNetworkConfigurer, értelmetlen bemenet) {
-        LogicNetworkConfigurer lnc(0);
+        LogicNetworkConfigurer lnc;
         std::stringstream config;
         // 3 komponenst próbál beolvasni, de csak egy van
         config << "10 1\nAND 1 macska 1";
@@ -362,7 +362,7 @@ int main() {
         input_configuration << "1 2\n"
                                "PRINT 0 Kimenet\n"
                                "INP 0 1";
-        LogicNetworkConfigurer lnc(0);
+        LogicNetworkConfigurer lnc;
         EXPECT_THROW(lnc.read_logic_network(input_configuration), const char*);
     }
     END

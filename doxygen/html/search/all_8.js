@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['or_0',['OR',['../class_o_r.html',1,'OR'],['../class_o_r.html#ab4218ffb7cef987b87ee94c56df32594',1,'OR::OR()']]],
-  ['or_2eh_1',['OR.h',['../_o_r_8h.html',1,'']]]
+  ['inp_0',['INP',['../class_i_n_p.html',1,'INP'],['../class_i_n_p.html#adf396f65031c8d10608fff17dd5b8d50',1,'INP::INP()']]],
+  ['inp_2eh_1',['INP.h',['../_i_n_p_8h.html',1,'']]]
 ];

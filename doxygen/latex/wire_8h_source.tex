@@ -10,16 +10,18 @@
 \DoxyCodeLine{00010\ \textcolor{keyword}{class\ }Wire\ \{}
 \DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{int}\ input;}
 \DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{int}\ output;}
-\DoxyCodeLine{00013\ }
-\DoxyCodeLine{00014\ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00015\ \ \ \ \ Wire()\ :\ input(0),\ output(0)\ \{\}}
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wire_a51c7528796abe2531ce8174c64876886}{update}}();}
-\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wire_a72745864d2a3d0a3ca5baae5cc62a69a}{set\_signal}}(\textcolor{keywordtype}{int}\ signal);}
-\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_wire_a411b56b5e652298d169697b10374de16}{get\_signal}}()\textcolor{keyword}{\ const\ }\{}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ output;}
-\DoxyCodeLine{00034\ \ \ \ \ \}}
-\DoxyCodeLine{00035\ \};}
-\DoxyCodeLine{00036\ }
-\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00013\ \ \ \ \ Wire(\textcolor{keyword}{const}\ Wire\&);}
+\DoxyCodeLine{00014\ \ \ \ \ Wire\&\ operator=(\textcolor{keyword}{const}\ Wire\&);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ Wire()\ :\ input(0),\ output(0)\ \{\}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wire_a51c7528796abe2531ce8174c64876886}{update}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wire_a72745864d2a3d0a3ca5baae5cc62a69a}{set\_signal}}(\textcolor{keywordtype}{int}\ signal);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_wire_a411b56b5e652298d169697b10374de16}{get\_signal}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ output;}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00037\ \};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

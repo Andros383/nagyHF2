@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lányaidat_0',['Szeretem az anime lányaidat',['../index.html',1,'']]]
+  ['felhasználói_20dokumentáció_0',['Felhasználói dokumentáció',['../index.html',1,'']]]
 ];
