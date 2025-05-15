@@ -6,7 +6,7 @@ A Logic\+Network\+Configurer osztály származási diagramja\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=209pt]{class_logic_network_configurer__inherit__graph}
+\includegraphics[width=242pt]{class_logic_network_configurer__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -21,9 +21,11 @@ A Logic\+Network\+Configurer osztály együttműködési diagramja\+:\nopagebrea
 \doxysubsubsection*{Publikus tagfüggvények}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_logic_network_configurer}{Logic\+Network\+Configurer}} \& \mbox{\hyperlink{class_logic_network_configurer_aee4c5bb914a02bb18d8f159582d32825}{operator=}} (const \mbox{\hyperlink{class_logic_network_configurer}{Logic\+Network\+Configurer}} \&)
+\begin{DoxyCompactList}\small\item\em Logikai hálózat értékadó operátora. A hálózatot átállítja, viszont a kiírási adatfolyam az eredeti marad. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_logic_network_configurer_ad94bcc3081987d76b4e6bbabbb2ba848}{read\+\_\+logic\+\_\+network}} (std\+::istream \&is)
 \begin{DoxyCompactList}\small\item\em Beolvassa a kapott bemeneti adatfolyamról a hálózatot. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_logic_network_configurer_a36d46900d69aa856f5f247e88f7dc562}{write\+\_\+logic\+\_\+network}} (std\+::ostream \&os)
+void \mbox{\hyperlink{class_logic_network_configurer_a5d89cb2ad6af4e71457ab2db40afdf68}{write\+\_\+logic\+\_\+network}} (std\+::ostream \&os) const
 \begin{DoxyCompactList}\small\item\em Kiírja egy kimeneti adatfolyamra a hálózatot. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Publikus tagfüggvények a(z) \mbox{\hyperlink{class_logic_network}{Logic\+Network}} osztályból származnak}
 \begin{DoxyCompactItemize}
@@ -38,11 +40,28 @@ void \mbox{\hyperlink{class_logic_network_a939a492bcc688188b79d7715aa632f95}{bul
 \begin{DoxyCompactList}\small\item\em Visszaad egy mutatót az eltárolt vezetékekre sorszám alapján. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_logic_network_a52198c2d05ba83550b2bdf835a837698}{add\+\_\+component}} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}component)
 \begin{DoxyCompactList}\small\item\em Hozzáad egy komponenst a hálózathoz. A komponenst a hálózat fogja felszabadítani. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logic_network_a2e6bfd4839a3c3fdb8400d66ced7bcf9}{remove\+\_\+component}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Kitöröl egy komponenst a hálózatból a sorszáma alapján. A törlés felszabadítja a memóriát. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logic_network_abe674fc8f869a3d0b659e0ca29223b0b}{remove\+\_\+component}} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}component)
+\begin{DoxyCompactList}\small\item\em Kitöröl egy komponenst a hálózatból a mutatója alapján. A törlés felszabadítja a memóriát. Ha nem találta, nem szabadítja fel. \end{DoxyCompactList}\item 
 std\+::ostream \& \mbox{\hyperlink{class_logic_network_aa5fb94382274f892ca2f4feb9da97f30}{get\+\_\+os}} ()
 \begin{DoxyCompactList}\small\item\em Visszaadja a kimeneti adatfolyamot, amire a frissítések kezdetét jelző szöveget írja ki. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Tagfüggvények dokumentációja}
+\Hypertarget{class_logic_network_configurer_aee4c5bb914a02bb18d8f159582d32825}\index{LogicNetworkConfigurer@{LogicNetworkConfigurer}!operator=@{operator=}}
+\index{operator=@{operator=}!LogicNetworkConfigurer@{LogicNetworkConfigurer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_logic_network_configurer_aee4c5bb914a02bb18d8f159582d32825} 
+\mbox{\hyperlink{class_logic_network_configurer}{Logic\+Network\+Configurer}} \& Logic\+Network\+Configurer\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_logic_network_configurer}{Logic\+Network\+Configurer}} \&}]{rhs}{}\end{DoxyParamCaption})}
+
+
+
+Logikai hálózat értékadó operátora. A hálózatot átállítja, viszont a kiírási adatfolyam az eredeti marad. 
+
+\begin{DoxyReturn}{Visszatérési érték}
+\doxylink{class_logic_network_configurer}{Logic\+Network\+Configurer}\& 
+\end{DoxyReturn}
 \Hypertarget{class_logic_network_configurer_ad94bcc3081987d76b4e6bbabbb2ba848}\index{LogicNetworkConfigurer@{LogicNetworkConfigurer}!read\_logic\_network@{read\_logic\_network}}
 \index{read\_logic\_network@{read\_logic\_network}!LogicNetworkConfigurer@{LogicNetworkConfigurer}}
 \doxysubsubsection{\texorpdfstring{read\_logic\_network()}{read\_logic\_network()}}
@@ -63,11 +82,11 @@ Beolvassa a kapott bemeneti adatfolyamról a hálózatot.
 {\em is} & A bemeneti adatfolyam \\
 \hline
 \end{DoxyParams}
-\Hypertarget{class_logic_network_configurer_a36d46900d69aa856f5f247e88f7dc562}\index{LogicNetworkConfigurer@{LogicNetworkConfigurer}!write\_logic\_network@{write\_logic\_network}}
+\Hypertarget{class_logic_network_configurer_a5d89cb2ad6af4e71457ab2db40afdf68}\index{LogicNetworkConfigurer@{LogicNetworkConfigurer}!write\_logic\_network@{write\_logic\_network}}
 \index{write\_logic\_network@{write\_logic\_network}!LogicNetworkConfigurer@{LogicNetworkConfigurer}}
 \doxysubsubsection{\texorpdfstring{write\_logic\_network()}{write\_logic\_network()}}
-{\footnotesize\ttfamily \label{class_logic_network_configurer_a36d46900d69aa856f5f247e88f7dc562} 
-void Logic\+Network\+Configurer\+::write\+\_\+logic\+\_\+network (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{class_logic_network_configurer_a5d89cb2ad6af4e71457ab2db40afdf68} 
+void Logic\+Network\+Configurer\+::write\+\_\+logic\+\_\+network (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{}\end{DoxyParamCaption}) const}
 
 
 

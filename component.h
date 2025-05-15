@@ -30,6 +30,7 @@ class Component {
      * @param os A kimeneti adatfolyam, amire a kapu kiírja magát
      */
     virtual void write(Wire* base_address, std::ostream& os = std::cout) = 0;
+
     virtual ~Component();
 };
 #endif

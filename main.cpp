@@ -376,33 +376,125 @@ int main() {
         EXPECT_THROW(lnc.read_logic_network(input_configuration), const char*);
     }
     END
+    TEST(LogicNetwork, komponenstörlés index szerint) {
+        std::stringstream ss;
+        LogicNetwork ln(1, ss);
+        ln.add_component(new PRINT(ln.get_wire(0), "Enekelek", ln.get_os()));
+        ln.add_component(new PRINT(ln.get_wire(0), "Ordibalok", ln.get_os()));
+        ln.add_component(new PRINT(ln.get_wire(0), "Halkan beszelek", ln.get_os()));
+        ss << " --- Update 1 ---\n";
+        ln.update();
+        ln.remove_component(1);
+        ss << " --- Update 2 ---\n";
+        ln.update();
+        EXPECT_EQ(ss.str(),
+                  " --- Update 1 ---\n"
+                  "Enekelek: 0\n"
+                  "Ordibalok: 0\n"
+                  "Halkan beszelek: 0\n"
+                  " --- Update 2 ---\n"
+                  "Enekelek: 0\n"
+                  "Halkan beszelek: 0\n")
+            << "Nem lehet törölni komponenst index szerint";
+    }
+    END
+    TEST(LogicNetwork, komponenstörlés mutató szerint hiba) {
+        std::stringstream ss;
+        LogicNetwork ln(1, ss);
+        ln.add_component(new PRINT(ln.get_wire(0), "Enekelek", ln.get_os()));
+        ln.add_component(new PRINT(ln.get_wire(0), "Ordibalok", ln.get_os()));
+
+        EXPECT_THROW(ln.remove_component(2), const char*) << "Nem dob hibát ha nincs ilyen indexű komponens benne";
+    }
+    END
+    TEST(LogicNetwork, komponenstörlés mutató szerint) {
+        std::stringstream ss;
+        LogicNetwork ln(1, ss);
+        ln.add_component(new PRINT(ln.get_wire(0), "Enekelek", ln.get_os()));
+        PRINT* ordibalo = new PRINT(ln.get_wire(0), "Ordibalok", ln.get_os());
+        ln.add_component(ordibalo);
+        ln.add_component(new PRINT(ln.get_wire(0), "Halkan beszelek", ln.get_os()));
+        ss << " --- Update 1 ---\n";
+        ln.update();
+        ln.remove_component(1);
+        ss << " --- Update 2 ---\n";
+        ln.update();
+        EXPECT_EQ(ss.str(),
+                  " --- Update 1 ---\n"
+                  "Enekelek: 0\n"
+                  "Ordibalok: 0\n"
+                  "Halkan beszelek: 0\n"
+                  " --- Update 2 ---\n"
+                  "Enekelek: 0\n"
+                  "Halkan beszelek: 0\n")
+            << "Nem lehet törölni komponens mutató szerint";
+    }
+    END
+    TEST(LogicNetwork, komponenstörlés mutató szerint hiba) {
+        std::stringstream ss;
+        LogicNetwork ln(1, ss);
+        ln.add_component(new PRINT(ln.get_wire(0), "Enekelek", ln.get_os()));
+        PRINT* ordibalo = new PRINT(ln.get_wire(0), "Ordibalok", ln.get_os());
+
+        EXPECT_THROW(ln.remove_component(ordibalo), const char*) << "Nem dob hibát ha nincs ilyen mutatójú komponens benne";
+
+        // ki kell törölni, mert nem találta meg
+        delete ordibalo;
+    }
+    END
+
+    TEST(LogicNetworkConfigurer, copy constructor) {
+        std::stringstream ss;
+        LogicNetworkConfigurer lnc(1, ss);
+        lnc.add_component(new PRINT(lnc.get_wire(0), "Megy a copy constructor", lnc.get_os()));
+        LogicNetworkConfigurer copy = lnc;
+        copy.update();
+        EXPECT_EQ(ss.str(), "Megy a copy constructor: 0\n") << "Nem megy a copy constructor";
+    }
+    END
+    TEST(LogicNetworkConfigurer, értékadó operátor) {
+        std::stringstream ss;
+        LogicNetworkConfigurer lnc(1, ss);
+        lnc.add_component(new PRINT(lnc.get_wire(0), "Megy a masolo operator", lnc.get_os()));
+
+        std::stringstream uj_stream;
+        LogicNetworkConfigurer masolt(1, uj_stream);
+
+        masolt.add_component(new PRINT(masolt.get_wire(0), "Nem megy, eredeti print", masolt.get_os()));
+
+        masolt = lnc;
+        masolt.update();
+
+        EXPECT_EQ(uj_stream.str(), "Megy a masolo operator: 0\n") << "Nem megy a másoló operátor";
+    }
+    END
 
     TEST(LogicNetworkConfigurer, standard bemenet) {
+        std::stringstream ss;
+        LogicNetworkConfigurer lnc(0, ss);
+        std::ifstream f("fivetest.txt");
+        try {
+            lnc.read_logic_network(f);
+            lnc.bulk_update(6);
+        } catch (const char* error) {
+            std::cout << "Futtatás közbeni hiba: " << std::endl;
+            std::cout << error << '\n';
+        }
+        EXPECT_EQ(ss.str(),
+                  " --- Update 1 ---\n"
+                  "Ha a bemenet 5 volt valamikor itt a kimenet 1 lesz: 0\n\n"
+                  " --- Update 2 ---\n"
+                  "Ha a bemenet 5 volt valamikor itt a kimenet 1 lesz: 0\n\n"
+                  " --- Update 3 ---\n"
+                  "Ha a bemenet 5 volt valamikor itt a kimenet 1 lesz: 0\n\n"
+                  " --- Update 4 ---\n"
+                  "Ha a bemenet 5 volt valamikor itt a kimenet 1 lesz: 0\n\n"
+                  " --- Update 5 ---\n"
+                  "Ha a bemenet 5 volt valamikor itt a kimenet 1 lesz: 0\n\n"
+                  " --- Update 6 ---\n"
+                  "Ha a bemenet 5 volt valamikor itt a kimenet 1 lesz: 1\n\n");
+        f.close();
     }
-    std::stringstream ss;
-    LogicNetworkConfigurer lnc(0, ss);
-    std::ifstream f("fivetest.txt");
-    try {
-        lnc.read_logic_network(f);
-        lnc.bulk_update(6);
-    } catch (const char* error) {
-        std::cout << "Futtatás közbeni hiba: " << std::endl;
-        std::cout << error << '\n';
-    }
-    EXPECT_EQ(ss.str(),
-              " --- Update 1 ---\n"
-              "Ha a bemenet 5 volt valamikor itt a kimenet 1 lesz: 0\n\n"
-              " --- Update 2 ---\n"
-              "Ha a bemenet 5 volt valamikor itt a kimenet 1 lesz: 0\n\n"
-              " --- Update 3 ---\n"
-              "Ha a bemenet 5 volt valamikor itt a kimenet 1 lesz: 0\n\n"
-              " --- Update 4 ---\n"
-              "Ha a bemenet 5 volt valamikor itt a kimenet 1 lesz: 0\n\n"
-              " --- Update 5 ---\n"
-              "Ha a bemenet 5 volt valamikor itt a kimenet 1 lesz: 0\n\n"
-              " --- Update 6 ---\n"
-              "Ha a bemenet 5 volt valamikor itt a kimenet 1 lesz: 1\n\n");
-    f.close();
     END
 
         return 0;

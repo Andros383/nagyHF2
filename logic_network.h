@@ -10,15 +10,7 @@
 #include "memtrace.h"
 #include "wire.h"
 class LogicNetwork {
-    // ne lehessen lemásolni, mert nincs sok értelme
-    // és lehetetlen lenne lemásolni a mutatók miatt, valójában kirakná egy streamre és visszaolvasná
-    // automatikusan a configurert se lehet lemásolni
-    LogicNetwork(const LogicNetwork&);
-    LogicNetwork& operator=(const LogicNetwork&);
-
    protected:
-    // UML-ben frissíteni, ez wire tömböt tárol, nem Wire*[]-t
-    // mert asszem végül nem lehet felüldefelni a wire-t?
     Wire* wires;
     size_t wires_size;
 
@@ -28,6 +20,10 @@ class LogicNetwork {
     // viszont ki szeretném írni
 
     std::ostream& os;
+
+    // ne lehessen lemásolni, mert nehéz?
+    LogicNetwork(const LogicNetwork&);
+    LogicNetwork& operator=(const LogicNetwork&);
 
    public:
     /**
@@ -63,6 +59,21 @@ class LogicNetwork {
      * @param component Az új komponens mutatóval, amit hozzáad
      */
     void add_component(Component* component);
+
+    /**
+     * @brief Kitöröl egy komponenst a hálózatból a sorszáma alapján. A törlés felszabadítja a memóriát.
+     *
+     * @param index Az törlendő komponens belső sorszáma
+     * @throw const_char* Hibát dob, ha nincs ilyen komponens
+     */
+    void remove_component(size_t index);
+    /**
+     * @brief Kitöröl egy komponenst a hálózatból a mutatója alapján. A törlés felszabadítja a memóriát. Ha nem találta, nem szabadítja fel.
+     *
+     * @param index Mutató a törlendő komponensre
+     * @throw const_char* Hibát dob, ha nincs ilyen komponens
+     */
+    void remove_component(Component* component);
 
     /**
      * @brief Visszaadja a kimeneti adatfolyamot, amire a frissítések kezdetét jelző szöveget írja ki

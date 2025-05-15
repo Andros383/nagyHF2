@@ -1,5 +1,7 @@
 #include "PRINT.h"
 
+#include <cstring>
+
 #include "../memtrace.h"
 // kapu neve a beolvasáshoz / kiíráshoz
 const char* PRINT::name = "PRINT";

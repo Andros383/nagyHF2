@@ -6,7 +6,7 @@ A Logic\+Network osztály származási diagramja\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=209pt]{class_logic_network__inherit__graph}
+\includegraphics[width=242pt]{class_logic_network__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -32,6 +32,10 @@ void \mbox{\hyperlink{class_logic_network_a939a492bcc688188b79d7715aa632f95}{bul
 \begin{DoxyCompactList}\small\item\em Visszaad egy mutatót az eltárolt vezetékekre sorszám alapján. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_logic_network_a52198c2d05ba83550b2bdf835a837698}{add\+\_\+component}} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}component)
 \begin{DoxyCompactList}\small\item\em Hozzáad egy komponenst a hálózathoz. A komponenst a hálózat fogja felszabadítani. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logic_network_a2e6bfd4839a3c3fdb8400d66ced7bcf9}{remove\+\_\+component}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Kitöröl egy komponenst a hálózatból a sorszáma alapján. A törlés felszabadítja a memóriát. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logic_network_abe674fc8f869a3d0b659e0ca29223b0b}{remove\+\_\+component}} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}component)
+\begin{DoxyCompactList}\small\item\em Kitöröl egy komponenst a hálózatból a mutatója alapján. A törlés felszabadítja a memóriát. Ha nem találta, nem szabadítja fel. \end{DoxyCompactList}\item 
 std\+::ostream \& \mbox{\hyperlink{class_logic_network_aa5fb94382274f892ca2f4feb9da97f30}{get\+\_\+os}} ()
 \begin{DoxyCompactList}\small\item\em Visszaadja a kimeneti adatfolyamot, amire a frissítések kezdetét jelző szöveget írja ki. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -123,6 +127,46 @@ Visszaad egy mutatót az eltárolt vezetékekre sorszám alapján.
 \begin{DoxyReturn}{Visszatérési érték}
 Wire\texorpdfstring{$\ast$}{*} 
 \end{DoxyReturn}
+\Hypertarget{class_logic_network_abe674fc8f869a3d0b659e0ca29223b0b}\index{LogicNetwork@{LogicNetwork}!remove\_component@{remove\_component}}
+\index{remove\_component@{remove\_component}!LogicNetwork@{LogicNetwork}}
+\doxysubsubsection{\texorpdfstring{remove\_component()}{remove\_component()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_logic_network_abe674fc8f869a3d0b659e0ca29223b0b} 
+void Logic\+Network\+::remove\+\_\+component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}}]{component}{}\end{DoxyParamCaption})}
+
+
+
+Kitöröl egy komponenst a hálózatból a mutatója alapján. A törlés felszabadítja a memóriát. Ha nem találta, nem szabadítja fel. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em index} & Mutató a törlendő komponensre \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Kivételek}
+{\em const\+\_\+char\texorpdfstring{$\ast$}{*}} & Hibát dob, ha nincs ilyen komponens \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_logic_network_a2e6bfd4839a3c3fdb8400d66ced7bcf9}\index{LogicNetwork@{LogicNetwork}!remove\_component@{remove\_component}}
+\index{remove\_component@{remove\_component}!LogicNetwork@{LogicNetwork}}
+\doxysubsubsection{\texorpdfstring{remove\_component()}{remove\_component()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_logic_network_a2e6bfd4839a3c3fdb8400d66ced7bcf9} 
+void Logic\+Network\+::remove\+\_\+component (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Kitöröl egy komponenst a hálózatból a sorszáma alapján. A törlés felszabadítja a memóriát. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em index} & Az törlendő komponens belső sorszáma \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Kivételek}
+{\em const\+\_\+char\texorpdfstring{$\ast$}{*}} & Hibát dob, ha nincs ilyen komponens \\
+\hline
+\end{DoxyExceptions}
 
 
 Ez a dokumentáció az osztályról a következő fájlok alapján készült\+:\begin{DoxyCompactItemize}

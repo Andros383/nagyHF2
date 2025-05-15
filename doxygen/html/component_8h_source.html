@@ -107,10 +107,11 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    Component() : inputs(<span class="keyword">nullptr</span>), output(<span class="keyword">nullptr</span>) {};</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_component.html#a910086d9eda3ecb47d1117674ee99ea5">   25</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_component.html#a910086d9eda3ecb47d1117674ee99ea5">update</a>() = 0;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_component.html#a60c1995ed8c270084ba7703579f5684a">   32</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_component.html#a60c1995ed8c270084ba7703579f5684a">write</a>(<a class="code hl_class" href="class_wire.html">Wire</a>* base_address, std::ostream&amp; os = std::cout) = 0;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">virtual</span> ~Component();</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">virtual</span> ~Component();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>};</div>
 </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_component_html_a60c1995ed8c270084ba7703579f5684a"><div class="ttname"><a href="class_component.html#a60c1995ed8c270084ba7703579f5684a">Component::write</a></div><div class="ttdeci">virtual void write(Wire *base_address, std::ostream &amp;os=std::cout)=0</div><div class="ttdoc">Komponens kiírása a fájlba mentéshez.</div></div>
 <div class="ttc" id="aclass_component_html_a910086d9eda3ecb47d1117674ee99ea5"><div class="ttname"><a href="class_component.html#a910086d9eda3ecb47d1117674ee99ea5">Component::update</a></div><div class="ttdeci">virtual void update()=0</div><div class="ttdoc">Kaputól függően a frissítés elvégzése:   Bementi jelekből a kimeneti jelek kiszámítása / egyéb művele...</div></div>
 <div class="ttc" id="aclass_wire_html"><div class="ttname"><a href="class_wire.html">Wire</a></div><div class="ttdef"><b>Definition</b> wire.h:10</div></div>

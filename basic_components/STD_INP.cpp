@@ -1,6 +1,8 @@
 
 #include "STD_INP.h"
 
+#include <cstring>
+
 #include "../memtrace.h"
 // kapu neve a beolvasáshoz / kiíráshoz
 const char* STD_INP::name = "STD_INP";

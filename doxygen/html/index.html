@@ -131,10 +131,11 @@ Tesztesetek</h2>
 <p>A <a class="el" href="main_8cpp.html" title="Main file az összes teszttel Minden teszt gtest_lita-al írt. Az utolsó teszteset standard bemenetről ...">main.cpp</a> fájlban vannak a gtest_lite-al megvalósított tesztek. Az utolsó teszteset standard bemenetről olvas, amihez példabemenetet kap a Jporta.</p>
 <h2><a class="anchor" id="autotoc_md7"></a>
 Egyéb megjegyzések</h2>
-<p>A komponensek mutatókkal tárolják, melyik vezetékhez kapcsolódnak. Emiatt minden osztálynál le van tiltva a másoló konstruktor és az értékadó operátor, mivel nem lehet / nincs értelme ugyan olyan objektumokat létrehozni.</p>
+<p>A komponensek mutatókkal tárolják, melyik vezetékhez kapcsolódnak. Emiatt minden komponensnél le van tiltva a másoló konstruktor és az értékadó operátor, mivel nem lehet / nincs értelme ugyan olyan objektumokat létrehozni.</p>
+<p>Viszont a <a class="el" href="class_logic_network_configurer.html">LogicNetworkConfigurer</a> osztály értékadó és másoló operátora meg van valósítva, így azokkal könnyebb lehet dolgozni.</p>
 <h2><a class="anchor" id="autotoc_md8"></a>
 Új komponens felvétele</h2>
-<p>Az új komponens felvételéhez az osztálynak a többi komponenshez hasonlóan a <a class="el" href="class_component.html">Component</a> leszármazottjának kell lennie. Ezen felül tetszőlegesen megvalósítható a beolvasás / kiírás. A beolvasást a <a class="el" href="class_logic_network_configurer.html">LogicNetworkConfigurer</a> read_logic_network() függvényében kell megvalósítani a többihez hasonlóan. A komponens nevében nem szerepelhet whitespace, és legfeljebb 100 karakter hosszú lehet. <br  />
+<p>Az új komponens felvételéhez az osztálynak a többi komponenshez hasonlóan a <a class="el" href="class_component.html">Component</a> leszármazottjának kell lennie. Ezen felül tetszőlegesen megvalósítható a beolvasás / kiírás. A beolvasást a <a class="el" href="class_logic_network_configurer.html">LogicNetworkConfigurer</a> read_logic_network() függvényében kell megvalósítani a többihez hasonlóan. A komponens nevében nem szerepelhet whitespace, és legfeljebb 100 karakter hosszú lehet. Ha a komponens konstuktorának szintaxisa megegyezik egy már létezőével, a meglévő generikus függvényekkel könnyebb lehet az új elem felvétele. <br  />
 <br  />
 <br  />
 <br  />

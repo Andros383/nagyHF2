@@ -44,11 +44,13 @@ A fájlból beolvasásnál az első sorban a kábelek, majd a komponensek szám�
 A main.cpp fájlban vannak a gtest_lite-al megvalósított tesztek. Az utolsó teszteset standard bemenetről olvas, amihez példabemenetet kap a Jporta.
 
 ### Egyéb megjegyzések
-A komponensek mutatókkal tárolják, melyik vezetékhez kapcsolódnak. Emiatt minden osztálynál le van tiltva a másoló konstruktor és az értékadó operátor, mivel nem lehet / nincs értelme ugyan olyan objektumokat létrehozni.
+A komponensek mutatókkal tárolják, melyik vezetékhez kapcsolódnak. Emiatt minden komponensnél le van tiltva a másoló konstruktor és az értékadó operátor, mivel nem lehet / nincs értelme ugyan olyan objektumokat létrehozni.
+
+Viszont a LogicNetworkConfigurer osztály értékadó és másoló operátora meg van valósítva, így azokkal könnyebb lehet dolgozni.
 
 ### Új komponens felvétele
 Az új komponens felvételéhez az osztálynak a többi komponenshez hasonlóan a Component leszármazottjának kell lennie. Ezen felül tetszőlegesen megvalósítható a beolvasás / kiírás.
-A beolvasást a LogicNetworkConfigurer read_logic_network() függvényében kell megvalósítani a többihez hasonlóan. A komponens nevében nem szerepelhet whitespace, és legfeljebb 100 karakter hosszú lehet.
+A beolvasást a LogicNetworkConfigurer read_logic_network() függvényében kell megvalósítani a többihez hasonlóan. A komponens nevében nem szerepelhet whitespace, és legfeljebb 100 karakter hosszú lehet. Ha a komponens konstuktorának szintaxisa megegyezik egy már létezőével, a meglévő generikus függvényekkel könnyebb lehet az új elem felvétele.
 \n
 \n
 \n

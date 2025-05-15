@@ -6,7 +6,7 @@
     \subitem {AND}, \hyperpage{13}
     \subitem {get\_name}, \hyperpage{13}
     \subitem {write}, \hyperpage{13}
-  \item {AND.h}, \hyperpage{41}
+  \item {AND.h}, \hyperpage{43}
 
   \indexspace
 
@@ -17,7 +17,7 @@
 
   \item {Component}, \hyperpage{14}
     \subitem {write}, \hyperpage{15}
-  \item {component.h}, \hyperpage{51}
+  \item {component.h}, \hyperpage{53}
 
   \indexspace
 
@@ -28,15 +28,15 @@
   \item {get\_name}
     \subitem {AND}, \hyperpage{13}
     \subitem {INP}, \hyperpage{17}
-    \subitem {NOT}, \hyperpage{27}
-    \subitem {OR}, \hyperpage{30}
-    \subitem {PRINT}, \hyperpage{33}
-    \subitem {STD\_INP}, \hyperpage{36}
-    \subitem {XOR}, \hyperpage{40}
+    \subitem {NOT}, \hyperpage{28}
+    \subitem {OR}, \hyperpage{31}
+    \subitem {PRINT}, \hyperpage{34}
+    \subitem {STD\_INP}, \hyperpage{37}
+    \subitem {XOR}, \hyperpage{41}
   \item {get\_os}
-    \subitem {LogicNetwork}, \hyperpage{20}
+    \subitem {LogicNetwork}, \hyperpage{21}
   \item {get\_signal}
-    \subitem {Wire}, \hyperpage{37}
+    \subitem {Wire}, \hyperpage{38}
   \item {get\_wire}
     \subitem {LogicNetwork}, \hyperpage{21}
 
@@ -46,95 +46,101 @@
     \subitem {get\_name}, \hyperpage{17}
     \subitem {INP}, \hyperpage{17}
     \subitem {write}, \hyperpage{17}
-  \item {INP.h}, \hyperpage{41}, \hyperpage{43}
+  \item {INP.h}, \hyperpage{43}, \hyperpage{45}
 
   \indexspace
 
-  \item {logic\_network.h}, \hyperpage{52}
-  \item {logic\_network\_configurer.h}, \hyperpage{54}
+  \item {logic\_network.h}, \hyperpage{54}
+  \item {logic\_network\_configurer.h}, \hyperpage{56}
   \item {LogicNetwork}, \hyperpage{18}
     \subitem {add\_component}, \hyperpage{20}
     \subitem {bulk\_update}, \hyperpage{20}
-    \subitem {get\_os}, \hyperpage{20}
+    \subitem {get\_os}, \hyperpage{21}
     \subitem {get\_wire}, \hyperpage{21}
     \subitem {LogicNetwork}, \hyperpage{20}
-  \item {LogicNetworkConfigurer}, \hyperpage{22}
-    \subitem {read\_logic\_network}, \hyperpage{24}
-    \subitem {write\_logic\_network}, \hyperpage{24}
+    \subitem {remove\_component}, \hyperpage{21, 22}
+  \item {LogicNetworkConfigurer}, \hyperpage{23}
+    \subitem {operator=}, \hyperpage{25}
+    \subitem {read\_logic\_network}, \hyperpage{25}
+    \subitem {write\_logic\_network}, \hyperpage{25}
 
   \indexspace
 
-  \item {main.cpp}, \hyperpage{56}
+  \item {main.cpp}, \hyperpage{58}
 
   \indexspace
 
-  \item {NOT}, \hyperpage{25}
-    \subitem {get\_name}, \hyperpage{27}
-    \subitem {NOT}, \hyperpage{27}
-    \subitem {write}, \hyperpage{27}
-  \item {NOT.h}, \hyperpage{43, 44}
+  \item {NOT}, \hyperpage{26}
+    \subitem {get\_name}, \hyperpage{28}
+    \subitem {NOT}, \hyperpage{28}
+    \subitem {write}, \hyperpage{28}
+  \item {NOT.h}, \hyperpage{45, 46}
 
   \indexspace
 
-  \item {OR}, \hyperpage{28}
-    \subitem {get\_name}, \hyperpage{30}
-    \subitem {OR}, \hyperpage{30}
-    \subitem {write}, \hyperpage{30}
-  \item {OR.h}, \hyperpage{45, 46}
+  \item {operator=}
+    \subitem {LogicNetworkConfigurer}, \hyperpage{25}
+  \item {OR}, \hyperpage{29}
+    \subitem {get\_name}, \hyperpage{31}
+    \subitem {OR}, \hyperpage{31}
+    \subitem {write}, \hyperpage{31}
+  \item {OR.h}, \hyperpage{47, 48}
 
   \indexspace
 
-  \item {PRINT}, \hyperpage{31}
-    \subitem {get\_name}, \hyperpage{33}
-    \subitem {PRINT}, \hyperpage{33}
-    \subitem {write}, \hyperpage{33}
-  \item {PRINT.h}, \hyperpage{46}, \hyperpage{48}
+  \item {PRINT}, \hyperpage{32}
+    \subitem {get\_name}, \hyperpage{34}
+    \subitem {PRINT}, \hyperpage{34}
+    \subitem {write}, \hyperpage{34}
+  \item {PRINT.h}, \hyperpage{48}, \hyperpage{50}
 
   \indexspace
 
   \item {read\_logic\_network}
-    \subitem {LogicNetworkConfigurer}, \hyperpage{24}
+    \subitem {LogicNetworkConfigurer}, \hyperpage{25}
+  \item {remove\_component}
+    \subitem {LogicNetwork}, \hyperpage{21, 22}
 
   \indexspace
 
   \item {set\_signal}
-    \subitem {Wire}, \hyperpage{37}
-  \item {STD\_INP}, \hyperpage{34}
-    \subitem {get\_name}, \hyperpage{36}
-    \subitem {STD\_INP}, \hyperpage{36}
-    \subitem {update}, \hyperpage{36}
-    \subitem {write}, \hyperpage{36}
-  \item {STD\_INP.h}, \hyperpage{48, 49}
+    \subitem {Wire}, \hyperpage{38}
+  \item {STD\_INP}, \hyperpage{35}
+    \subitem {get\_name}, \hyperpage{37}
+    \subitem {STD\_INP}, \hyperpage{37}
+    \subitem {update}, \hyperpage{37}
+    \subitem {write}, \hyperpage{37}
+  \item {STD\_INP.h}, \hyperpage{50, 51}
 
   \indexspace
 
   \item {update}
-    \subitem {STD\_INP}, \hyperpage{36}
+    \subitem {STD\_INP}, \hyperpage{37}
 
   \indexspace
 
-  \item {Wire}, \hyperpage{37}
-    \subitem {get\_signal}, \hyperpage{37}
-    \subitem {set\_signal}, \hyperpage{37}
-  \item {wire.h}, \hyperpage{56}
+  \item {Wire}, \hyperpage{38}
+    \subitem {get\_signal}, \hyperpage{38}
+    \subitem {set\_signal}, \hyperpage{38}
+  \item {wire.h}, \hyperpage{58}
   \item {write}
     \subitem {AND}, \hyperpage{13}
     \subitem {Component}, \hyperpage{15}
     \subitem {INP}, \hyperpage{17}
-    \subitem {NOT}, \hyperpage{27}
-    \subitem {OR}, \hyperpage{30}
-    \subitem {PRINT}, \hyperpage{33}
-    \subitem {STD\_INP}, \hyperpage{36}
-    \subitem {XOR}, \hyperpage{40}
+    \subitem {NOT}, \hyperpage{28}
+    \subitem {OR}, \hyperpage{31}
+    \subitem {PRINT}, \hyperpage{34}
+    \subitem {STD\_INP}, \hyperpage{37}
+    \subitem {XOR}, \hyperpage{41}
   \item {write\_logic\_network}
-    \subitem {LogicNetworkConfigurer}, \hyperpage{24}
+    \subitem {LogicNetworkConfigurer}, \hyperpage{25}
 
   \indexspace
 
-  \item {XOR}, \hyperpage{38}
-    \subitem {get\_name}, \hyperpage{40}
-    \subitem {write}, \hyperpage{40}
-    \subitem {XOR}, \hyperpage{40}
-  \item {XOR.h}, \hyperpage{50, 51}
+  \item {XOR}, \hyperpage{39}
+    \subitem {get\_name}, \hyperpage{41}
+    \subitem {write}, \hyperpage{41}
+    \subitem {XOR}, \hyperpage{41}
+  \item {XOR.h}, \hyperpage{52, 53}
 
 \end{theindex}

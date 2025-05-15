@@ -95,9 +95,9 @@ A LogicNetwork osztály származási diagramja:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_logic_network__inherit__graph.png" border="0" usemap="#a_logic_network_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_logic_network_inherit__map" id="a_logic_network_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,5,177,261"/>
-<area shape="rect" href="class_logic_network_configurer.html" title=" " alt="" coords="8,309,175,432"/>
-<area shape="poly" title=" " alt="" coords="94,277,94,310,89,310,89,277"/>
+<area shape="rect" title=" " alt="" coords="27,5,199,336"/>
+<area shape="rect" href="class_logic_network_configurer.html" title=" " alt="" coords="5,384,221,560"/>
+<area shape="poly" title=" " alt="" coords="116,351,116,384,111,384,111,351"/>
 </map>
 </div>
 <div class="dynheader">
@@ -105,12 +105,12 @@ A LogicNetwork osztály együttműködési diagramja:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_logic_network__coll__graph.png" border="0" usemap="#a_logic_network_coll__map" alt="Collaboration graph"/></div>
 <map name="a_logic_network_coll__map" id="a_logic_network_coll__map">
-<area shape="rect" title=" " alt="" coords="5,416,177,672"/>
+<area shape="rect" title=" " alt="" coords="5,416,177,747"/>
 <area shape="rect" href="class_wire.html" title=" " alt="" coords="19,5,164,133"/>
-<area shape="poly" title=" " alt="" coords="89,133,84,213,86,399,80,399,79,213,83,133"/>
+<area shape="poly" title=" " alt="" coords="89,133,84,213,85,399,79,399,79,213,83,133"/>
 <area shape="rect" href="class_component.html" title=" " alt="" coords="136,213,290,352"/>
 <area shape="poly" title=" " alt="" coords="130,132,167,197,163,200,125,135"/>
-<area shape="poly" title=" " alt="" coords="183,353,160,402,156,399,178,351"/>
+<area shape="poly" title=" " alt="" coords="187,353,167,401,163,399,182,351"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -132,6 +132,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></t
 <tr class="memitem:a52198c2d05ba83550b2bdf835a837698" id="r_a52198c2d05ba83550b2bdf835a837698"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52198c2d05ba83550b2bdf835a837698">add_component</a> (<a class="el" href="class_component.html">Component</a> *component)</td></tr>
 <tr class="memdesc:a52198c2d05ba83550b2bdf835a837698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hozzáad egy komponenst a hálózathoz. A komponenst a hálózat fogja felszabadítani.  <br /></td></tr>
 <tr class="separator:a52198c2d05ba83550b2bdf835a837698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e6bfd4839a3c3fdb8400d66ced7bcf9" id="r_a2e6bfd4839a3c3fdb8400d66ced7bcf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e6bfd4839a3c3fdb8400d66ced7bcf9">remove_component</a> (size_t index)</td></tr>
+<tr class="memdesc:a2e6bfd4839a3c3fdb8400d66ced7bcf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kitöröl egy komponenst a hálózatból a sorszáma alapján. A törlés felszabadítja a memóriát.  <br /></td></tr>
+<tr class="separator:a2e6bfd4839a3c3fdb8400d66ced7bcf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe674fc8f869a3d0b659e0ca29223b0b" id="r_abe674fc8f869a3d0b659e0ca29223b0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe674fc8f869a3d0b659e0ca29223b0b">remove_component</a> (<a class="el" href="class_component.html">Component</a> *component)</td></tr>
+<tr class="memdesc:abe674fc8f869a3d0b659e0ca29223b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kitöröl egy komponenst a hálózatból a mutatója alapján. A törlés felszabadítja a memóriát. Ha nem találta, nem szabadítja fel.  <br /></td></tr>
+<tr class="separator:abe674fc8f869a3d0b659e0ca29223b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5fb94382274f892ca2f4feb9da97f30" id="r_aa5fb94382274f892ca2f4feb9da97f30"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5fb94382274f892ca2f4feb9da97f30">get_os</a> ()</td></tr>
 <tr class="memdesc:aa5fb94382274f892ca2f4feb9da97f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visszaadja a kimeneti adatfolyamot, amire a frissítések kezdetét jelző szöveget írja ki.  <br /></td></tr>
 <tr class="separator:aa5fb94382274f892ca2f4feb9da97f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -275,6 +281,68 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></t
   </dd>
 </dl>
 <dl class="section return"><dt>Visszatérési érték</dt><dd>Wire* </dd></dl>
+
+</div>
+</div>
+<a id="abe674fc8f869a3d0b659e0ca29223b0b" name="abe674fc8f869a3d0b659e0ca29223b0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe674fc8f869a3d0b659e0ca29223b0b">&#9670;&#160;</a></span>remove_component() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LogicNetwork::remove_component </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_component.html">Component</a> *</td>          <td class="paramname"><span class="paramname"><em>component</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kitöröl egy komponenst a hálózatból a mutatója alapján. A törlés felszabadítja a memóriát. Ha nem találta, nem szabadítja fel. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Mutató a törlendő komponensre </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Kivételek</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">const_char*</td><td>Hibát dob, ha nincs ilyen komponens </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2e6bfd4839a3c3fdb8400d66ced7bcf9" name="a2e6bfd4839a3c3fdb8400d66ced7bcf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e6bfd4839a3c3fdb8400d66ced7bcf9">&#9670;&#160;</a></span>remove_component() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LogicNetwork::remove_component </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kitöröl egy komponenst a hálózatból a sorszáma alapján. A törlés felszabadítja a memóriát. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Az törlendő komponens belső sorszáma </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Kivételek</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">const_char*</td><td>Hibát dob, ha nincs ilyen komponens </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

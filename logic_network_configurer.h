@@ -11,6 +11,13 @@
 #include "memtrace.h"
 class LogicNetworkConfigurer : public LogicNetwork {
    public:
+    LogicNetworkConfigurer(const LogicNetworkConfigurer&);
+    /**
+     * @brief Logikai hálózat értékadó operátora. A hálózatot átállítja, viszont a kiírási adatfolyam az eredeti marad.
+     *
+     * @return LogicNetworkConfigurer&
+     */
+    LogicNetworkConfigurer& operator=(const LogicNetworkConfigurer&);
     LogicNetworkConfigurer(size_t wires_size = 0, std::ostream& os = std::cout) : LogicNetwork(wires_size, os) {}
     /**
      * @brief Beolvassa a kapott bemeneti adatfolyamról a hálózatot
@@ -25,7 +32,7 @@ class LogicNetworkConfigurer : public LogicNetwork {
      *
      * @param os A kimeneti adatfolyam
      */
-    void write_logic_network(std::ostream& os);
+    void write_logic_network(std::ostream& os) const;
 };
 
 #endif

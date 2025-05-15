@@ -1,10 +1,10 @@
 <map id="LogicNetworkConfigurer" name="LogicNetworkConfigurer">
-<area shape="rect" id="Node000001" title=" " alt="" coords="8,721,175,844"/>
-<area shape="rect" id="Node000002" href="$class_logic_network.html" title=" " alt="" coords="5,416,177,672"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,687,94,722,89,722,89,687"/>
-<area shape="rect" id="Node000003" href="$class_wire.html" title=" " alt="" coords="19,5,164,133"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="89,133,84,213,86,399,80,399,79,213,83,133"/>
-<area shape="rect" id="Node000004" href="$class_component.html" title=" " alt="" coords="136,213,290,352"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="130,132,167,197,163,200,125,135"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="183,353,160,402,156,399,178,351"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,796,221,972"/>
+<area shape="rect" id="Node000002" href="$class_logic_network.html" title=" " alt="" coords="27,416,199,747"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,761,116,796,111,796,111,761"/>
+<area shape="rect" id="Node000003" href="$class_wire.html" title=" " alt="" coords="41,5,186,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="111,133,106,213,107,399,101,399,101,213,105,133"/>
+<area shape="rect" id="Node000004" href="$class_component.html" title=" " alt="" coords="158,213,312,352"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="152,132,189,197,185,200,147,135"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="209,353,189,401,185,399,204,351"/>
 </map>

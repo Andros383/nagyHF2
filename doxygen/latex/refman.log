@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.10)  13 MAY 2025 21:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.10)  15 MAY 2025 17:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -995,7 +995,12 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 6.29996pt on input line 232.
-
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 232.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 232.
+ (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
 
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 6.29996pt on input line 232.
@@ -1101,13 +1106,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--54
 ]
 5. fejezet.
 (class_a_n_d.tex <./class_a_n_d__inherit__graph.pdf>
-<class_a_n_d__inherit__graph.pdf, id=765, 199.74625pt x 369.38pt>
+<class_a_n_d__inherit__graph.pdf, id=781, 199.74625pt x 369.38pt>
 File: class_a_n_d__inherit__graph.pdf Graphic file (type pdf)
 <use class_a_n_d__inherit__graph.pdf>
 Package pdftex.def Info: class_a_n_d__inherit__graph.pdf  used on input line 9.
 (pdftex.def)             Requested size: 199.0pt x 368.02074pt.
  <./class_a_n_d__coll__graph.pdf>
-<class_a_n_d__coll__graph.pdf, id=780, 199.74625pt x 526.96875pt>
+<class_a_n_d__coll__graph.pdf, id=796, 199.74625pt x 526.96875pt>
 File: class_a_n_d__coll__graph.pdf Graphic file (type pdf)
 <use class_a_n_d__coll__graph.pdf>
 Package pdftex.def Info: class_a_n_d__coll__graph.pdf  used on input line 18.
@@ -1124,12 +1129,6 @@ LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 
 
 [12]
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 42.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 42.
- (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 43.
 
@@ -1140,7 +1139,7 @@ Underfull \hbox (badness 10000) detected at line 71
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 78.
 ) (class_component.tex <./class_component__inherit__graph.pdf>
-<class_component__inherit__graph.pdf, id=828, 1066.98625pt x 393.47pt>
+<class_component__inherit__graph.pdf, id=844, 1066.98625pt x 393.47pt>
 File: class_component__inherit__graph.pdf Graphic file (type pdf)
 <use class_component__inherit__graph.pdf>
 Package pdftex.def Info: class_component__inherit__graph.pdf  used on input line 9.
@@ -1148,7 +1147,7 @@ Package pdftex.def Info: class_component__inherit__graph.pdf  used on input line
 
 
 [13] <./class_component__coll__graph.pdf>
-<class_component__coll__graph.pdf, id=857, 196.735pt x 341.275pt>
+<class_component__coll__graph.pdf, id=872, 196.735pt x 341.275pt>
 File: class_component__coll__graph.pdf Graphic file (type pdf)
 <use class_component__coll__graph.pdf>
 Package pdftex.def Info: class_component__coll__graph.pdf  used on input line 18.
@@ -1156,13 +1155,13 @@ Package pdftex.def Info: class_component__coll__graph.pdf  used on input line 18
 
 
 [14]) (class_i_n_p.tex <./class_i_n_p__inherit__graph.pdf>
-<class_i_n_p__inherit__graph.pdf, id=892, 199.74625pt x 369.38pt>
+<class_i_n_p__inherit__graph.pdf, id=907, 199.74625pt x 369.38pt>
 File: class_i_n_p__inherit__graph.pdf Graphic file (type pdf)
 <use class_i_n_p__inherit__graph.pdf>
 Package pdftex.def Info: class_i_n_p__inherit__graph.pdf  used on input line 9.
 (pdftex.def)             Requested size: 199.0pt x 368.02074pt.
  <./class_i_n_p__coll__graph.pdf>
-<class_i_n_p__coll__graph.pdf, id=907, 199.74625pt x 526.96875pt>
+<class_i_n_p__coll__graph.pdf, id=922, 199.74625pt x 526.96875pt>
 File: class_i_n_p__coll__graph.pdf Graphic file (type pdf)
 <use class_i_n_p__coll__graph.pdf>
 Package pdftex.def Info: class_i_n_p__coll__graph.pdf  used on input line 18.
@@ -1177,19 +1176,19 @@ Underfull \hbox (badness 10000) detected at line 67
  []
 
 ) (class_logic_network.tex <./class_logic_network__inherit__graph.pdf>
-<class_logic_network__inherit__graph.pdf, id=955, 209.78375pt x 401.5pt>
+<class_logic_network__inherit__graph.pdf, id=970, 242.9075pt x 497.86pt>
 File: class_logic_network__inherit__graph.pdf Graphic file (type pdf)
 <use class_logic_network__inherit__graph.pdf>
-Package pdftex.def Info: class_logic_network__inherit__graph.pdf  used on input line 9.
-(pdftex.def)             Requested size: 209.0pt x 399.99803pt.
+Package pdftex.def Info: class_logic_network__inherit__graph.pdf  used on input line 10.
+(pdftex.def)             Requested size: 242.0pt x 495.99757pt.
 
 
 [17] <./class_logic_network__coll__graph.pdf>
-<class_logic_network__coll__graph.pdf, id=978, 294.09875pt x 582.175pt>
+<class_logic_network__coll__graph.pdf, id=993, 294.09875pt x 638.385pt>
 File: class_logic_network__coll__graph.pdf Graphic file (type pdf)
 <use class_logic_network__coll__graph.pdf>
-Package pdftex.def Info: class_logic_network__coll__graph.pdf  used on input line 18.
-(pdftex.def)             Requested size: 277.86644pt x 550.0pt.
+Package pdftex.def Info: class_logic_network__coll__graph.pdf  used on input line 20.
+(pdftex.def)             Requested size: 253.3822pt x 550.0pt.
 
 
 [18]
@@ -1197,129 +1196,138 @@ Package pdftex.def Info: class_logic_network__coll__graph.pdf  used on input lin
 [19]
 
 [20]
-Underfull \hbox (badness 10000) detected at line 100
+Underfull \hbox (badness 10000) detected at line 106
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 123
+Underfull \hbox (badness 10000) detected at line 129
 [][][]
  []
 
-) (class_logic_network_configurer.tex <./class_logic_network_configurer__inherit__graph.pdf>
-<class_logic_network_configurer__inherit__graph.pdf, id=1030, 209.78375pt x 401.5pt>
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 7.19995pt on input line 134.
+
+
+[21]) (class_logic_network_configurer.tex <./class_logic_network_configurer__inherit__graph.pdf>
+<class_logic_network_configurer__inherit__graph.pdf, id=1062, 242.9075pt x 497.86pt>
 File: class_logic_network_configurer__inherit__graph.pdf Graphic file (type pdf)
 <use class_logic_network_configurer__inherit__graph.pdf>
-Package pdftex.def Info: class_logic_network_configurer__inherit__graph.pdf  used on input line 9.
-(pdftex.def)             Requested size: 209.0pt x 399.99803pt.
+Package pdftex.def Info: class_logic_network_configurer__inherit__graph.pdf  used on input line 10.
+(pdftex.def)             Requested size: 242.0pt x 495.99757pt.
 
 
-[21] <./class_logic_network_configurer__coll__graph.pdf>
-<class_logic_network_configurer__coll__graph.pdf, id=1053, 294.09875pt x 711.65875pt>
+[22] <./class_logic_network_configurer__coll__graph.pdf>
+<class_logic_network_configurer__coll__graph.pdf, id=1083, 311.1625pt x 808.01875pt>
 File: class_logic_network_configurer__coll__graph.pdf Graphic file (type pdf)
 <use class_logic_network_configurer__coll__graph.pdf>
-Package pdftex.def Info: class_logic_network_configurer__coll__graph.pdf  used on input line 18.
-(pdftex.def)             Requested size: 227.30038pt x 550.0pt.
+Package pdftex.def Info: class_logic_network_configurer__coll__graph.pdf  used on input line 20.
+(pdftex.def)             Requested size: 211.80136pt x 550.0pt.
 
 
-[22]
+[23]
 
-[23]) (class_n_o_t.tex <./class_n_o_t__inherit__graph.pdf>
-<class_n_o_t__inherit__graph.pdf, id=1094, 199.74625pt x 369.38pt>
+[24]
+Underfull \hbox (badness 10000) detected at line 64
+[][][]
+ []
+
+
+
+[25]) (class_n_o_t.tex <./class_n_o_t__inherit__graph.pdf>
+<class_n_o_t__inherit__graph.pdf, id=1143, 199.74625pt x 369.38pt>
 File: class_n_o_t__inherit__graph.pdf Graphic file (type pdf)
 <use class_n_o_t__inherit__graph.pdf>
 Package pdftex.def Info: class_n_o_t__inherit__graph.pdf  used on input line 9.
 (pdftex.def)             Requested size: 199.0pt x 368.02074pt.
-
-
-[24] <./class_n_o_t__coll__graph.pdf>
-<class_n_o_t__coll__graph.pdf, id=1117, 199.74625pt x 526.96875pt>
+ <./class_n_o_t__coll__graph.pdf>
+<class_n_o_t__coll__graph.pdf, id=1158, 199.74625pt x 526.96875pt>
 File: class_n_o_t__coll__graph.pdf Graphic file (type pdf)
 <use class_n_o_t__coll__graph.pdf>
 Package pdftex.def Info: class_n_o_t__coll__graph.pdf  used on input line 18.
 (pdftex.def)             Requested size: 199.0pt x 525.02959pt.
 
 
-[25]
-
 [26]
+
+[27]
 Underfull \hbox (badness 10000) detected at line 69
 [][][]
  []
 
 ) (class_o_r.tex <./class_o_r__inherit__graph.pdf>
-<class_o_r__inherit__graph.pdf, id=1162, 199.74625pt x 369.38pt>
+<class_o_r__inherit__graph.pdf, id=1202, 199.74625pt x 369.38pt>
 File: class_o_r__inherit__graph.pdf Graphic file (type pdf)
 <use class_o_r__inherit__graph.pdf>
 Package pdftex.def Info: class_o_r__inherit__graph.pdf  used on input line 9.
 (pdftex.def)             Requested size: 199.0pt x 368.02074pt.
 
 
-[27] <./class_o_r__coll__graph.pdf>
-<class_o_r__coll__graph.pdf, id=1185, 199.74625pt x 526.96875pt>
+[28] <./class_o_r__coll__graph.pdf>
+<class_o_r__coll__graph.pdf, id=1225, 199.74625pt x 526.96875pt>
 File: class_o_r__coll__graph.pdf Graphic file (type pdf)
 <use class_o_r__coll__graph.pdf>
 Package pdftex.def Info: class_o_r__coll__graph.pdf  used on input line 18.
 (pdftex.def)             Requested size: 199.0pt x 525.02959pt.
 
 
-[28]
-
 [29]
+
+[30]
 Underfull \hbox (badness 10000) detected at line 71
 [][][]
  []
 
 ) (class_p_r_i_n_t.tex <./class_p_r_i_n_t__inherit__graph.pdf>
-<class_p_r_i_n_t__inherit__graph.pdf, id=1231, 207.77625pt x 393.47pt>
+<class_p_r_i_n_t__inherit__graph.pdf, id=1271, 207.77625pt x 393.47pt>
 File: class_p_r_i_n_t__inherit__graph.pdf Graphic file (type pdf)
 <use class_p_r_i_n_t__inherit__graph.pdf>
 Package pdftex.def Info: class_p_r_i_n_t__inherit__graph.pdf  used on input line 9.
 (pdftex.def)             Requested size: 207.0pt x 392.01608pt.
 
 
-[30] <./class_p_r_i_n_t__coll__graph.pdf>
-<class_p_r_i_n_t__coll__graph.pdf, id=1254, 207.77625pt x 551.05875pt>
+[31] <./class_p_r_i_n_t__coll__graph.pdf>
+<class_p_r_i_n_t__coll__graph.pdf, id=1295, 207.77625pt x 551.05875pt>
 File: class_p_r_i_n_t__coll__graph.pdf Graphic file (type pdf)
 <use class_p_r_i_n_t__coll__graph.pdf>
 Package pdftex.def Info: class_p_r_i_n_t__coll__graph.pdf  used on input line 18.
 (pdftex.def)             Requested size: 207.0pt x 549.02254pt.
 
 
-[31]
-
 [32]
+
+[33]
 Underfull \hbox (badness 10000) detected at line 71
 [][][]
  []
 
 ) (class_s_t_d___i_n_p.tex <./class_s_t_d___i_n_p__inherit__graph.pdf>
-<class_s_t_d___i_n_p__inherit__graph.pdf, id=1296, 234.8775pt x 381.425pt>
+<class_s_t_d___i_n_p__inherit__graph.pdf, id=1336, 234.8775pt x 381.425pt>
 File: class_s_t_d___i_n_p__inherit__graph.pdf Graphic file (type pdf)
 <use class_s_t_d___i_n_p__inherit__graph.pdf>
 Package pdftex.def Info: class_s_t_d___i_n_p__inherit__graph.pdf  used on input line 9.
 (pdftex.def)             Requested size: 234.0pt x 379.99814pt.
 
 
-[33] <./class_s_t_d___i_n_p__coll__graph.pdf>
-<class_s_t_d___i_n_p__coll__graph.pdf, id=1319, 234.8775pt x 539.01375pt>
+[34] <./class_s_t_d___i_n_p__coll__graph.pdf>
+<class_s_t_d___i_n_p__coll__graph.pdf, id=1359, 234.8775pt x 539.01375pt>
 File: class_s_t_d___i_n_p__coll__graph.pdf Graphic file (type pdf)
 <use class_s_t_d___i_n_p__coll__graph.pdf>
 Package pdftex.def Info: class_s_t_d___i_n_p__coll__graph.pdf  used on input line 18.
 (pdftex.def)             Requested size: 234.0pt x 536.99736pt.
 
 
-[34]
-
 [35]
+
+[36]
 Underfull \hbox (badness 10000) detected at line 68
 [][][]
  []
 
 
 
-[36]) (class_wire.tex <./class_wire__coll__graph.pdf>
-<class_wire__coll__graph.pdf, id=1373, 189.70876pt x 176.66pt>
+[37]) (class_wire.tex <./class_wire__coll__graph.pdf>
+<class_wire__coll__graph.pdf, id=1414, 189.70876pt x 176.66pt>
 File: class_wire__coll__graph.pdf Graphic file (type pdf)
 <use class_wire__coll__graph.pdf>
 Package pdftex.def Info: class_wire__coll__graph.pdf  used on input line 9.
@@ -1331,203 +1339,205 @@ Underfull \hbox (badness 10000) detected at line 35
 
 
 
-[37]) (class_x_o_r.tex <./class_x_o_r__inherit__graph.pdf>
-<class_x_o_r__inherit__graph.pdf, id=1402, 199.74625pt x 369.38pt>
+[38]) (class_x_o_r.tex <./class_x_o_r__inherit__graph.pdf>
+<class_x_o_r__inherit__graph.pdf, id=1442, 199.74625pt x 369.38pt>
 File: class_x_o_r__inherit__graph.pdf Graphic file (type pdf)
 <use class_x_o_r__inherit__graph.pdf>
 Package pdftex.def Info: class_x_o_r__inherit__graph.pdf  used on input line 9.
 (pdftex.def)             Requested size: 199.0pt x 368.02074pt.
  <./class_x_o_r__coll__graph.pdf>
-<class_x_o_r__coll__graph.pdf, id=1417, 199.74625pt x 526.96875pt>
+<class_x_o_r__coll__graph.pdf, id=1457, 199.74625pt x 526.96875pt>
 File: class_x_o_r__coll__graph.pdf Graphic file (type pdf)
 <use class_x_o_r__coll__graph.pdf>
 Package pdftex.def Info: class_x_o_r__coll__graph.pdf  used on input line 18.
 (pdftex.def)             Requested size: 199.0pt x 525.02959pt.
 
 
-[38]
-
 [39]
+
+[40]
 Underfull \hbox (badness 10000) detected at line 71
 [][][]
  []
 
 )
 
-[40]
+[41]
+
+[42
+
+]
 6. fejezet.
 (basic__components_8h_source.tex) (_a_n_d_8h_source.tex) (_i_n_p_8h.tex <./_i_n_p_8h__incl.pdf>
-<_i_n_p_8h__incl.pdf, id=1486, 283.0575pt x 269.005pt>
+<_i_n_p_8h__incl.pdf, id=1530, 283.0575pt x 269.005pt>
 File: _i_n_p_8h__incl.pdf Graphic file (type pdf)
 <use _i_n_p_8h__incl.pdf>
 Package pdftex.def Info: _i_n_p_8h__incl.pdf  used on input line 14.
 (pdftex.def)             Requested size: 282.0pt x 268.0233pt.
 
 
-[41
-
-] <./_i_n_p_8h__dep__incl.pdf>
-<_i_n_p_8h__dep__incl.pdf, id=1498, 186.6975pt x 212.795pt>
+[43] <./_i_n_p_8h__dep__incl.pdf>
+<_i_n_p_8h__dep__incl.pdf, id=1543, 186.6975pt x 212.795pt>
 File: _i_n_p_8h__dep__incl.pdf Graphic file (type pdf)
 <use _i_n_p_8h__dep__incl.pdf>
 Package pdftex.def Info: _i_n_p_8h__dep__incl.pdf  used on input line 21.
 (pdftex.def)             Requested size: 186.0pt x 212.00868pt.
 ) (_i_n_p_8h_source.tex
 
-[42]) (_n_o_t_8h.tex <./_n_o_t_8h__incl.pdf>
-<_n_o_t_8h__incl.pdf, id=1523, 283.0575pt x 269.005pt>
+[44]) (_n_o_t_8h.tex <./_n_o_t_8h__incl.pdf>
+<_n_o_t_8h__incl.pdf, id=1568, 283.0575pt x 269.005pt>
 File: _n_o_t_8h__incl.pdf Graphic file (type pdf)
 <use _n_o_t_8h__incl.pdf>
 Package pdftex.def Info: _n_o_t_8h__incl.pdf  used on input line 14.
 (pdftex.def)             Requested size: 282.0pt x 268.0233pt.
  <./_n_o_t_8h__dep__incl.pdf>
-<_n_o_t_8h__dep__incl.pdf, id=1531, 186.6975pt x 212.795pt>
+<_n_o_t_8h__dep__incl.pdf, id=1576, 186.6975pt x 212.795pt>
 File: _n_o_t_8h__dep__incl.pdf Graphic file (type pdf)
 <use _n_o_t_8h__dep__incl.pdf>
 Package pdftex.def Info: _n_o_t_8h__dep__incl.pdf  used on input line 21.
 (pdftex.def)             Requested size: 186.0pt x 212.00868pt.
 
 
-[43]) (_n_o_t_8h_source.tex) (_o_r_8h.tex <./_o_r_8h__incl.pdf>
-<_o_r_8h__incl.pdf, id=1558, 283.0575pt x 269.005pt>
+[45]) (_n_o_t_8h_source.tex) (_o_r_8h.tex <./_o_r_8h__incl.pdf>
+<_o_r_8h__incl.pdf, id=1602, 283.0575pt x 269.005pt>
 File: _o_r_8h__incl.pdf Graphic file (type pdf)
 <use _o_r_8h__incl.pdf>
 Package pdftex.def Info: _o_r_8h__incl.pdf  used on input line 14.
 (pdftex.def)             Requested size: 282.0pt x 268.0233pt.
 
 
-[44] <./_o_r_8h__dep__incl.pdf>
-<_o_r_8h__dep__incl.pdf, id=1574, 186.6975pt x 212.795pt>
+[46] <./_o_r_8h__dep__incl.pdf>
+<_o_r_8h__dep__incl.pdf, id=1618, 186.6975pt x 212.795pt>
 File: _o_r_8h__dep__incl.pdf Graphic file (type pdf)
 <use _o_r_8h__dep__incl.pdf>
 Package pdftex.def Info: _o_r_8h__dep__incl.pdf  used on input line 21.
 (pdftex.def)             Requested size: 186.0pt x 212.00868pt.
 ) (_o_r_8h_source.tex
 
-[45]) (_p_r_i_n_t_8h.tex <./_p_r_i_n_t_8h__incl.pdf>
-<_p_r_i_n_t_8h__incl.pdf, id=1601, 283.0575pt x 269.005pt>
+[47]) (_p_r_i_n_t_8h.tex <./_p_r_i_n_t_8h__incl.pdf>
+<_p_r_i_n_t_8h__incl.pdf, id=1645, 283.0575pt x 269.005pt>
 File: _p_r_i_n_t_8h__incl.pdf Graphic file (type pdf)
 <use _p_r_i_n_t_8h__incl.pdf>
 Package pdftex.def Info: _p_r_i_n_t_8h__incl.pdf  used on input line 15.
 (pdftex.def)             Requested size: 282.0pt x 268.0233pt.
 
 
-[46] <./_p_r_i_n_t_8h__dep__incl.pdf>
-<_p_r_i_n_t_8h__dep__incl.pdf, id=1615, 186.6975pt x 212.795pt>
+[48] <./_p_r_i_n_t_8h__dep__incl.pdf>
+<_p_r_i_n_t_8h__dep__incl.pdf, id=1659, 186.6975pt x 212.795pt>
 File: _p_r_i_n_t_8h__dep__incl.pdf Graphic file (type pdf)
 <use _p_r_i_n_t_8h__dep__incl.pdf>
 Package pdftex.def Info: _p_r_i_n_t_8h__dep__incl.pdf  used on input line 22.
 (pdftex.def)             Requested size: 186.0pt x 212.00868pt.
 ) (_p_r_i_n_t_8h_source.tex
 
-[47]) (_s_t_d___i_n_p_8h.tex <./_s_t_d___i_n_p_8h__incl.pdf>
-<_s_t_d___i_n_p_8h__incl.pdf, id=1641, 283.0575pt x 269.005pt>
+[49]) (_s_t_d___i_n_p_8h.tex <./_s_t_d___i_n_p_8h__incl.pdf>
+<_s_t_d___i_n_p_8h__incl.pdf, id=1686, 283.0575pt x 269.005pt>
 File: _s_t_d___i_n_p_8h__incl.pdf Graphic file (type pdf)
 <use _s_t_d___i_n_p_8h__incl.pdf>
 Package pdftex.def Info: _s_t_d___i_n_p_8h__incl.pdf  used on input line 14.
 (pdftex.def)             Requested size: 282.0pt x 268.0233pt.
  <./_s_t_d___i_n_p_8h__dep__incl.pdf>
-<_s_t_d___i_n_p_8h__dep__incl.pdf, id=1649, 186.6975pt x 212.795pt>
+<_s_t_d___i_n_p_8h__dep__incl.pdf, id=1694, 186.6975pt x 212.795pt>
 File: _s_t_d___i_n_p_8h__dep__incl.pdf Graphic file (type pdf)
 <use _s_t_d___i_n_p_8h__dep__incl.pdf>
 Package pdftex.def Info: _s_t_d___i_n_p_8h__dep__incl.pdf  used on input line 21.
 (pdftex.def)             Requested size: 186.0pt x 212.00868pt.
 
 
-[48]) (_s_t_d___i_n_p_8h_source.tex) (_x_o_r_8h.tex
+[50]) (_s_t_d___i_n_p_8h_source.tex) (_x_o_r_8h.tex
 
-[49] <./_x_o_r_8h__incl.pdf>
-<_x_o_r_8h__incl.pdf, id=1684, 283.0575pt x 269.005pt>
+[51] <./_x_o_r_8h__incl.pdf>
+<_x_o_r_8h__incl.pdf, id=1728, 283.0575pt x 269.005pt>
 File: _x_o_r_8h__incl.pdf Graphic file (type pdf)
 <use _x_o_r_8h__incl.pdf>
 Package pdftex.def Info: _x_o_r_8h__incl.pdf  used on input line 14.
 (pdftex.def)             Requested size: 282.0pt x 268.0233pt.
  <./_x_o_r_8h__dep__incl.pdf>
-<_x_o_r_8h__dep__incl.pdf, id=1692, 186.6975pt x 212.795pt>
+<_x_o_r_8h__dep__incl.pdf, id=1736, 186.6975pt x 212.795pt>
 File: _x_o_r_8h__dep__incl.pdf Graphic file (type pdf)
 <use _x_o_r_8h__dep__incl.pdf>
 Package pdftex.def Info: _x_o_r_8h__dep__incl.pdf  used on input line 21.
 (pdftex.def)             Requested size: 186.0pt x 212.00868pt.
 ) (_x_o_r_8h_source.tex
 
-[50]) (component_8h.tex <./component_8h__incl.pdf>
-<component_8h__incl.pdf, id=1719, 225.84375pt x 212.795pt>
+[52]) (component_8h.tex <./component_8h__incl.pdf>
+<component_8h__incl.pdf, id=1763, 225.84375pt x 212.795pt>
 File: component_8h__incl.pdf Graphic file (type pdf)
 <use component_8h__incl.pdf>
 Package pdftex.def Info: component_8h__incl.pdf  used on input line 15.
 (pdftex.def)             Requested size: 225.0pt x 212.01193pt.
  <./component_8h__dep__incl.pdf>
-<component_8h__dep__incl.pdf, id=1727, 652.4375pt x 269.005pt>
+<component_8h__dep__incl.pdf, id=1771, 652.4375pt x 269.005pt>
 File: component_8h__dep__incl.pdf Graphic file (type pdf)
 <use component_8h__dep__incl.pdf>
 Package pdftex.def Info: component_8h__dep__incl.pdf  used on input line 22.
 (pdftex.def)             Requested size: 350.0pt x 144.31235pt.
 
 
-[51]) (component_8h_source.tex) (logic__network_8h.tex <./logic__network_8h__incl.pdf>
-<logic__network_8h__incl.pdf, id=1750, 233.87375pt x 269.005pt>
+[53]) (component_8h_source.tex) (logic__network_8h.tex <./logic__network_8h__incl.pdf>
+<logic__network_8h__incl.pdf, id=1794, 233.87375pt x 269.005pt>
 File: logic__network_8h__incl.pdf Graphic file (type pdf)
 <use logic__network_8h__incl.pdf>
 Package pdftex.def Info: logic__network_8h__incl.pdf  used on input line 16.
 (pdftex.def)             Requested size: 233.0pt x 268.01509pt.
 
 
-[52] <./logic__network_8h__dep__incl.pdf>
-<logic__network_8h__dep__incl.pdf, id=1766, 235.88126pt x 212.795pt>
+[54] <./logic__network_8h__dep__incl.pdf>
+<logic__network_8h__dep__incl.pdf, id=1810, 235.88126pt x 212.795pt>
 File: logic__network_8h__dep__incl.pdf Graphic file (type pdf)
 <use logic__network_8h__dep__incl.pdf>
 Package pdftex.def Info: logic__network_8h__dep__incl.pdf  used on input line 23.
 (pdftex.def)             Requested size: 235.0pt x 212.0022pt.
 ) (logic__network_8h_source.tex
 
-[53]) (logic__network__configurer_8h.tex <./logic__network__configurer_8h__incl.pdf>
-<logic__network__configurer_8h__incl.pdf, id=1796, 272.01625pt x 325.215pt>
+[55]) (logic__network__configurer_8h.tex <./logic__network__configurer_8h__incl.pdf>
+<logic__network__configurer_8h__incl.pdf, id=1844, 272.01625pt x 325.215pt>
 File: logic__network__configurer_8h__incl.pdf Graphic file (type pdf)
 <use logic__network__configurer_8h__incl.pdf>
 Package pdftex.def Info: logic__network__configurer_8h__incl.pdf  used on input line 15.
 (pdftex.def)             Requested size: 271.0pt x 324.01826pt.
 
 
-[54] <./logic__network__configurer_8h__dep__incl.pdf>
-<logic__network__configurer_8h__dep__incl.pdf, id=1809, 212.795pt x 156.585pt>
+[56] <./logic__network__configurer_8h__dep__incl.pdf>
+<logic__network__configurer_8h__dep__incl.pdf, id=1857, 212.795pt x 156.585pt>
 File: logic__network__configurer_8h__dep__incl.pdf Graphic file (type pdf)
 <use logic__network__configurer_8h__dep__incl.pdf>
 Package pdftex.def Info: logic__network__configurer_8h__dep__incl.pdf  used on input line 22.
 (pdftex.def)             Requested size: 212.0pt x 156.00879pt.
 ) (logic__network__configurer_8h_source.tex
 
-[55]) (main_8cpp.tex <./main_8cpp__incl.pdf>
-<main_8cpp__incl.pdf, id=1831, 1617.04124pt x 393.47pt>
+[57]) (main_8cpp.tex <./main_8cpp__incl.pdf>
+<main_8cpp__incl.pdf, id=1879, 1617.04124pt x 393.47pt>
 File: main_8cpp__incl.pdf Graphic file (type pdf)
 <use main_8cpp__incl.pdf>
 Package pdftex.def Info: main_8cpp__incl.pdf  used on input line 21.
 (pdftex.def)             Requested size: 350.0pt x 85.16476pt.
 ) (wire_8h.tex <./wire_8h__incl.pdf>
-<wire_8h__incl.pdf, id=1839, 220.825pt x 156.585pt>
+<wire_8h__incl.pdf, id=1887, 220.825pt x 156.585pt>
 File: wire_8h__incl.pdf Graphic file (type pdf)
 <use wire_8h__incl.pdf>
 Package pdftex.def Info: wire_8h__incl.pdf  used on input line 14.
 (pdftex.def)             Requested size: 220.0pt x 156.0064pt.
 
 
-[56] <./wire_8h__dep__incl.pdf>
-<wire_8h__dep__incl.pdf, id=1854, 661.47125pt x 325.215pt>
+[58] <./wire_8h__dep__incl.pdf>
+<wire_8h__dep__incl.pdf, id=1902, 661.47125pt x 325.215pt>
 File: wire_8h__dep__incl.pdf Graphic file (type pdf)
 <use wire_8h__dep__incl.pdf>
 Package pdftex.def Info: wire_8h__dep__incl.pdf  used on input line 21.
 (pdftex.def)             Requested size: 350.0pt x 172.0753pt.
 ) (wire_8h_source.tex
 
-[57])
+[59])
 
-[58] (refman.ind
+[60] (refman.ind
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 22.39185pt on input line 1.
 
 
 
 
-[59
+[61
 
 
 
@@ -1535,7 +1545,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 
 
 
-[60
+[62
 
 ]) (refman.aux)
  ***********
@@ -1543,20 +1553,20 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-14>
  ***********
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 44E6A124A8BEB553B613A3A18906DE3F;22369.
+(rerunfilecheck)             Checksum: 9854607BA5D403856B901FB7E7ABE2BD;23042.
  ) 
 Here is how much of TeX's memory you used:
- 22149 strings out of 469940
- 375085 string characters out of 5469893
- 785316 words of memory out of 5000000
- 48156 multiletter control sequences out of 15000+600000
- 681966 words of font info for 108 fonts, out of 8000000 for 9000
+ 22175 strings out of 469940
+ 375684 string characters out of 5469893
+ 788553 words of memory out of 5000000
+ 48168 multiletter control sequences out of 15000+600000
+ 684220 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,16n,117p,645b,775s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (66 pages, 1331800 bytes).
+ 101i,16n,117p,645b,797s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (68 pages, 1349851 bytes).
 PDF statistics:
- 2098 PDF objects out of 2487 (max. 8388607)
- 359 named destinations out of 1000 (max. 500000)
- 1131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2160 PDF objects out of 2487 (max. 8388607)
+ 371 named destinations out of 1000 (max. 500000)
+ 1155 words of extra memory for PDF output out of 10000 (max. 10000000)
 
